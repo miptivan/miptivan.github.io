@@ -15,6 +15,9 @@ jobs:
       - name: Install Emacs
         run: sudo apt install emacs-nox --yes
 
+      - name: Emacs version
+        run: emacs-nox --version
+
       - name: Build the site
         run: ./build.sh
 
