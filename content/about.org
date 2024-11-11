@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       5f9aaa3d-bd8c-41ae-985b-10b337558ca1
+:END:
+#+title: about
+#+setupfile: setup.org
+#+date: [2024-11-09 Sat 20:49]
+#+excerpt: About me
+#+filetags:  :private:
+
+* Обо мне
+
+specific
+
+Меня зовут Иван, я студент 2-го курса ИТМО ПМИ.
+
+[[id:bd54e8a9-ee81-4864-b517-db149c650aac][$A$ лежит левее $B$]]

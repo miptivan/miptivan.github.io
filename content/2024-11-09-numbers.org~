@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       35540f17-78a1-4d7a-a012-b47bd72d6383
+:END:
+#+title: numbers
+#+setupfile: ./setup.org
+#+date: [2024-11-09 Sat 20:06]
+#+excerpt: 
+#+filetags: :private:
+
+* Рациональные числа
+
+#+BEGIN_LaTeX
+$$
+\mathbb{Q} = \left\{ \frac{a}{b} \mid a \in \mathbb{Z}, b \in \mathbb{N}, (a, b) = 1 \right\}
+$$
+
+$(a, b) = 1$ Значит, что $НОД = 1$. То есть дробь несократима.
+#+END_LaTeX
+
+* Иррациональность $\sqrt{2}$
+
+\begin{gather*}
+x^2 = 2 \\
+x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
+\iff a \text{ делится на } 4 \iff a^2 = 4k, k \in \mathbb{N} \iff b^2 = 2k \iff \\ 
+\iff a \text{ и } b - \text{чётные, а значит сократимые}
+\end{gather*}
+
+Числовое множество $A$ лежит левее числового множества $B$ $\iff$ $\forall a \in A \text{ и } \forall b \in B \colon a \leqslant b$

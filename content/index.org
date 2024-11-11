@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       9fcaae14-d0dd-4995-8ce1-f5c3a4b379bf
+:END:
+#+title: home
+#+setupfile: setup.org
+#+date: [2024-11-10 Sun 14:06]
+#+excerpt: 
+#+filetags:  :private:
+
+* Главная страница

@@ -1,0 +1,5 @@
+/.packages/
+/themes/
+build.el
+build.sh
+setup.org

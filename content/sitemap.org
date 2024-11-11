@@ -1,0 +1,10 @@
+* Sitemap
+
+- 08-11-2024 [[file:index.org][Обо мне]] Пост о том, кто я такой
+
+- 07-11-2024 [[file:test.org][Тестовый пост]] Пост, в котором я тестирую возможности org-mode
+
+     
+** Additional Links
+   [[https://example.com][Example Website]]
+   [[https://another-example.com][Another Example]]

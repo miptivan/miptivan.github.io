@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       3868d8b6-33fa-412a-959b-4078c02a9a40
+:END:
+#+title: math
+#+setupfile: setup.org
+#+date: [2024-11-10 Sun 13:37]
+#+excerpt: 
+#+filetags: :private:
+
+* Математический анализ 1
+
+[[id:35540f17-78a1-4d7a-a012-b47bd72d6383][Первая лекция о числовых множествах]]
+
+Ссылка на определение [[id:bd54e8a9-ee81-4864-b517-db149c650aac][$A$ лежит левее $B$]]
