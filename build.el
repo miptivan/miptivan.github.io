@@ -16,25 +16,8 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(use-package org-roam
-  :ensure t
-  :custom
-  (org-roam-directory "~/blog/content")
-  (org-roam-capture-templates
-   '(("b" "blog" plain
-      "#+setupfile: setup.org\n#+date: %U\n#+excerpt: %?\n#+filetags:  :private:"
-      :if-new (file+head "%<%Y-%m-%d>-${slug}.org" "#+title: ${title}\n")
-      :unnarrowed t)
-      ("m" "math" plain
-      "#+setupfile: setup.org\n#+date: %U\n#+excerpt: %?\n#+filetags: :private:math"
-      :if-new (file+head "%<%Y-%m-%d>-${slug}.org" "#+title: ${title}\n")
-      :unnarrowed t)))
-  :bind (("C-c n l" . org-roam-buffer-toggle)
-         ("C-c n f" . org-roam-node-find)
-         ("C-c n i" . org-roam-node-insert))
-  :config
-  (org-roam-setup))
-
+(unless (package-installed-p 'org-roam)
+  (package-install 'org-roam))
 
 (require 'ox-publish)
 (require 'org-roam)
