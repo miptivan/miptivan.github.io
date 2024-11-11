@@ -5,8 +5,6 @@
 (require 'package)
 (setq package-user-dir (expand-file-name "./.packages"))
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
-                         ("org" . "https://orgmode.org/elpa/")
-                         ("gnu-devel" . "https://elpa.gnu.org/devel/")
                          ("elpa" . "https://elpa.gnu.org/packages/")))
 
 ;; Initialize the package system
