@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       45e24a20-5c1d-47b4-996d-0fc37b0b7dc0
+:END:
+#+title: index
+#+setupfile: setup.org
+#+date: [2024-11-18 Mon 22:22]
+#+excerpt: 
+#+filetags:
+
+* Здесь будет список постов из блога
+
+#+include: "sitemap.org"

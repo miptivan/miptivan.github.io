@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       3868d8b6-33fa-412a-959b-4078c02a9a40
+:END:
+#+title: math
+#+setupfile: setup.org
+#+date: [2024-11-10 Sun 13:37]
+#+excerpt: 
+#+filetags:
+
+* Математический анализ 1
+
+** Лекция 1
+
+[[file:analysis/2024-11-09-numbers.org][Числовые множества]]

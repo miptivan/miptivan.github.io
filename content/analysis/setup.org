@@ -1,0 +1,10 @@
+#+AUTHOR: Ivan Borisov
+#+EMAIL: miptivan@gmail.com
+#+OPTIONS: num:nil html-style:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/scrollable.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/links.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+#+LATEX_HEADER: \usepackage[T2A]{fontenc}
+#+LATEX_HEADER: \usepackage[russian]{babel}
+#+LATEX_HEADER: \usepackage{amsmath}
