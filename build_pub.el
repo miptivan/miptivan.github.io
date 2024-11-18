@@ -12,7 +12,7 @@
               :recursive t
               :base-directory "./content"
               :base-extension "org"
-              :publishing-directory "./public"
+              :publishing-directory "./docs"
               :publishing-function 'org-html-publish-to-html
               :html-preamble (my/preamble-gen "." )
               :html-postamble (my/postamble-gen ".")
