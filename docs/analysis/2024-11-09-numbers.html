@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-11-19 Tue 20:47 -->
+<!-- 2024-11-19 Tue 22:24 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>numbers</title>
@@ -71,17 +71,23 @@ webvisor:true
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgd4ab346">Рациональные числа</a></li>
-<li><a href="#org19368d4">Иррациональность \(\sqrt{2}\)</a></li>
-<li><a href="#org3f08b67">\(A\) лежит левее \(B\)</a></li>
+<li><a href="#org203abbd">Рациональные числа</a></li>
+<li><a href="#orgb02e37d">Иррациональность \(\sqrt{2}\)</a></li>
+<li><a href="#org780cd33">\(A\) лежит левее \(B\)</a></li>
+<li><a href="#org5380405">Разделяющий элемент</a>
+<ul>
+<li><a href="#org42fa89d">Пример</a></li>
+</ul>
+</li>
+<li><a href="#org553361c">Свойство полноты</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgd4ab346" class="outline-2">
-<h2 id="orgd4ab346">Рациональные числа</h2>
-<div class="outline-text-2" id="text-orgd4ab346">
-<div class="LaTeX" id="orgab4d52f">
+<div id="outline-container-org203abbd" class="outline-2">
+<h2 id="org203abbd">Рациональные числа</h2>
+<div class="outline-text-2" id="text-org203abbd">
+<div class="LaTeX" id="orgcb51693">
 <p>
 \[
 \mathbb{Q} = \left\{ \frac{a}{b} \mid a \in \mathbb{Z}, b \in \mathbb{N}, (a, b) = 1 \right\}
@@ -96,9 +102,9 @@ webvisor:true
 </div>
 </div>
 
-<div id="outline-container-org19368d4" class="outline-2">
-<h2 id="org19368d4">Иррациональность \(\sqrt{2}\)</h2>
-<div class="outline-text-2" id="text-org19368d4">
+<div id="outline-container-orgb02e37d" class="outline-2">
+<h2 id="orgb02e37d">Иррациональность \(\sqrt{2}\)</h2>
+<div class="outline-text-2" id="text-orgb02e37d">
 \begin{gather*}
 x^2 = 2 \\
 x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
@@ -108,11 +114,38 @@ x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
 </div>
 </div>
 
-<div id="outline-container-org3f08b67" class="outline-2">
-<h2 id="org3f08b67">\(A\) лежит левее \(B\)</h2>
-<div class="outline-text-2" id="text-org3f08b67">
+<div id="outline-container-org780cd33" class="outline-2">
+<h2 id="org780cd33">\(A\) лежит левее \(B\)</h2>
+<div class="outline-text-2" id="text-org780cd33">
 <p>
 Числовое множество \(A\) лежит левее числового множества \(B\) \(\iff\) \(\forall a \in A \text{ и } \forall b \in B \colon a \leqslant b\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5380405" class="outline-2">
+<h2 id="org5380405">Разделяющий элемент</h2>
+<div class="outline-text-2" id="text-org5380405">
+<p>
+Число \(c\) называется разделяющим элементом для множеств \(A\) и \(B\) из <a href="#org780cd33">Предыдущего определения</a>, если \(\forall a \in A\;\; c \geqslant a \text{ и } \forall b \in B\;\; c \leqslant b\).
+</p>
+</div>
+
+<div id="outline-container-org42fa89d" class="outline-3">
+<h3 id="org42fa89d">Пример</h3>
+<div class="outline-text-3" id="text-org42fa89d">
+<p>
+Рассмотреть 2 множества: одно состоит из рациональных чисел, меньших \(\sqrt{2}\), а другое из рациональных чисел, больших \(\sqrt{2}\). Попробовать найти рациональное число, разделяющее эти 2 множества. Подсказка: рассмотреть число, чуть-чуть меньшее, чем \(\sqrt{2}\), понять, что нужное нам число не может быть меньше \(\sqrt{2}\). Затем рассмотреть число, большее чем \(\sqrt{2}\) и тоже понять, что оно не может быть больше, чем \(\sqrt{2}\).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org553361c" class="outline-2">
+<h2 id="org553361c">Свойство полноты</h2>
+<div class="outline-text-2" id="text-org553361c">
+<p>
+Числовое множество \(M\) обладает свойством полноты, если
 </p>
 </div>
 </div>
