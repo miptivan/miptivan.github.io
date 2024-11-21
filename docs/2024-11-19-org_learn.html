@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-21 Thu 21:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>org learn</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="./css/links.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+<div id="preamble" class="status">
+<nav> <center>[ <a href="https://miptivan.github.io/index.html"/> Home </a> ][ <a href="https://miptivan.github.io/about.html"/> About </a> ][ <a href="https://github.com/miptivan"/> Github </a> ][ <a href="https://miptivan.github.io/analysis.html"/> Analysis </a> ]</center> </nav>
+</div>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga6d0ee1">Изучение Org-mode</a></li>
+<li><a href="#org2b089fc">Вставка</a></li>
+<li><a href="#org3e9d61f">Сохранение</a></li>
+<li><a href="#org1bb1cf5">Окна и буфферы</a></li>
+<li><a href="#org9143b6c">Шорткаты org</a></li>
+<li><a href="#orge29f708">Ссылки</a></li>
+<li><a href="#org255f207">Списки</a></li>
+<li><a href="#org9322430">Тудушки</a></li>
+<li><a href="#org25ec4f5">Agenda</a></li>
+<li><a href="#org107bbe1">Заметки с ссылками на эту страницу</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga6d0ee1" class="outline-2">
+<h2 id="orga6d0ee1">Изучение Org-mode</h2>
+<div class="outline-text-2" id="text-orga6d0ee1">
+<p>
+Здесь я буду записывать фичи org-mode.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2b089fc" class="outline-2">
+<h2 id="org2b089fc">Вставка</h2>
+<div class="outline-text-2" id="text-org2b089fc">
+<p>
+<code>C-c .</code> &#x2013; Вставка даты (Узнать, можно ли поменять формат даты)
+</p>
+
+<p>
+<code>C-c C-l</code> &#x2013; Вставка ссылки
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3e9d61f" class="outline-2">
+<h2 id="org3e9d61f">Сохранение</h2>
+<div class="outline-text-2" id="text-org3e9d61f">
+<p>
+<code>C-x C-w</code> &#x2013; Сохранить под новым именем
+</p>
+
+<p>
+<code>C-x s</code> &#x2013; Сохранить все буфферы
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1bb1cf5" class="outline-2">
+<h2 id="org1bb1cf5">Окна и буфферы</h2>
+<div class="outline-text-2" id="text-org1bb1cf5">
+<p>
+Тут могу быть неточен в том, где буффер, а где окно.
+</p>
+
+<p>
+<code>C-w j</code> &#x2013; На окно снизу
+</p>
+
+<p>
+<code>C-w k</code> &#x2013; На окно сверху
+</p>
+
+<p>
+<code>C-w w</code> &#x2013; Следующее окно
+</p>
+
+<p>
+<b><b><code>C-M-j</code> &#x2013; Switch buffer</b></b>
+</p>
+
+<p>
+<code>C-x 1</code> &#x2013; Окно на весь экран
+</p>
+
+<p>
+<code>C-x 2</code> &#x2013; Разделить окно на два
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9143b6c" class="outline-2">
+<h2 id="org9143b6c">Шорткаты org</h2>
+<div class="outline-text-2" id="text-org9143b6c">
+<p>
+<code>S-Tab</code> &#x2013; Сворачивать-разворачивать заголовки
+</p>
+
+<p>
+<code>C-Enter</code> &#x2013; Ещё один такой же заголовок
+</p>
+
+<p>
+<code>M-стрелка влево-вправо</code> &#x2013; Изменить уровень заголовка
+</p>
+
+<p>
+<b><b><code>M-стрелка вверх-вниз</code> &#x2013; Двигать строчку</b></b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge29f708" class="outline-2">
+<h2 id="orge29f708">Ссылки</h2>
+<div class="outline-text-2" id="text-orge29f708">
+<p>
+<b><b><code>C-c C-o</code> &#x2013; Открыть ссылку</b></b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org255f207" class="outline-2">
+<h2 id="org255f207">Списки</h2>
+<div class="outline-text-2" id="text-org255f207">
+<ol class="org-ol">
+<li>Нумерованные &#x2013; просто ставишь <code>1.</code></li>
+<li>Пишешь текст</li>
+<li>И нажимаешь <code>M-Enter</code></li>
+</ol>
+
+<p>
+<code>M-S-Enter</code> &#x2013; Создаёт чекбокс
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org9322430" class="outline-2">
+<h2 id="org9322430">Тудушки</h2>
+<div class="outline-text-2" id="text-org9322430">
+<p>
+<code>C-c C-t</code> &#x2013; Done (Или S-стрелочка)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org25ec4f5" class="outline-2">
+<h2 id="org25ec4f5">Agenda</h2>
+<div class="outline-text-2" id="text-org25ec4f5">
+<p>
+<code>C-c C-s</code> S-стрелочки &#x2013; Выбрать дату
+</p>
+
+<p>
+<code>C-c C-d</code> &#x2013; Дедлайн
+</p>
+</div>
+</div>
+<div id="outline-container-org107bbe1" class="outline-2">
+<h2 id="org107bbe1">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org107bbe1">
+<ul class="org-ul">
+<li><a href="../../blog/content/index.html">Публикации</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer> <center>[ <a href="https://miptivan.github.io/index.html"/> Home </a> ][ <a href="https://miptivan.github.io/about.html"/> About </a> ][ <a href="https://github.com/miptivan"/> Github </a> ][ <a href="https://miptivan.github.io/analysis.html"/> Analysis </a> ]</center> </nav></center> </footer>
+</div>
+</body>
+</html>

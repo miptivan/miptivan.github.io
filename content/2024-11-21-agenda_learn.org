@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       fe8642cb-877b-4cca-921e-a0f76f235057
+:END:
+#+title: agenda learn
+#+setupfile: setup.org
+#+date: [2024-11-21 Thu 19:57]
+#+excerpt: 
+#+filetags:
+
+* org-agenda
+Пробую планировать с помощью org-agenda.
+
+* Забиндить вызов org-agenda
+~(global-set-key (kbd "C-c a") 'org-agenda)~ -- Я сделал на сочетание клавиш ~C-c a~.
+
+
