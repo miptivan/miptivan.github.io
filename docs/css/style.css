@@ -60,11 +60,54 @@ body {
         flex-direction: column-reverse;
     }
     .status {
-        width: 100%;
+        margin: 0 auto;
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .content {
         flex-grow: 1;
+    }
+
+    .status img {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        display: block;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .name {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    .whoami {
+        text-align: center;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .links a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0 0.5rem;
+        color: #3a343a;
+    }
+
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -167,7 +210,7 @@ body img {
     body img {
         max-width: 100%;
     }
-}*/S
+}*/
 body img.no-border {
     border: none;
 }
