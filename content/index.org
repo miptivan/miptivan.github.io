@@ -13,13 +13,13 @@
 :ID:       75853990-bdf6-4ad6-a104-b65a4c89810d
 :END:
 
-- <2024-11-21 Thu> [[id:fe8642cb-877b-4cca-921e-a0f76f235057][org-agenda cheatsheet]]
+- <2024-11-21 Thu> [[file:2024-11-21-agenda_learn.org][Org-agenda cheatsheet]]
   {{{div(Моя попытка планировать в org-agenda (Пока что идёт успешно))}}}
   
-- <2024-11-21 Thu> [[id:6780ad00-ecff-4bd7-8633-24957bf2bbfa][org-mode cheatsheet и не только]]
+- <2024-11-21 Thu> [[file:2024-11-19-org_learn.org][Org-learn cheatsheet]]
   {{{div(Добавляю интересные фичи сюда и довожу их использование до автоматизма.)}}}
   
-- <2024-11-20 Wed> [[id:34dfc640-ed3a-4689-8070-1ed9e434839a][vim cheatsheet]]
+- <2024-11-20 Wed> [[file:2024-11-15-vim.org][Vim cheatsheet]]
   {{{div(Каждый день я добавляю новую фичу Vim и практикую её.)}}}
   
 - <2024-11-07 Thu> [[file:about.org][Обо мне]]
