@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-11-21 Thu 21:44 -->
+<!-- 2024-11-28 Thu 23:10 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>numbers</title>
@@ -64,34 +64,53 @@ webvisor:true
 </head>
 <body>
 <div id="preamble" class="status">
-<nav> <center>[ <a href="https://miptivan.github.io/index.html"/> Home </a> ][ <a href="https://miptivan.github.io/about.html"/> About </a> ][ <a href="https://github.com/miptivan"/> Github </a> ][ <a href="https://miptivan.github.io/analysis.html"/> Analysis </a> ]</center> </nav>
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150" class="Aside___StyledImg-sc-d50w66-1 bKjoDJ">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
 </div>
 <div id="content" class="content">
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgeecc8d0">Рациональные числа</a></li>
-<li><a href="#org8b8a0ab">Иррациональность \(\sqrt{2}\)</a></li>
-<li><a href="#orgb44f217">\(A\) лежит левее \(B\)</a></li>
-<li><a href="#org7122ed8">Разделяющий элемент</a>
+<li><a href="#orgcc9de9e">Рациональные числа</a></li>
+<li><a href="#orgc652a1f">Иррациональность \(\sqrt{2}\)</a></li>
+<li><a href="#orgb1e8340">\(A\) лежит левее \(B\)</a></li>
+<li><a href="#org702ec7d">Разделяющий элемент</a>
 <ul>
-<li><a href="#orga5b8920">Пример</a></li>
+<li><a href="#orga201fc4">Пример</a></li>
 </ul>
 </li>
-<li><a href="#orgbcadad9">Свойство полноты</a></li>
-<li><a href="#org6625a95">Иррациональные числа</a></li>
-<li><a href="#org3066f79">Вещественные числа</a></li>
-<li><a href="#orgc780067">Важный момент</a></li>
-<li><a href="#org762f782">Принцип полноты для \(\mathbb{R}\)</a></li>
+<li><a href="#org08d2530">Свойство полноты</a></li>
+<li><a href="#org1c50d98">Иррациональные числа</a></li>
+<li><a href="#org193cfd4">Вещественные числа</a></li>
+<li><a href="#orgce8fd20">Важный момент</a></li>
+<li><a href="#org252d235">Принцип полноты для \(\mathbb{R}\)</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgeecc8d0" class="outline-2">
-<h2 id="orgeecc8d0">Рациональные числа</h2>
-<div class="outline-text-2" id="text-orgeecc8d0">
-<div class="LaTeX" id="org653a170">
+<div id="outline-container-orgcc9de9e" class="outline-2">
+<h2 id="orgcc9de9e">Рациональные числа</h2>
+<div class="outline-text-2" id="text-orgcc9de9e">
+<div class="LaTeX" id="org18f0acb">
 <p>
 \[
 \mathbb{Q} = \left\{ \frac{a}{b} \mid a \in \mathbb{Z}, b \in \mathbb{N}, (a, b) = 1 \right\}
@@ -106,9 +125,9 @@ webvisor:true
 </div>
 </div>
 
-<div id="outline-container-org8b8a0ab" class="outline-2">
-<h2 id="org8b8a0ab">Иррациональность \(\sqrt{2}\)</h2>
-<div class="outline-text-2" id="text-org8b8a0ab">
+<div id="outline-container-orgc652a1f" class="outline-2">
+<h2 id="orgc652a1f">Иррациональность \(\sqrt{2}\)</h2>
+<div class="outline-text-2" id="text-orgc652a1f">
 \begin{gather*}
 x^2 = 2 \\
 x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
@@ -118,26 +137,26 @@ x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
 </div>
 </div>
 
-<div id="outline-container-orgb44f217" class="outline-2">
-<h2 id="orgb44f217">\(A\) лежит левее \(B\)</h2>
-<div class="outline-text-2" id="text-orgb44f217">
+<div id="outline-container-orgb1e8340" class="outline-2">
+<h2 id="orgb1e8340">\(A\) лежит левее \(B\)</h2>
+<div class="outline-text-2" id="text-orgb1e8340">
 <p>
 Числовое множество \(A\) лежит левее числового множества \(B\) \(\iff\) \(\forall a \in A \text{ и } \forall b \in B \colon a \leqslant b\)
 </p>
 </div>
 </div>
 
-<div id="outline-container-org7122ed8" class="outline-2">
-<h2 id="org7122ed8">Разделяющий элемент</h2>
-<div class="outline-text-2" id="text-org7122ed8">
+<div id="outline-container-org702ec7d" class="outline-2">
+<h2 id="org702ec7d">Разделяющий элемент</h2>
+<div class="outline-text-2" id="text-org702ec7d">
 <p>
-Число \(c\) называется разделяющим элементом для множеств \(A\) и \(B\) из <a href="#orgb44f217">Предыдущего определения</a>, если \(\forall a \in A\;\; c \geqslant a \text{ и } \forall b \in B\;\; c \leqslant b\).
+Число \(c\) называется разделяющим элементом для множеств \(A\) и \(B\) из <a href="#orgb1e8340">Предыдущего определения</a>, если \(\forall a \in A\;\; c \geqslant a \text{ и } \forall b \in B\;\; c \leqslant b\).
 </p>
 </div>
 
-<div id="outline-container-orga5b8920" class="outline-3">
-<h3 id="orga5b8920">Пример</h3>
-<div class="outline-text-3" id="text-orga5b8920">
+<div id="outline-container-orga201fc4" class="outline-3">
+<h3 id="orga201fc4">Пример</h3>
+<div class="outline-text-3" id="text-orga201fc4">
 <p>
 Рассмотреть 2 множества: одно состоит из рациональных чисел, меньших \(\sqrt{2}\), а другое из рациональных чисел, больших \(\sqrt{2}\). Попробовать найти рациональное число, разделяющее эти 2 множества. Подсказка: рассмотреть число, чуть-чуть меньшее, чем \(\sqrt{2}\), понять, что нужное нам число не может быть меньше \(\sqrt{2}\). Затем рассмотреть число, большее чем \(\sqrt{2}\) и тоже понять, что оно не может быть больше, чем \(\sqrt{2}\).
 </p>
@@ -145,9 +164,9 @@ x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
 </div>
 </div>
 
-<div id="outline-container-orgbcadad9" class="outline-2">
-<h2 id="orgbcadad9">Свойство полноты</h2>
-<div class="outline-text-2" id="text-orgbcadad9">
+<div id="outline-container-org08d2530" class="outline-2">
+<h2 id="org08d2530">Свойство полноты</h2>
+<div class="outline-text-2" id="text-org08d2530">
 <p>
 Числовое множество \(M\) обладает свойством полноты, если для любых его непустых подмножеств \(A\) и \(B\), таких, что \(A \leqslant B\;\;\exists c \in M\), которое разделяет \(A\) и \(B\).
 </p>
@@ -166,27 +185,27 @@ x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
 </div>
 </div>
 
-<div id="outline-container-org6625a95" class="outline-2">
-<h2 id="org6625a95">Иррациональные числа</h2>
-<div class="outline-text-2" id="text-org6625a95">
+<div id="outline-container-org1c50d98" class="outline-2">
+<h2 id="org1c50d98">Иррациональные числа</h2>
+<div class="outline-text-2" id="text-org1c50d98">
 <p>
 <b><b>Иррациональные числа</b></b> &#x2013; числа которые представляются в виде бесконечных непериодических десятичных дробей.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org3066f79" class="outline-2">
-<h2 id="org3066f79">Вещественные числа</h2>
-<div class="outline-text-2" id="text-org3066f79">
+<div id="outline-container-org193cfd4" class="outline-2">
+<h2 id="org193cfd4">Вещественные числа</h2>
+<div class="outline-text-2" id="text-org193cfd4">
 <p>
 Множество всех периодических и непериодических десятичных дробей называется множеством <b><b>вещественных чисел</b></b>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc780067" class="outline-2">
-<h2 id="orgc780067">Важный момент</h2>
-<div class="outline-text-2" id="text-orgc780067">
+<div id="outline-container-orgce8fd20" class="outline-2">
+<h2 id="orgce8fd20">Важный момент</h2>
+<div class="outline-text-2" id="text-orgce8fd20">
 <p>
 У тех дробей, у которых возможен период из \((9)\), всегда возможен период из $(0)
 </p>
@@ -201,17 +220,42 @@ x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
 </div>
 </div>
 
-<div id="outline-container-org762f782" class="outline-2">
-<h2 id="org762f782">Принцип полноты для \(\mathbb{R}\)</h2>
-<div class="outline-text-2" id="text-org762f782">
+<div id="outline-container-org252d235" class="outline-2">
+<h2 id="org252d235">Принцип полноты для \(\mathbb{R}\)</h2>
+<div class="outline-text-2" id="text-org252d235">
 <p>
 Для вещественных чисел выполнен принцип полноты.
 </p>
+
+<p>
+Это сложная формула:
+</p>
+
+<p>
+\[
+\mathbf{A} = \begin{matrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{matrix}, \\
+\mathbf{B} = \begin{matrix}
+b_{11} & b_{12} & \cdots & b_{1p} \\
+b_{21} & b_{22} & \cdots & b_{2p} \\
+\vdots & \vdots & \ddots & \vdots \\
+b_{n1} & b_{n2} & \cdots & b_{np}
+\end{matrix}, \\
+\mathbf{C} = \mathbf{A} \cdot \mathbf{B} = \begin{matrix}
+\sum_{k=1}^n a_{1k}b_{k1} & \sum_{k=1}^n a_{1k}b_{k2} & \cdots & \sum_{k=1}^n a_{1k}b_{kp} \\
+\sum_{k=1}^n a_{2k}b_{k1} & \sum_{k=1}^n a_{2k}b_{k2} & \cdots & \sum_{k=1}^n a_{2k}b_{kp} \\
+\vdots & \vdots & \ddots & \vdots \\
+\sum_{k=1}^n a_{mk}b_{k1} & \sum_{k=1}^n a_{mk}b_{k2} & \cdots & \sum_{k=1}^n a_{mk}b_{kp}
+\end{matrix},
+\text{где } \mathbf{C}_{ij} = \sum_{k=1}^n a_{ik}b_{kj} \quad \text{для } i = 1, 2, \ldots, m \text{ и } j = 1, 2, \ldots, p.
+\]
+</p>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
-<footer> <center>[ <a href="https://miptivan.github.io/index.html"/> Home </a> ][ <a href="https://miptivan.github.io/about.html"/> About </a> ][ <a href="https://github.com/miptivan"/> Github </a> ][ <a href="https://miptivan.github.io/analysis.html"/> Analysis </a> ]</center> </nav></center> </footer>
 </div>
 </body>
 </html>

@@ -15,9 +15,14 @@
               :publishing-directory "./docs"
               :publishing-function 'org-html-publish-to-html
               :html-preamble (my/preamble-gen "." )
-              :html-postamble (my/postamble-gen ".")
+              :html-postamble nil
               :with-title nil)
               ))
+
+(setq org-export-global-macros '(
+                                 ("timestamp" . "@@html:<span class=\"timestamp\">[$1]</span>@@")
+                                 ("div" . "@@html:<div>$1</div>@@")
+                                 ))
 
 (org-publish-all t)
 ;; (org-publish-project "public")

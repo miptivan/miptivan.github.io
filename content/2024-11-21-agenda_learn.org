@@ -13,4 +13,29 @@
 * Забиндить вызов org-agenda
 ~(global-set-key (kbd "C-c a") 'org-agenda)~ -- Я сделал на сочетание клавиш ~C-c a~.
 
+* org-schedule
+:PROPERTIES:
+:ID:       f61a74b8-7489-47f9-a88d-b7a93ac2b3c5
+:END:
+Позволяет что-то запланировать.
 
+~C-c C-s~ -- org-schedule
+
+~S-стрелки~ -- Перемещение по календарю
+
+* org-deadline
+
+~C-c C-d~ -- org-deadline
+
+~(setq org-deadline-warning-days 5)~ -- За сколько дней будут приходить напоминания
+
+~C-c C-t~ -- Выбрать статус задачи
+
+~C-c C-q~ -- Выбрать тег из списка в конфиге
+
+~C-c C-w~ -- Переместить в файл (Например, архивировать)
+
+**~C-c c~ -- org-capture**
+
+* Habits
+~M-x org-set-propherty style habit~ -- чтобы тудушка появилась в привычках

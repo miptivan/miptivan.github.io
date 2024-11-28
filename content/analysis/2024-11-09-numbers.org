@@ -64,3 +64,27 @@ $$4,(9) = 5,(0)$$
 :ID:       6bb02af9-7601-4953-a124-ec24c47d567f
 :END:
 Для вещественных чисел выполнен принцип полноты.
+
+Это сложная формула:
+
+$$
+\mathbf{A} = \begin{matrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{matrix}, \\
+\mathbf{B} = \begin{matrix}
+b_{11} & b_{12} & \cdots & b_{1p} \\
+b_{21} & b_{22} & \cdots & b_{2p} \\
+\vdots & \vdots & \ddots & \vdots \\
+b_{n1} & b_{n2} & \cdots & b_{np}
+\end{matrix}, \\
+\mathbf{C} = \mathbf{A} \cdot \mathbf{B} = \begin{matrix}
+\sum_{k=1}^n a_{1k}b_{k1} & \sum_{k=1}^n a_{1k}b_{k2} & \cdots & \sum_{k=1}^n a_{1k}b_{kp} \\
+\sum_{k=1}^n a_{2k}b_{k1} & \sum_{k=1}^n a_{2k}b_{k2} & \cdots & \sum_{k=1}^n a_{2k}b_{kp} \\
+\vdots & \vdots & \ddots & \vdots \\
+\sum_{k=1}^n a_{mk}b_{k1} & \sum_{k=1}^n a_{mk}b_{k2} & \cdots & \sum_{k=1}^n a_{mk}b_{kp}
+\end{matrix},
+\text{где } \mathbf{C}_{ij} = \sum_{k=1}^n a_{ik}b_{kj} \quad \text{для } i = 1, 2, \ldots, m \text{ и } j = 1, 2, \ldots, p.
+$$

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-11-21 Thu 21:44 -->
+<!-- 2024-11-28 Thu 23:10 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>vim learn</title>
@@ -32,34 +32,53 @@ webvisor:true
 </head>
 <body>
 <div id="preamble" class="status">
-<nav> <center>[ <a href="https://miptivan.github.io/index.html"/> Home </a> ][ <a href="https://miptivan.github.io/about.html"/> About </a> ][ <a href="https://github.com/miptivan"/> Github </a> ][ <a href="https://miptivan.github.io/analysis.html"/> Analysis </a> ]</center> </nav>
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150" class="Aside___StyledImg-sc-d50w66-1 bKjoDJ">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
 </div>
 <div id="content" class="content">
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgda030ce">Изучение Vim</a></li>
-<li><a href="#org793a50b">Перемещение по экрану</a></li>
-<li><a href="#org6bca306">Перемещение экрана</a></li>
-<li><a href="#org80352a9">Визуальный режим</a></li>
-<li><a href="#org6dea12b">Копировать-вставить</a>
+<li><a href="#org6357d59">Изучение Vim</a></li>
+<li><a href="#orgecade80">Перемещение по экрану</a></li>
+<li><a href="#org7c76926">Перемещение экрана</a></li>
+<li><a href="#org63676c6">Визуальный режим</a></li>
+<li><a href="#orga87d7ec">Копировать-вставить</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org26add84"><span class="todo TODO">TODO</span> Как вырезать выделенное?</a></li>
+<li><a href="#org6d054b5"><span class="todo TODO">TODO</span> Как вырезать выделенное?</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgd59f30e">Заметки с ссылками на эту страницу</a></li>
+<li><a href="#org1d80c80">Заметки с ссылками на эту страницу</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgda030ce" class="outline-2">
-<h2 id="orgda030ce">Изучение Vim</h2>
-<div class="outline-text-2" id="text-orgda030ce">
+<div id="outline-container-org6357d59" class="outline-2">
+<h2 id="org6357d59">Изучение Vim</h2>
+<div class="outline-text-2" id="text-org6357d59">
 <p>
 Каждый день я буду учить одну фичу Vim и добавлять сюда в список.
 </p>
@@ -70,9 +89,9 @@ webvisor:true
 </div>
 </div>
 
-<div id="outline-container-org793a50b" class="outline-2">
-<h2 id="org793a50b">Перемещение по экрану</h2>
-<div class="outline-text-2" id="text-org793a50b">
+<div id="outline-container-orgecade80" class="outline-2">
+<h2 id="orgecade80">Перемещение по экрану</h2>
+<div class="outline-text-2" id="text-orgecade80">
 <p>
 <code>H</code> &#x2013; К началу экрана
 </p>
@@ -99,9 +118,9 @@ webvisor:true
 </div>
 </div>
 
-<div id="outline-container-org6bca306" class="outline-2">
-<h2 id="org6bca306">Перемещение экрана</h2>
-<div class="outline-text-2" id="text-org6bca306">
+<div id="outline-container-org7c76926" class="outline-2">
+<h2 id="org7c76926">Перемещение экрана</h2>
+<div class="outline-text-2" id="text-org7c76926">
 <p>
 <code>Ctrl+b</code> &#x2013; Назад на целый экран
 </p>
@@ -120,9 +139,9 @@ webvisor:true
 </div>
 </div>
 
-<div id="outline-container-org80352a9" class="outline-2">
-<h2 id="org80352a9">Визуальный режим</h2>
-<div class="outline-text-2" id="text-org80352a9">
+<div id="outline-container-org63676c6" class="outline-2">
+<h2 id="org63676c6">Визуальный режим</h2>
+<div class="outline-text-2" id="text-org63676c6">
 <p>
 <code>V</code> &#x2013; Построчный режим выделения
 </p>
@@ -133,9 +152,9 @@ webvisor:true
 </div>
 </div>
 
-<div id="outline-container-org6dea12b" class="outline-2">
-<h2 id="org6dea12b">Копировать-вставить</h2>
-<div class="outline-text-2" id="text-org6dea12b">
+<div id="outline-container-orga87d7ec" class="outline-2">
+<h2 id="orga87d7ec">Копировать-вставить</h2>
+<div class="outline-text-2" id="text-orga87d7ec">
 <p>
 <code>y</code> &#x2013; Скопировать выделенное
 </p>
@@ -153,23 +172,20 @@ webvisor:true
 </p>
 </div>
 
-<div id="outline-container-org26add84" class="outline-4">
-<h4 id="org26add84"><span class="todo TODO">TODO</span> Как вырезать выделенное?</h4>
-<div class="outline-text-4" id="text-org26add84">
+<div id="outline-container-org6d054b5" class="outline-4">
+<h4 id="org6d054b5"><span class="todo TODO">TODO</span> Как вырезать выделенное?</h4>
+<div class="outline-text-4" id="text-org6d054b5">
 </div>
 </div>
 </div>
-<div id="outline-container-orgd59f30e" class="outline-2">
-<h2 id="orgd59f30e">Заметки с ссылками на эту страницу</h2>
-<div class="outline-text-2" id="text-orgd59f30e">
+<div id="outline-container-org1d80c80" class="outline-2">
+<h2 id="org1d80c80">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org1d80c80">
 <ul class="org-ul">
 <li><a href="../../blog/content/index.html">Публикации</a></li>
 </ul>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
-<footer> <center>[ <a href="https://miptivan.github.io/index.html"/> Home </a> ][ <a href="https://miptivan.github.io/about.html"/> About </a> ][ <a href="https://github.com/miptivan"/> Github </a> ][ <a href="https://miptivan.github.io/analysis.html"/> Analysis </a> ]</center> </nav></center> </footer>
 </div>
 </body>
 </html>
