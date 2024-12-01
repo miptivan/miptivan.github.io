@@ -23,7 +23,7 @@
 
 ~S-стрелки~ -- Перемещение по календарю
 
-* org-deadline
+* org-deadline							      :@work:
 
 ~C-c C-d~ -- org-deadline
 
@@ -37,5 +37,12 @@
 
 **~C-c c~ -- org-capture**
 
-* Habits
+* Habits							:@study:blog:
+:PROPERTIES:
+:ID:       08d45379-ccec-4810-b11d-e29650fc51b6
+:END:
 ~M-x org-set-propherty style habit~ -- чтобы тудушка появилась в привычках
+
+~C-c C-t~ -- Состояния тудушек
+
+~21 C-c a~ -- Посмотреть планы на 21 день вперёд
