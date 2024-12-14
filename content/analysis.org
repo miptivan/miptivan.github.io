@@ -5,7 +5,7 @@
 #+setupfile: setup.org
 #+date: [2024-11-10 Sun 13:37]
 #+excerpt: 
-#+filetags:
+#+filetags: :analysis:
 
 * Математический анализ 1
 
