@@ -49,7 +49,6 @@
 **~C-c C-o~ -- Открыть ссылку**
 
 * Списки
-
 1. Нумерованные -- просто ставишь ~1.~
 2. Пишешь текст
 3. И нажимаешь ~M-Enter~
@@ -58,10 +57,30 @@
 
 
 * Тудушки
-
 ~C-c C-t~ -- Done (Или S-стрелочка)
 
 * Agenda
 ~C-c C-s~ S-стрелочки -- Выбрать дату
 
 ~C-c C-d~ -- Дедлайн
+
+* auto-complete
+~M+/~ -- Листать варианты 
+
+* treemacs
+:PROPERTIES:
+:ID:       ab434808-dd08-4a62-beb4-8a9daaade444
+:END:
+
+~treemacs-select-directory~ -- Выбрать где работать
+
+~treemacs-select-window~ -- Курсор к дереву treemacs
+
+~C-c C-p a~ -- Добавить проект в treemacs (Находясь в Treemacs)
+
+Мои аккорды:
+~C-c j t~ -- treemacs
+~C-c j w~ -- treemacs-select-window
+~C-c j d~ -- treemacs-select-directory
+
+Внутри treemacs работает ~C-c C-p~ с небольшим количеством важных функций, например добавить проект.

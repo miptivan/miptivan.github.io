@@ -23,7 +23,10 @@
 
 ~S-стрелки~ -- Перемещение по календарю
 
-* org-deadline							      :@work:
+* org-deadline
+:PROPERTIES:
+:ID:       25fbf73f-f7d9-4e17-8cb7-2689fd3936a1
+:END:
 
 ~C-c C-d~ -- org-deadline
 
@@ -37,7 +40,7 @@
 
 **~C-c c~ -- org-capture**
 
-* Habits							:@study:blog:
+* Habits
 :PROPERTIES:
 :ID:       08d45379-ccec-4810-b11d-e29650fc51b6
 :END:
@@ -46,3 +49,8 @@
 ~C-c C-t~ -- Состояния тудушек
 
 ~21 C-c a~ -- Посмотреть планы на 21 день вперёд
+
+* Books
+
+org-sort -> propherty -- отсортировать
+
