@@ -36,7 +36,7 @@ $\lim a_{n} = A \Leftrightarrow \forall \varepsilon > 0 \exists N \colon \forall
 * Арифметика пределов :theorem:
 Пусть $\lim_{x \to \infty} a_{n} = A \quad \text{и} \quad \lim_{x \to \infty} b_{n} = B$, тогда:
 
-1. $\lim_{x \to \infinity} [\alpha a_{n} + \beta b_{n}] = \alpha A + \beta B$
+1. $\lim_{x \to \infty} [\alpha a_{n} + \beta b_{n}] = \alpha A + \beta B$
 2. Предел произведения -- произведение пределов.
 3. Предел частного -- частное пределов.
 #+NOTE: Попробовать это доказать
