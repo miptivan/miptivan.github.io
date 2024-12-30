@@ -3,7 +3,7 @@
 (defun my/preamble-gen (p) (concat
                             "<!-- SIDEBAR -->
                                  <a aria-current=\"page\" class=\"\" href=\"/\">
-                                     <img alt=\"me\" src=\"img/me.jpg\" width=\"150\" height=\"150\" class=\"Aside___StyledImg-sc-d50w66-1 bKjoDJ\">
+                                     <img alt=\"me\" src=\"img/me.jpg\" width=\"150\" height=\"150\">
                                      <div class=\"name\">Ivan Borisov</div>
                                  </a>
 

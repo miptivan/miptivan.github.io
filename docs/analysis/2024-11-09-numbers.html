@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-12-31 Tue 00:58 -->
+<!-- 2024-12-31 Tue 01:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>numbers</title>
@@ -66,7 +66,7 @@ webvisor:true
 <div id="preamble" class="status">
 <!-- SIDEBAR -->
                                  <a aria-current="page" class="" href="/">
-                                     <img alt="me" src="img/me.jpg" width="150" height="150" class="Aside___StyledImg-sc-d50w66-1 bKjoDJ">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
                                      <div class="name">Ivan Borisov</div>
                                  </a>
 
@@ -90,27 +90,27 @@ webvisor:true
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org8c239fe">Рациональные числа</a></li>
-<li><a href="#org8fd588a">Иррациональность \(\sqrt{2}\)</a></li>
-<li><a href="#org87e04c6">\(A\) лежит левее \(B\)</a></li>
-<li><a href="#org1ab2515">Разделяющий элемент</a>
+<li><a href="#orgc955d4e">Рациональные числа</a></li>
+<li><a href="#org1c5be71">Иррациональность \(\sqrt{2}\)</a></li>
+<li><a href="#org0274f10">\(A\) лежит левее \(B\)</a></li>
+<li><a href="#org238917b">Разделяющий элемент</a>
 <ul>
-<li><a href="#org7e7050b">Пример</a></li>
+<li><a href="#orge5c1232">Пример</a></li>
 </ul>
 </li>
-<li><a href="#org111a753">Свойство полноты</a></li>
-<li><a href="#orgf55c227">Иррациональные числа</a></li>
-<li><a href="#orgf474b45">Вещественные числа</a></li>
-<li><a href="#org2d1c15d">Важный момент</a></li>
-<li><a href="#orgf52c5b7">Принцип полноты для \(\mathbb{R}\)</a></li>
+<li><a href="#org6b297ef">Свойство полноты</a></li>
+<li><a href="#org3a9c3b5">Иррациональные числа</a></li>
+<li><a href="#org32d6bc1">Вещественные числа</a></li>
+<li><a href="#orgab3d687">Важный момент</a></li>
+<li><a href="#org203baaa">Принцип полноты для \(\mathbb{R}\)</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org8c239fe" class="outline-2">
-<h2 id="org8c239fe">Рациональные числа</h2>
-<div class="outline-text-2" id="text-org8c239fe">
-<div class="LaTeX" id="org7e2ec1a">
+<div id="outline-container-orgc955d4e" class="outline-2">
+<h2 id="orgc955d4e">Рациональные числа</h2>
+<div class="outline-text-2" id="text-orgc955d4e">
+<div class="LaTeX" id="org9763074">
 <p>
 \[
 \mathbb{Q} = \left\{ \frac{a}{b} \mid a \in \mathbb{Z}, b \in \mathbb{N}, (a, b) = 1 \right\}
@@ -125,9 +125,9 @@ webvisor:true
 </div>
 </div>
 
-<div id="outline-container-org8fd588a" class="outline-2">
-<h2 id="org8fd588a">Иррациональность \(\sqrt{2}\)</h2>
-<div class="outline-text-2" id="text-org8fd588a">
+<div id="outline-container-org1c5be71" class="outline-2">
+<h2 id="org1c5be71">Иррациональность \(\sqrt{2}\)</h2>
+<div class="outline-text-2" id="text-org1c5be71">
 \begin{gather*}
 x^2 = 2 \\
 x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
@@ -137,26 +137,26 @@ x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
 </div>
 </div>
 
-<div id="outline-container-org87e04c6" class="outline-2">
-<h2 id="org87e04c6">\(A\) лежит левее \(B\)</h2>
-<div class="outline-text-2" id="text-org87e04c6">
+<div id="outline-container-org0274f10" class="outline-2">
+<h2 id="org0274f10">\(A\) лежит левее \(B\)</h2>
+<div class="outline-text-2" id="text-org0274f10">
 <p>
 Числовое множество \(A\) лежит левее числового множества \(B\) \(\iff\) \(\forall a \in A \text{ и } \forall b \in B \colon a \leqslant b\)
 </p>
 </div>
 </div>
 
-<div id="outline-container-org1ab2515" class="outline-2">
-<h2 id="org1ab2515">Разделяющий элемент</h2>
-<div class="outline-text-2" id="text-org1ab2515">
+<div id="outline-container-org238917b" class="outline-2">
+<h2 id="org238917b">Разделяющий элемент</h2>
+<div class="outline-text-2" id="text-org238917b">
 <p>
-Число \(c\) называется разделяющим элементом для множеств \(A\) и \(B\) из <a href="#org87e04c6">Предыдущего определения</a>, если \(\forall a \in A\;\; c \geqslant a \text{ и } \forall b \in B\;\; c \leqslant b\).
+Число \(c\) называется разделяющим элементом для множеств \(A\) и \(B\) из <a href="#org0274f10">Предыдущего определения</a>, если \(\forall a \in A\;\; c \geqslant a \text{ и } \forall b \in B\;\; c \leqslant b\).
 </p>
 </div>
 
-<div id="outline-container-org7e7050b" class="outline-3">
-<h3 id="org7e7050b">Пример</h3>
-<div class="outline-text-3" id="text-org7e7050b">
+<div id="outline-container-orge5c1232" class="outline-3">
+<h3 id="orge5c1232">Пример</h3>
+<div class="outline-text-3" id="text-orge5c1232">
 <p>
 Рассмотреть 2 множества: одно состоит из рациональных чисел, меньших \(\sqrt{2}\), а другое из рациональных чисел, больших \(\sqrt{2}\). Попробовать найти рациональное число, разделяющее эти 2 множества. Подсказка: рассмотреть число, чуть-чуть меньшее, чем \(\sqrt{2}\), понять, что нужное нам число не может быть меньше \(\sqrt{2}\). Затем рассмотреть число, большее чем \(\sqrt{2}\) и тоже понять, что оно не может быть больше, чем \(\sqrt{2}\).
 </p>
@@ -164,9 +164,9 @@ x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
 </div>
 </div>
 
-<div id="outline-container-org111a753" class="outline-2">
-<h2 id="org111a753">Свойство полноты</h2>
-<div class="outline-text-2" id="text-org111a753">
+<div id="outline-container-org6b297ef" class="outline-2">
+<h2 id="org6b297ef">Свойство полноты</h2>
+<div class="outline-text-2" id="text-org6b297ef">
 <p>
 Числовое множество \(M\) обладает свойством полноты, если для любых его непустых подмножеств \(A\) и \(B\), таких, что \(A \leqslant B\;\;\exists c \in M\), которое разделяет \(A\) и \(B\).
 </p>
@@ -185,27 +185,27 @@ x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
 </div>
 </div>
 
-<div id="outline-container-orgf55c227" class="outline-2">
-<h2 id="orgf55c227">Иррациональные числа</h2>
-<div class="outline-text-2" id="text-orgf55c227">
+<div id="outline-container-org3a9c3b5" class="outline-2">
+<h2 id="org3a9c3b5">Иррациональные числа</h2>
+<div class="outline-text-2" id="text-org3a9c3b5">
 <p>
 <b><b>Иррациональные числа</b></b> &#x2013; числа которые представляются в виде бесконечных непериодических десятичных дробей.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgf474b45" class="outline-2">
-<h2 id="orgf474b45">Вещественные числа</h2>
-<div class="outline-text-2" id="text-orgf474b45">
+<div id="outline-container-org32d6bc1" class="outline-2">
+<h2 id="org32d6bc1">Вещественные числа</h2>
+<div class="outline-text-2" id="text-org32d6bc1">
 <p>
 Множество всех периодических и непериодических десятичных дробей называется множеством <b><b>вещественных чисел</b></b>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org2d1c15d" class="outline-2">
-<h2 id="org2d1c15d">Важный момент</h2>
-<div class="outline-text-2" id="text-org2d1c15d">
+<div id="outline-container-orgab3d687" class="outline-2">
+<h2 id="orgab3d687">Важный момент</h2>
+<div class="outline-text-2" id="text-orgab3d687">
 <p>
 У тех дробей, у которых возможен период из \((9)\), всегда возможен период из $(0)
 </p>
@@ -220,9 +220,9 @@ x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
 </div>
 </div>
 
-<div id="outline-container-orgf52c5b7" class="outline-2">
-<h2 id="orgf52c5b7">Принцип полноты для \(\mathbb{R}\)</h2>
-<div class="outline-text-2" id="text-orgf52c5b7">
+<div id="outline-container-org203baaa" class="outline-2">
+<h2 id="org203baaa">Принцип полноты для \(\mathbb{R}\)</h2>
+<div class="outline-text-2" id="text-org203baaa">
 <p>
 Для вещественных чисел выполнен принцип полноты.
 </p>

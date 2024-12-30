@@ -16,7 +16,6 @@
 (setq org-id-link-to-org-use-id t)
 (org-roam-db-sync)
 
-
 ;; ПРЕВРАЩАЕТ ID ORG-ROAM В ССЫЛКИ
 (setq org-id-extra-files (org-roam-list-files))
 
