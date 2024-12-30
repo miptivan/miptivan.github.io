@@ -10,8 +10,10 @@
 * org-agenda
 Пробую планировать с помощью org-agenda.
 
+
 * Забиндить вызов org-agenda
 ~(global-set-key (kbd "C-c a") 'org-agenda)~ -- Я сделал на сочетание клавиш ~C-c a~.
+
 
 * org-schedule
 :PROPERTIES:
@@ -27,7 +29,6 @@
 :PROPERTIES:
 :ID:       25fbf73f-f7d9-4e17-8cb7-2689fd3936a1
 :END:
-
 ~C-c C-d~ -- org-deadline
 
 ~(setq org-deadline-warning-days 5)~ -- За сколько дней будут приходить напоминания
@@ -51,6 +52,7 @@
 ~21 C-c a~ -- Посмотреть планы на 21 день вперёд
 
 * Books
-
 org-sort -> propherty -- отсортировать
 
+* Pomodoro
+~org-clock-report~ -- просуммировать затраченное время

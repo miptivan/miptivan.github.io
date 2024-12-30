@@ -16,7 +16,7 @@
 - [2024-11-21 Thu] [[file:2024-11-21-agenda_learn.org][Org-agenda cheatsheet]]
   {{{div(Моя попытка планировать в org-agenda (Пока что идёт успешно))}}}
   
-- [2024-11-21 Thu] [[file:2024-11-19-org_learn.org][Org-mode cheatsaheet]]
+- [2024-11-21 Thu] [[file:2024-11-19-org_learn.org][Org-mode cheatsheet]]
   {{{div(Добавляю интересные фичи сюда и довожу их использование до автоматизма.)}}}
   
 - [2024-11-20 Wed] [[file:2024-11-19-vim_learn.org][Vim]]

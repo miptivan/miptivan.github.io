@@ -26,3 +26,4 @@
 #+LATEX_HEADER: \usepackage[russian]{babel}
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{cancel}
+#+LATEX_HEADER: \usepackage{mathtext}

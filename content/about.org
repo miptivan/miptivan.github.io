@@ -5,6 +5,7 @@
 #+setupfile: setup.org
 #+date: [2024-11-09 Sat 20:49]
 #+excerpt: About me
+#+options: toc:nil
 #+filetags:
 
 * Обо мне

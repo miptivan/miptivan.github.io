@@ -229,7 +229,7 @@ body .tag {
     font-size: 0.6em;
 }
 body .tag span {
-    background: #1692cc;
+    background: darkgreen;
     color: white;
     padding: 2px 5px;
     border-radius: 4px;
