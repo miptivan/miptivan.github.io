@@ -6,7 +6,7 @@
 <!-- 2025-01-04 Sat 15:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>vim</title>
+<title>разделяющий элемент</title>
 <meta name="author" content="Ivan Borisov" />
 <meta name="generator" content="Org Mode" />
 <!-- Yandex.Metrika counter -->
@@ -26,9 +26,41 @@ webvisor:true
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
-<link rel="stylesheet" type="text/css" href="./css/links.css" />
-<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="../css/links.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -58,33 +90,40 @@ webvisor:true
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org1d5a213">Что такое vim</a></li>
-<li><a href="#orgd3da266">Что такое evil-mode</a></li>
-<li><a href="#orgf0d3e79">Мой способ привыкнуть к перемещению в vim</a></li>
+<li><a href="#orgf79234a">Разделяющий элемент</a>
+<ul>
+<li><a href="#org3b71cf9">Пример</a></li>
+</ul>
+</li>
+<li><a href="#orgc4d1e61">Заметки с ссылками на эту страницу</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org1d5a213" class="outline-2">
-<h2 id="org1d5a213">Что такое vim</h2>
-<div class="outline-text-2" id="text-org1d5a213">
+<div id="outline-container-orgf79234a" class="outline-2">
+<h2 id="orgf79234a">Разделяющий элемент</h2>
+<div class="outline-text-2" id="text-orgf79234a">
 <p>
-Здесь я рассказываю о том, что такое текстовый редактор vim.
+Число \(c\) называется разделяющим элементом для множеств \(A\) и \(B\) из определения <a href="2025-01-04-лежит_левее.html#ID-e9cf3442-6b66-4d49-8cf8-aef4f30c8608">лежит левее</a>, если \(\forall a \in A\;\; c \geqslant a \text{ и } \forall b \in B\;\; c \leqslant b\).
+</p>
+</div>
+
+<div id="outline-container-org3b71cf9" class="outline-3">
+<h3 id="org3b71cf9">Пример</h3>
+<div class="outline-text-3" id="text-org3b71cf9">
+<p>
+Рассмотреть 2 множества: одно состоит из рациональных чисел, меньших \(\sqrt{2}\), а другое из рациональных чисел, больших \(\sqrt{2}\). Попробовать найти рациональное число, разделяющее эти 2 множества. Подсказка: рассмотреть число, чуть-чуть меньшее, чем \(\sqrt{2}\), понять, что нужное нам число не может быть меньше \(\sqrt{2}\). Затем рассмотреть число, большее чем \(\sqrt{2}\) и тоже понять, что оно не может быть больше, чем \(\sqrt{2}\).
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgd3da266" class="outline-2">
-<h2 id="orgd3da266">Что такое evil-mode</h2>
-<div class="outline-text-2" id="text-orgd3da266">
-<p>
-Здесь я рассказыаю о том, что такое evil-mode в emacs.
-</p>
 </div>
+<div id="outline-container-orgc4d1e61" class="outline-2">
+<h2 id="orgc4d1e61">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-orgc4d1e61">
+<ul class="org-ul">
+<li><a href="../analysis.html">analysis</a></li>
+</ul>
 </div>
-
-<div id="outline-container-orgf0d3e79" class="outline-2">
-<h2 id="orgf0d3e79">Мой способ привыкнуть к перемещению в vim</h2>
 </div>
 </div>
 </body>

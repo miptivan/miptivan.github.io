@@ -25,5 +25,14 @@
                                  ))
 
 (org-publish-all t)
+
+;; Возвращение орг роама в исходную директорию
+(setq org-roam-link-use-id nil)
+(setq org-roam-directory (file-truename "../blog/content"))
+;; (org-id-update-id-locations "../blog/content")
+(setq org-id-link-to-org-use-id t)
+(org-roam-db-sync)
+;; / Возвращение орг роама в исходную директорию
+
 ;; (org-publish-project "public")
 (message "Build complete!")

@@ -6,7 +6,7 @@
 <!-- 2025-01-04 Sat 15:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>vim</title>
+<title>свойство полноты</title>
 <meta name="author" content="Ivan Borisov" />
 <meta name="generator" content="Org Mode" />
 <!-- Yandex.Metrika counter -->
@@ -26,9 +26,41 @@ webvisor:true
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
-<link rel="stylesheet" type="text/css" href="./css/links.css" />
-<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="../css/links.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -58,33 +90,49 @@ webvisor:true
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org1d5a213">Что такое vim</a></li>
-<li><a href="#orgd3da266">Что такое evil-mode</a></li>
-<li><a href="#orgf0d3e79">Мой способ привыкнуть к перемещению в vim</a></li>
+<li><a href="#orgf1150e3">Свойство полноты</a></li>
+<li><a href="#org0087527">Принцип полноты для \(\mathbb{R}\)</a></li>
+<li><a href="#orga1cbc4a">Заметки с ссылками на эту страницу</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org1d5a213" class="outline-2">
-<h2 id="org1d5a213">Что такое vim</h2>
-<div class="outline-text-2" id="text-org1d5a213">
+<div id="outline-container-orgf1150e3" class="outline-2">
+<h2 id="orgf1150e3">Свойство полноты</h2>
+<div class="outline-text-2" id="text-orgf1150e3">
 <p>
-Здесь я рассказываю о том, что такое текстовый редактор vim.
+Числовое множество \(M\) обладает свойством полноты, если для любых его непустых подмножеств \(A\) и \(B\), таких, что \(A \leqslant B\;\;\exists c \in M\), которое разделяет \(A\) и \(B\).
+</p>
+
+<p>
+\(\mathbb{Q}\) не обладает свойством полноты.
+</p>
+
+<p>
+\(\mathbb{N}\) обладает свойством полноты.
+</p>
+
+<p>
+Рациональные числа могут быть записаны в виде периодических десятичных дробей. Просто потому что когда мы будем числитель делить в столбик на знаменатель, у нас будет конечное число остатков. Всегда появится цикл. См. теорему о периодичности десятичных дробей для рациональных чисел.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgd3da266" class="outline-2">
-<h2 id="orgd3da266">Что такое evil-mode</h2>
-<div class="outline-text-2" id="text-orgd3da266">
+<div id="outline-container-org0087527" class="outline-2">
+<h2 id="org0087527">Принцип полноты для \(\mathbb{R}\)</h2>
+<div class="outline-text-2" id="text-org0087527">
 <p>
-Здесь я рассказыаю о том, что такое evil-mode в emacs.
+Для вещественных чисел выполнен принцип полноты.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgf0d3e79" class="outline-2">
-<h2 id="orgf0d3e79">Мой способ привыкнуть к перемещению в vim</h2>
+<div id="outline-container-orga1cbc4a" class="outline-2">
+<h2 id="orga1cbc4a">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-orga1cbc4a">
+<ul class="org-ul">
+<li><a href="../analysis.html">analysis</a></li>
+</ul>
+</div>
 </div>
 </div>
 </body>

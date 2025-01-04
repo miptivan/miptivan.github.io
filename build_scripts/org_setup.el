@@ -12,7 +12,7 @@
 
 (setq org-roam-link-use-id nil)
 (setq org-roam-directory (file-truename "./content"))
-(org-id-update-id-locations "./content")
+;; (org-id-update-id-locations "./content")
 (setq org-id-link-to-org-use-id t)
 (org-roam-db-sync)
 

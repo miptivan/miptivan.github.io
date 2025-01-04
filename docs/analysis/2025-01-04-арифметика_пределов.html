@@ -6,7 +6,7 @@
 <!-- 2025-01-04 Sat 15:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>арифметика пределов</title>
 <meta name="author" content="Ivan Borisov" />
 <meta name="generator" content="Org Mode" />
 <!-- Yandex.Metrika counter -->
@@ -26,9 +26,41 @@ webvisor:true
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
-<link rel="stylesheet" type="text/css" href="./css/links.css" />
-<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="../css/links.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -54,6 +86,38 @@ webvisor:true
                              <!-- / SIDEBAR -->
 </div>
 <div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgcac0225">Арифметика пределов&#xa0;&#xa0;&#xa0;<span class="tag"><span class="theorem">theorem</span></span></a></li>
+<li><a href="#orgb71865e">Заметки с ссылками на эту страницу</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcac0225" class="outline-2">
+<h2 id="orgcac0225">Арифметика пределов&#xa0;&#xa0;&#xa0;<span class="tag"><span class="theorem">theorem</span></span></h2>
+<div class="outline-text-2" id="text-orgcac0225">
+<p>
+Пусть \(\lim_{x \to \infty} a_{n} = A \quad \text{и} \quad \lim_{x \to \infty} b_{n} = B\), тогда:
+</p>
+
+<ol class="org-ol">
+<li>\(\lim_{x \to \infty} [\alpha a_{n} + \beta b_{n}] = \alpha A + \beta B\)</li>
+<li>Предел произведения &#x2013; произведение пределов.</li>
+<li>Предел частного &#x2013; частное пределов.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgb71865e" class="outline-2">
+<h2 id="orgb71865e">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-orgb71865e">
+<ul class="org-ul">
+<li><a href="../analysis.html">analysis</a></li>
+</ul>
+</div>
+</div>
 </div>
 </body>
 </html>

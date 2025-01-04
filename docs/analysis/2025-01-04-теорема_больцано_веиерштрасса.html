@@ -6,7 +6,7 @@
 <!-- 2025-01-04 Sat 15:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>vim</title>
+<title>теорема больцано-вейерштрасса</title>
 <meta name="author" content="Ivan Borisov" />
 <meta name="generator" content="Org Mode" />
 <!-- Yandex.Metrika counter -->
@@ -26,9 +26,9 @@ webvisor:true
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
-<link rel="stylesheet" type="text/css" href="./css/links.css" />
-<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="../css/links.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 <body>
 <div id="preamble" class="status">
@@ -58,33 +58,39 @@ webvisor:true
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org1d5a213">Что такое vim</a></li>
-<li><a href="#orgd3da266">Что такое evil-mode</a></li>
-<li><a href="#orgf0d3e79">Мой способ привыкнуть к перемещению в vim</a></li>
+<li><a href="#orgfe66354">Теорема Больцано-Вейерштрасса&#xa0;&#xa0;&#xa0;<span class="tag"><span class="theorem">theorem</span></span></a></li>
+<li><a href="#orge48e086">Заметки с ссылками на эту страницу</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org1d5a213" class="outline-2">
-<h2 id="org1d5a213">Что такое vim</h2>
-<div class="outline-text-2" id="text-org1d5a213">
+<div id="outline-container-orgfe66354" class="outline-2">
+<h2 id="orgfe66354">Теорема Больцано-Вейерштрасса&#xa0;&#xa0;&#xa0;<span class="tag"><span class="theorem">theorem</span></span></h2>
+<div class="outline-text-2" id="text-orgfe66354">
 <p>
-Здесь я рассказываю о том, что такое текстовый редактор vim.
+Пусть последовательность ограничена, тогда у неё есть частичный предел.
+</p>
+
+<p>
+Другими словами: если последовательность ограничена, то в ней найдётся сходящаяся подпоследовательность.
+</p>
+
+<p>
+То есть из всякой ограниченной последовательности можно выделить сходящуюся подпоследовательность.
+</p>
+
+<p>
+Доказательство: Разбиваем отрезок пополам и выбираем ту часть, в которой бесконечно много элементов и ещё раз и ещё раз&#x2026; Мы получим систему вложенных отрезков, длины которых стремятся к нулю &#x2013; система <i>стягивающихся</i> отрезков. По лемме о вложенных отрезках, у всех отрезков есть единственная общая точка. В любой окрестности этой точки бесконечно много элементов последовательности. Предел подпоследовательности и будет равен этой точке.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgd3da266" class="outline-2">
-<h2 id="orgd3da266">Что такое evil-mode</h2>
-<div class="outline-text-2" id="text-orgd3da266">
-<p>
-Здесь я рассказыаю о том, что такое evil-mode в emacs.
-</p>
+<div id="outline-container-orge48e086" class="outline-2">
+<h2 id="orge48e086">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-orge48e086">
+<ul class="org-ul">
+<li><a href="../analysis.html">analysis</a></li>
+</ul>
 </div>
-</div>
-
-<div id="outline-container-orgf0d3e79" class="outline-2">
-<h2 id="orgf0d3e79">Мой способ привыкнуть к перемещению в vim</h2>
 </div>
 </div>
 </body>

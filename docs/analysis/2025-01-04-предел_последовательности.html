@@ -6,7 +6,7 @@
 <!-- 2025-01-04 Sat 15:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>vim</title>
+<title>предел последовательности</title>
 <meta name="author" content="Ivan Borisov" />
 <meta name="generator" content="Org Mode" />
 <!-- Yandex.Metrika counter -->
@@ -26,9 +26,41 @@ webvisor:true
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
-<link rel="stylesheet" type="text/css" href="./css/links.css" />
-<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="../css/links.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -58,33 +90,57 @@ webvisor:true
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org1d5a213">Что такое vim</a></li>
-<li><a href="#orgd3da266">Что такое evil-mode</a></li>
-<li><a href="#orgf0d3e79">Мой способ привыкнуть к перемещению в vim</a></li>
+<li><a href="#org9acfc82">Предел последовательности</a>
+<ul>
+<li><a href="#org505d725">Примеры</a></li>
+</ul>
+</li>
+<li><a href="#org5f04d81">Заметки с ссылками на эту страницу</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org1d5a213" class="outline-2">
-<h2 id="org1d5a213">Что такое vim</h2>
-<div class="outline-text-2" id="text-org1d5a213">
+<div id="outline-container-org9acfc82" class="outline-2">
+<h2 id="org9acfc82">Предел последовательности</h2>
+<div class="outline-text-2" id="text-org9acfc82">
 <p>
-Здесь я рассказываю о том, что такое текстовый редактор vim.
+\(\lim a_{n} = A \Leftrightarrow \forall \varepsilon > 0 \exists N \colon \forall n > N\;\;|a_{n} - A| < \varepsilon\)
+</p>
+
+<p>
+Число не будет пределом, если можно найти интервал вокруг этого числа, вне которого будет лежать бесконечно много элементов последовательности.
+</p>
+</div>
+
+<div id="outline-container-org505d725" class="outline-3">
+<h3 id="org505d725">Примеры</h3>
+<div class="outline-text-3" id="text-org505d725">
+<ol class="org-ol">
+<li>Доказать, что \(\lim\dfrac{1}{n} = 0\)</li>
+</ol>
+
+<p>
+Указание: Надо взять \(n \geqslant \left[\dfrac{1}{\varepsilon}\right] + 1\)
+</p>
+
+<ol class="org-ol">
+<li>\(b_{n} = (-1)^{n}\)</li>
+</ol>
+
+<p>
+Доказательство, что предела нет (в доказательстве пригодится неравенство треугольника):
+<img src="../../img/3.png" alt="3.png" />
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgd3da266" class="outline-2">
-<h2 id="orgd3da266">Что такое evil-mode</h2>
-<div class="outline-text-2" id="text-orgd3da266">
-<p>
-Здесь я рассказыаю о том, что такое evil-mode в emacs.
-</p>
 </div>
+<div id="outline-container-org5f04d81" class="outline-2">
+<h2 id="org5f04d81">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org5f04d81">
+<ul class="org-ul">
+<li><a href="../analysis.html">analysis</a></li>
+</ul>
 </div>
-
-<div id="outline-container-orgf0d3e79" class="outline-2">
-<h2 id="orgf0d3e79">Мой способ привыкнуть к перемещению в vim</h2>
 </div>
 </div>
 </body>
