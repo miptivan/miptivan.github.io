@@ -4,6 +4,13 @@
 (load "org_setup")
 (load "sections_pub")
 
+(defun my-org-html-link-transform (link desc info)
+  "Преобразует ссылки вида ../img/ в /img/ для публикации."
+  (let ((path (org-element-property :path link)))
+    (if (string-prefix-p "../../img" path)
+        (org-element-put-property link :path (concat "img/" (substring path 7)))))
+  nil)
+
 (require 'ox-publish)
 
   (setq org-publish-project-alist
