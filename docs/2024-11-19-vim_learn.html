@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-01-04 Sat 15:55 -->
+<!-- 2025-01-27 Mon 20:52 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>vim learn</title>
+<title>Vim learn</title>
 <meta name="author" content="Ivan Borisov" />
 <meta name="generator" content="Org Mode" />
 <!-- Yandex.Metrika counter -->
@@ -58,26 +58,22 @@ webvisor:true
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org3201321">Изучение Vim</a></li>
-<li><a href="#org637351e">Перемещение по экрану</a></li>
-<li><a href="#org3bf7c78">Перемещение экрана</a></li>
-<li><a href="#orgaf09fe6">Визуальный режим</a></li>
-<li><a href="#org81aaf7d">Копировать-вставить</a>
+<li><a href="#org3561671">Перемещение по экрану</a></li>
+<li><a href="#org78b1a17">Перемещение экрана</a></li>
+<li><a href="#org588e5a2">Визуальный режим</a></li>
+<li><a href="#orgf544010">Копировать-вставить</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org3bf7101"><span class="todo TODO">TODO</span> Как вырезать выделенное?</a></li>
+<li><a href="#orgdfa7ea2"><span class="todo TODO">TODO</span> Как вырезать выделенное?</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li><a href="#org85334ab">Visual-mode</a></li>
 </ul>
 </div>
 </div>
-
-<div id="outline-container-org3201321" class="outline-2">
-<h2 id="org3201321">Изучение Vim</h2>
-<div class="outline-text-2" id="text-org3201321">
 <p>
 Каждый день я буду учить одну фичу Vim и добавлять сюда в список.
 </p>
@@ -85,12 +81,10 @@ webvisor:true
 <p>
 <a href="https://rigovanov.ru/vim">Шпаргалка</a>
 </p>
-</div>
-</div>
 
-<div id="outline-container-org637351e" class="outline-2">
-<h2 id="org637351e">Перемещение по экрану</h2>
-<div class="outline-text-2" id="text-org637351e">
+<div id="outline-container-org3561671" class="outline-2">
+<h2 id="org3561671">Перемещение по экрану</h2>
+<div class="outline-text-2" id="text-org3561671">
 <p>
 <code>H</code> &#x2013; К началу экрана
 </p>
@@ -117,9 +111,9 @@ webvisor:true
 </div>
 </div>
 
-<div id="outline-container-org3bf7c78" class="outline-2">
-<h2 id="org3bf7c78">Перемещение экрана</h2>
-<div class="outline-text-2" id="text-org3bf7c78">
+<div id="outline-container-org78b1a17" class="outline-2">
+<h2 id="org78b1a17">Перемещение экрана</h2>
+<div class="outline-text-2" id="text-org78b1a17">
 <p>
 <code>Ctrl+b</code> &#x2013; Назад на целый экран
 </p>
@@ -138,9 +132,9 @@ webvisor:true
 </div>
 </div>
 
-<div id="outline-container-orgaf09fe6" class="outline-2">
-<h2 id="orgaf09fe6">Визуальный режим</h2>
-<div class="outline-text-2" id="text-orgaf09fe6">
+<div id="outline-container-org588e5a2" class="outline-2">
+<h2 id="org588e5a2">Визуальный режим</h2>
+<div class="outline-text-2" id="text-org588e5a2">
 <p>
 <code>V</code> &#x2013; Построчный режим выделения
 </p>
@@ -151,9 +145,9 @@ webvisor:true
 </div>
 </div>
 
-<div id="outline-container-org81aaf7d" class="outline-2">
-<h2 id="org81aaf7d">Копировать-вставить</h2>
-<div class="outline-text-2" id="text-org81aaf7d">
+<div id="outline-container-orgf544010" class="outline-2">
+<h2 id="orgf544010">Копировать-вставить</h2>
+<div class="outline-text-2" id="text-orgf544010">
 <p>
 <code>y</code> &#x2013; Скопировать выделенное
 </p>
@@ -169,10 +163,47 @@ webvisor:true
 <p>
 <code>d</code> &#x2013; Удалить выделенное
 </p>
+
+<p>
+<code>yiw</code> &#x2013; Скопировать текущее слово
+</p>
+
+<p>
+<code>yaw</code> &#x2013; Скопировать текущее слово и правый пробел (или левый, если правого пробела нет)
+</p>
 </div>
 
-<div id="outline-container-org3bf7101" class="outline-4">
-<h4 id="org3bf7101"><span class="todo TODO">TODO</span> Как вырезать выделенное?</h4>
+<div id="outline-container-orgdfa7ea2" class="outline-4">
+<h4 id="orgdfa7ea2"><span class="todo TODO">TODO</span> Как вырезать выделенное?</h4>
+</div>
+</div>
+
+<div id="outline-container-org85334ab" class="outline-2">
+<h2 id="org85334ab">Visual-mode</h2>
+<div class="outline-text-2" id="text-org85334ab">
+<p>
+<code>v</code> &#x2013; Войти в режим выделения
+</p>
+
+<p>
+<code>V</code> &#x2013; Выделять построчно
+</p>
+
+<p>
+<code>viw</code> &#x2013; Выделить только слово
+</p>
+
+<p>
+<code>vaw</code> &#x2013; Выделить слово и правый пробел (или левый, если правого пробела нет)
+</p>
+
+<p>
+<code>vi'</code> &#x2013; Выделить внутри одиночных кавычек
+</p>
+
+<p>
+<code>vi"</code> &#x2013; Выделить внутри двойных кавычек
+</p>
 </div>
 </div>
 </div>

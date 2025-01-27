@@ -109,6 +109,15 @@ body {
         margin: 0;
         padding: 0;
     }
+
+    p:has(span.figure-number) {
+        color: gray;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 /* Computer */
@@ -166,6 +175,15 @@ body {
         max-width: 1024px;
         flex-grow: 1;
     }
+
+    p:has(span.figure-number) {
+        color: gray;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 .menu li a {

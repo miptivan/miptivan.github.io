@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       e2008864-cdcd-4333-9dd7-535d30575431
+:END:
+#+title: Правый и левый пределы функции
+#+setupfile: setup.org
+#+date: [2025-01-05 Sun 20:38]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+$\forall \varepsilon > 0 \exists \delta > 0 \colon \forall x \in E \colon a < x < a + \delta \;\; |f(x) - A| < \varepsilon$
+
+Левый предел аналогично.

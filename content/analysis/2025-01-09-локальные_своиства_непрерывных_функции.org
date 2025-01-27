@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       6cfd0e5c-c733-40a4-a1cd-9c40b7f04cec
+:END:
+#+title: Локальные свойства непрерывных функций
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 18:13]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f, g \in C(a)$ ($C(a)$ означает "непрерывны в $a$"), тогда:
+- $\exists U(a) \cap E \wedge \exists C > 0 \colon \forall x \in U(a) \cap E \;\; |f(x) \leqslant C$ (Ограниченность)
+- $\exists U(a) \cap E \colon \forall x \in U(a) \cap E \;\; |f(x)| \geqslant \dfrac{|f(a)|}{2}$ ($f(a) \cancel{=} 0$) (отделимость)
+- Линейная комбинация непрерывных функций непрерывна
+- Произведение непрерывных функций непрерывна
+- Частное непрерывных функций непрерывно (с понятно каким условием на знаменатель)

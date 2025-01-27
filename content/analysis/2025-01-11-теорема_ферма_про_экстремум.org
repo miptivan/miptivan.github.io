@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       279d4d03-60c8-44fb-8cc7-060ed863e8a1
+:END:
+#+title: Теорема Ферма про экстремум
+#+setupfile: setup.org
+#+date: [2025-01-11 Sat 20:04]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть функция $f$ определена на интервале $(a, b)$, дифференцируема в точке $c \in (a, b)$ и имеет в точке c локальный экстремум. Тогда $f^{\prime}(c) = 0$.

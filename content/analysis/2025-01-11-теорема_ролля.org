@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       449ef079-d8ce-40f6-81cc-0ad9566dd5e1
+:END:
+#+title: Теорема Ролля
+#+setupfile: setup.org
+#+date: [2025-01-11 Sat 20:11]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть:
+1. $f$ определена и непрерывна на $[a, b]$
+2. $f$ дифференцируема на $(a, b)$
+3. $f(a) = f(b)$
+
+Тогда существует такая точка $c \in (a, b)$, что $f^{\prime}(с) = 0$

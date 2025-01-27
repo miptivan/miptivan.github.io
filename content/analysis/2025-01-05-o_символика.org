@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       14e4204c-01d1-4e8a-914a-724190197c07
+:END:
+#+title: o-символика
+#+setupfile: setup.org
+#+date: [2025-01-05 Sun 21:09]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f$ и $g$ определены на $E$ и $\exists \overset{\circ}{U}(a)\colon \forall x \in \overset{\circ}{U}(a)\;\; f(x) = h(x) \cdot g(x)$, где $h$ -- [[id:3d3ff9d8-afda-4b57-8e85-50ff5257fa9a][бесконечно малая функция]]. Тогда пишут $f = o(g)$. Это значит, что $f$ является бесконечно малой функцией по сравнению с $g$.
+
+* Предложение 1
+#+CAPTION: Очевидно
+[[../../img/7.png]]

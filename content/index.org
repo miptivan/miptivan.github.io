@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       45e24a20-5c1d-47b4-996d-0fc37b0b7dc0
 :END:
-#+title: index
+#+title: Index
 #+setupfile: setup.org
 #+date: [2024-11-18 Mon 22:22]
 #+excerpt: 
@@ -9,10 +9,6 @@
 #+options: toc:nil
 
 * Публикации
-:PROPERTIES:
-:ID:       75853990-bdf6-4ad6-a104-b65a4c89810d
-:END:
-
 - [2024-11-21 Thu] [[file:2024-11-21-agenda_learn.org][Org-agenda cheatsheet]]
   {{{div(Моя попытка планировать в org-agenda (Пока что идёт успешно))}}}
   

@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       959e6c23-bcc4-421f-88e1-6767e6ce4cfe
+:END:
+#+title: Эквивалентность функций
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 22:12]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Если $f$ и $g$ определены в некоторой проколотой окрестности точки $a$ и для любого $x$ из этой окрестности $g(x) \cancel{=} 0$, то говорят, что $f$ и $g$ *эквивалентны при $x \rightarrow a$*, если $\lim_{x \rightarrow a} \dfrac{f(x)}{g(x)} = 1$
+
+Обозначается $f \sim g$
+
+* Примеры
+Исходя из [[id:752251e0-663f-4e7d-945e-0d7a1c26b343][пределов тригонометрических функций]], при $x \rightarrow 0$:
+- $\sin x \sim x$
+- $\tan x \sim x$
+- $\arctan x \sim x$
+- $\arcsin x \sim x$
+- $1 = \cos x \sim \dfrac{x^{2}}{2}$
+
+А из этого можно сделать выводы по типу $\arcsin x \sim \tan x$ и т.п.
+
+Здесь можно добавить ссылку на /отношение эквивалентности/.

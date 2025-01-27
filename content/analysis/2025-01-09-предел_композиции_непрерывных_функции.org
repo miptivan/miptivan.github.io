@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       a2acc279-3b49-46cc-9ef2-32e66f872357
+:END:
+#+title: Предел композиции непрерывных функций
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 18:49]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+[[id:8298f905-aa37-4413-9398-956b7ecb53d0][Композиция]] непрерывных функций -- непрерывна.

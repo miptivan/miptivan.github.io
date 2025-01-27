@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       c72d6959-297e-4228-b76e-88f9a85066af
+:END:
+#+title: Теорема Гейне-Кантора
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 20:57]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Функция непрерывна на отрезке $\Rightarrow$ Функция [[id:825678d1-68ac-4880-8973-51e17de817d4][равномерно непрерывна]] на этом отрезке.
+
+Доказывается от противного.

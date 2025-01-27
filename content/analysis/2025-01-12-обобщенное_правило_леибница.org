@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       94cdd72e-d2fe-4819-8a30-ebd20a8f418d
+:END:
+#+title: Обобщённое правило Лейбница
+#+setupfile: setup.org
+#+date: [2025-01-12 Sun 15:23]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть функции $u$ и $v$ $n$ раз дифференцируемы в точке $a$. Тогда их произведение также $n$ раз дифференцируемо в точке $a$ и:
+$(u \cdot v)^{(n)}(a) = \sum_{k=0}^{n}C_{n}^{k}u^{(k)}(a)v^{(n-k)}(a)$.
+
+* Пример
+[[../../img/11.png]]

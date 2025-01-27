@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       752251e0-663f-4e7d-945e-0d7a1c26b343
+:END:
+#+title: Пределы тригонометрических функций
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 22:10]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+* Предел косинуса
+$\lim_{x \rightarrow 0}\cos x = 1$
+
+Доказательство: рассмотреть $|1 - \cos x|$
+
+* Предел тангенса
+$\lim_{x \rightarrow 0}\dfrac{\tan x}{x} = 1$
+
+Следует из предыдущих двух заголовков.
+
+* Предел арктангенса
+$\lim_{x \rightarrow 0} \dfrac{\arctan x}{x} = 1$
+
+* Предел арксинуса
+$\lim_{x \rightarrow 0} \dfrac{\arcsin x}{x} = 1$
+
+* Ещё пример
+$\lim_{x \rightarrow 0} \dfrac{1 - \cos x}{x^{2}} = \dfrac{1}{2}$

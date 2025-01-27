@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       9ee98201-6554-4906-8888-4a4c34b03836
+:END:
+#+title: 1-e достаточное условие экстремума
+#+setupfile: setup.org
+#+date: [2025-01-16 Thu 21:38]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+* 1-e достаточное условие экстремума
+#+CAPTION: Донельзя просто
+[[../../img/12.png]]

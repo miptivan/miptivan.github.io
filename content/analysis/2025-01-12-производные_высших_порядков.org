@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       3fc65d41-5761-409f-9c7d-e6ef63b06df2
+:END:
+#+title: Производные высших порядков
+#+setupfile: setup.org
+#+date: [2025-01-12 Sun 14:58]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f \in D(U(a))$. Тогда определена функция $f^{\prime} \colon U(a) \rightarrow \mathbb{R}$. Пусть $f^{\prime} \in D(a). Тогда:
+$f^{\prime\prime}(a) = \lim_{h \rightarrow 0}\dfrac{f^{\prime}(a+h) - f^{\prime}(a)}{h}$.
+
+Производные старших порядков получаются из этой производной индуктивно.

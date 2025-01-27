@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       06c3216f-f190-48e3-add2-2e6fc9c824e9
+:END:
+#+title: Точки локального экстремума
+#+setupfile: setup.org
+#+date: [2025-01-11 Sat 20:00]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+[[../../img/10.png]]

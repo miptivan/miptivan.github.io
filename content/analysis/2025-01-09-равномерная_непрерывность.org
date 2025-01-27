@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       825678d1-68ac-4880-8973-51e17de817d4
+:END:
+#+title: Равномерная непрерывность
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 20:37]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+$f$ *равномерно непрерывна* на множестве $E$, если $\forall \varepsilon > 0 \;\; \exists \delta > 0 \colon \forall x, y \in E \colon |x - y| < \delta \;\; |f(x) - f(y) < \varepsilon$
+
+Обозначение: $f \in UC(E)$
+
+* Пример
+$\sin x$ -- равномерно непрерывна на $\mathbb{R}$.
+
+$\sin\dfrac{1}{n}$ -- нет.

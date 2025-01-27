@@ -1,13 +1,13 @@
 :PROPERTIES:
 :ID:       1ed2de44-2ca2-4984-a898-1de0c053ab1d
 :END:
-#+title: иррациональность корня из 2
+#+title: Иррациональность корня из 2
 #+setupfile: setup.org
 #+date: [2025-01-04 Sat 14:35]
 #+excerpt: 
 #+filetags: :analysis:
+#+options: toc:nil
 
-* Иррациональность $\sqrt{2}$
 \begin{gather*}
 x^2 = 2 \\
 x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\

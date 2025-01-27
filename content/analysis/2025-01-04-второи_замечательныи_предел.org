@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       74ec5b82-7c2e-4075-a0ec-fb316866ea0d
+:END:
+#+title: Второй замечательный предел
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 22:27]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+
+$\lim_{x \rightarrow +\infty}\left(1 + \dfrac{1}{x}\right)^{x} = e$

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       9ac1bc95-e1c7-4cb9-9b4b-60b320ef76ac
+:END:
+#+title: Критерий непрерывности монотонной функции
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 21:14]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f$ монотонна  на $[a, b]$. Тогда $f \in C[a, b]$ $\Leftrightarrow$ Множество значений $f$ -- это отрезок.

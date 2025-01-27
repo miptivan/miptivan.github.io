@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       b7ae26a2-a085-4fd6-9b9e-8f6f4bf5cd44
+:END:
+#+title: Обратная функция
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 21:10]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+[[../../img/9.png]]

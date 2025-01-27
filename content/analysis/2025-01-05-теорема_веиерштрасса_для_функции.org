@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       6b3ec6b5-bc72-4350-a9e5-84213448ae58
+:END:
+#+title: Теорема Вейерштрасса для функций
+#+setupfile: setup.org
+#+date: [2025-01-05 Sun 20:19]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Это обобщение [[id:85304424-8f26-48d7-b8a8-c0922f8d6205][теоремы Вейерштрасса для последовательностей]].
+[[../../img/6.png]]

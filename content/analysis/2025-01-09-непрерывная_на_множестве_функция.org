@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       95de782c-ef68-4639-bef4-d1c337cc7c57
+:END:
+#+title: Непрерывная на множестве функция
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 19:45]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+$f$ *непрерывна на множестве* $X$, если $\forall x \in X \;\; f \in C(x)$.
