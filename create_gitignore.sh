@@ -8,7 +8,6 @@ CONTENT="/.packages/
 /themes/
 /content/
 /straight/
-/content/straight/
 /img/
 /build_scripts/"
 
