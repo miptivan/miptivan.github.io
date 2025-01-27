@@ -1,5 +1,7 @@
 /.packages/
 /themes/
-/content/.packages/
+/content/
 /straight/
 /content/straight/
+/img/
+/build_scripts/

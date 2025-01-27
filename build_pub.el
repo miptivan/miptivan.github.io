@@ -21,9 +21,8 @@
               :base-extension "org"
               :publishing-directory "./docs"
               :publishing-function 'org-html-publish-to-html
-              :html-preamble (my/preamble-gen "." )
-              :html-postamble nil
-              :with-title nil)
+              :html-preamble (my/preamble-gen ".")
+              :html-postamble nil)
               ))
 
 (setq org-export-global-macros '(
