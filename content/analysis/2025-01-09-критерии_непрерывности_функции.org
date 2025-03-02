@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       42da77c6-df38-45aa-8bf8-5b7af5cd0112
+:END:
+#+title: Критерий непрерывности функции
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 19:17]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Функция непрерывна в точке $a$ $\Leftrightarrow$ $f$ непрерывна в точке $a$ слева и справа.
+
+#+begin_quote
+По сути это просто следствие определения предела
+#+end_quote

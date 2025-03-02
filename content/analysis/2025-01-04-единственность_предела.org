@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       e3430cce-ddf7-43d9-a122-2b02b19b0312
+:END:
+#+title: Единственность предела
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:53]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Если у последовательности есть предел, то он единственен.

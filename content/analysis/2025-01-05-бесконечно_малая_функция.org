@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       3d3ff9d8-afda-4b57-8e85-50ff5257fa9a
+:END:
+#+title: Бесконечно малая функция
+#+setupfile: setup.org
+#+date: [2025-01-05 Sun 21:12]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+*Бесконечно малая* функция при $x \rightarrow a$ это функция, предел которой $\lim_{x \rightarrow a} f(x) = 0$.

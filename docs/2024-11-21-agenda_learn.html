@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-03-02 Sun 21:53 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agenda learn</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="./css/links.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
+</div>
+<div id="content" class="content">
+<h1 class="title">Agenda learn</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgdd49b88">org-agenda</a></li>
+<li><a href="#orgae16c3d">Забиндить вызов org-agenda</a></li>
+<li><a href="#org7d2ce27">org-schedule</a></li>
+<li><a href="#orgd636675">org-deadline</a></li>
+<li><a href="#org8519a87">Habits</a></li>
+<li><a href="#orgd90015c">Books</a></li>
+<li><a href="#org38fe8eb">Pomodoro</a></li>
+<li><a href="#org36ee45b">Перемещение тасок в архив</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdd49b88" class="outline-2">
+<h2 id="orgdd49b88">org-agenda</h2>
+<div class="outline-text-2" id="text-orgdd49b88">
+<p>
+Пробую планировать с помощью org-agenda.
+</p>
+</div>
+</div>
+<div id="outline-container-orgae16c3d" class="outline-2">
+<h2 id="orgae16c3d">Забиндить вызов org-agenda</h2>
+<div class="outline-text-2" id="text-orgae16c3d">
+<p>
+<code>(global-set-key (kbd "C-c a") 'org-agenda)</code> &#x2013; Я сделал на сочетание клавиш <code>C-c a</code>.
+</p>
+</div>
+</div>
+<div id="outline-container-org7d2ce27" class="outline-2">
+<h2 id="org7d2ce27">org-schedule</h2>
+<div class="outline-text-2" id="text-org7d2ce27">
+<p>
+Позволяет что-то запланировать.
+</p>
+
+<p>
+<code>C-c C-s</code> &#x2013; org-schedule
+</p>
+
+<p>
+<code>S-стрелки</code> &#x2013; Перемещение по календарю
+</p>
+</div>
+</div>
+<div id="outline-container-orgd636675" class="outline-2">
+<h2 id="orgd636675">org-deadline</h2>
+<div class="outline-text-2" id="text-orgd636675">
+<p>
+<code>C-c C-d</code> &#x2013; org-deadline
+</p>
+
+<p>
+<code>(setq org-deadline-warning-days 5)</code> &#x2013; За сколько дней будут приходить напоминания
+</p>
+
+<p>
+<code>C-c C-t</code> &#x2013; Выбрать статус задачи
+</p>
+
+<p>
+<code>C-c C-q</code> &#x2013; Выбрать тег из списка в конфиге
+</p>
+
+<p>
+<code>C-c C-w</code> &#x2013; Переместить в файл (Например, архивировать)
+</p>
+</div>
+</div>
+<div id="outline-container-org8519a87" class="outline-2">
+<h2 id="org8519a87">Habits</h2>
+<div class="outline-text-2" id="text-org8519a87">
+<p>
+<code>M-x org-set-propherty style habit</code> &#x2013; чтобы тудушка появилась в привычках
+</p>
+
+<p>
+<code>C-c C-t</code> &#x2013; Состояния тудушек
+</p>
+
+<p>
+<code>21 C-c a</code> &#x2013; Посмотреть планы на 21 день вперёд
+</p>
+</div>
+</div>
+<div id="outline-container-orgd90015c" class="outline-2">
+<h2 id="orgd90015c">Books</h2>
+<div class="outline-text-2" id="text-orgd90015c">
+<p>
+org-sort -&gt; propherty &#x2013; отсортировать
+</p>
+</div>
+</div>
+<div id="outline-container-org38fe8eb" class="outline-2">
+<h2 id="org38fe8eb">Pomodoro</h2>
+<div class="outline-text-2" id="text-org38fe8eb">
+<p>
+<code>org-clock-report</code> &#x2013; просуммировать затраченное время
+</p>
+</div>
+</div>
+<div id="outline-container-org36ee45b" class="outline-2">
+<h2 id="org36ee45b">Перемещение тасок в архив</h2>
+<div class="outline-text-2" id="text-org36ee45b">
+<p>
+<code>org-refile</code> &#x2013; <code>C-c C-w</code> &#x2013; переместить
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

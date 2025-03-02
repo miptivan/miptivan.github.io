@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       4ead35b6-ebe2-4fb5-a965-70c05922226e
+:END:
+#+title: Универсальная тригонометрическая подстановка
+#+setupfile: setup.org
+#+date: [2025-01-28 Tue 15:44]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Это надо просто запомнить:
+
+Пусть $t = \tan \dfrac{x}{2}$, тогда:
+
+1. $\sin x = \dfrac{2t}{1+t^{2}}$
+2. $\cos x = \dfrac{1-t^{2}}{1+t^{2}}$
+3. $dx = \dfrac{2dt}{1+t^{2}}$

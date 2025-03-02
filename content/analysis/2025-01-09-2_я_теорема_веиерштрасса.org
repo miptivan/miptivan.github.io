@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       933b2400-252e-4828-b127-48a25219305d
+:END:
+#+title: 2-я теорема Вейерштрасса
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 20:27]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f$ [[id:95de782c-ef68-4639-bef4-d1c337cc7c57][непрерывная на отрезке функция]] $\Rightarrow$ У $f$ есть $\inf$ $\sup$ на этом отрезке, они достигаются функцией и называются минимумом и максимумом.

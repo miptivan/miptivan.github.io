@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       b18067f0-0cd9-4ca6-9c6b-b82f186ae0dc
+:END:
+#+title: Критерий дифференцируемости
+#+setupfile: setup.org
+#+date: [2025-01-11 Sat 16:15]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+$f \in D(a)$ ($f$ дифференцируема в точке $a$) $\Leftrightarrow$ $\exists f^{\prime}(a)$.
+

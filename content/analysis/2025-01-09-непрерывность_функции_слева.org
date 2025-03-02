@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       0124b5ad-ef6a-4d12-8f88-1e10f268b82d
+:END:
+#+title: Непрерывность функции слева
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 19:14]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+$f$ непрерывна в точке $a$ слева, если $\lim_{a-} f(x) = f(a)$
+
+Аналогично справа.

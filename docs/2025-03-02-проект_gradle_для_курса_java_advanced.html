@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-03-02 Sun 21:53 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Проект Gradle для курса Java-Advanced</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="./css/links.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
+</div>
+<div id="content" class="content">
+<h1 class="title">Проект Gradle для курса Java-Advanced</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orge27f356">Установка Gradle</a>
+<ul>
+<li><a href="#org5b88ea3">Arch</a></li>
+<li><a href="#org3dc3d71">Ubuntu</a></li>
+<li><a href="#orgb0edc08">MacOS</a></li>
+<li><a href="#orge617fe4">Windows</a></li>
+</ul>
+</li>
+<li><a href="#org54cbb42">Инициализация проекта</a></li>
+<li><a href="#org0a7ee51">Клонирование репозиториев</a></li>
+<li><a href="#org98403e6">Конфигурация build.gradle</a></li>
+<li><a href="#org164b639">Билд и запуск</a></li>
+<li><a href="#orga67b0ec">Заключение</a></li>
+<li><a href="#orgc10c73e">Заметки с ссылками на эту страницу</a></li>
+</ul>
+</div>
+</div>
+<p>
+Гайд на основе того, как я собрал проект для сдачи домашних заданий на курсе java-advanced.
+</p>
+<div id="outline-container-orge27f356" class="outline-2">
+<h2 id="orge27f356">Установка Gradle</h2>
+<div class="outline-text-2" id="text-orge27f356">
+<p>
+Посмотрите как установить gradle на вашу ОС, с этим не должно возникнуть проблем. Приведу несколько примеров, но в дальнейшем установка будет ориентирована на Linux.
+</p>
+</div>
+<div id="outline-container-org5b88ea3" class="outline-3">
+<h3 id="org5b88ea3">Arch</h3>
+<div class="outline-text-3" id="text-org5b88ea3">
+<div class="org-src-container">
+<pre class="src src-shell">sudo pacman -S gradle
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org3dc3d71" class="outline-3">
+<h3 id="org3dc3d71">Ubuntu</h3>
+<div class="outline-text-3" id="text-org3dc3d71">
+<div class="org-src-container">
+<pre class="src src-shell">sudo apt update
+sudo apt install gradle
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb0edc08" class="outline-3">
+<h3 id="orgb0edc08">MacOS</h3>
+<div class="outline-text-3" id="text-orgb0edc08">
+<p>
+С помощью Homebrew.
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">brew install gradle
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orge617fe4" class="outline-3">
+<h3 id="orge617fe4">Windows</h3>
+<div class="outline-text-3" id="text-orge617fe4">
+<p>
+Следуйте официальной инструкции на сайте.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org54cbb42" class="outline-2">
+<h2 id="org54cbb42">Инициализация проекта</h2>
+<div class="outline-text-2" id="text-org54cbb42">
+<p>
+Создайте директорию для проекта и перейдите в неё:
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">mkdir java-advanced
+<span style="font-weight: bold;">cd</span> java-advanced
+</pre>
+</div>
+
+<p>
+Инициализируйте проект:
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">gradle init
+</pre>
+</div>
+
+<p>
+Далее вам предложат выбрать опции, я предлагаю такие:
+</p>
+
+<ol class="org-ol">
+<li>Select type of build to generate &#x2013; <b>Basic</b></li>
+<li>Project name &#x2013; <b>Нажмите Enter, чтобы выбрать дефолтное</b></li>
+<li>Select build script DSL &#x2013; <b>Groovy</b></li>
+<li>Generate build using new APIs and behavior &#x2013; <b>no</b></li>
+</ol>
+
+<p>
+Появится такая структура файлов и директорий:
+</p>
+<div class="org-src-container">
+<pre class="src src-shell"><span style="font-weight: bold;">.</span>
+&#9500;&#9472;&#9472; build.gradle
+&#9500;&#9472;&#9472; gradle
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; libs.versions.toml
+&#9474;&#160;&#160; &#9492;&#9472;&#9472; wrapper
+&#9474;&#160;&#160;     &#9500;&#9472;&#9472; gradle-wrapper.jar
+&#9474;&#160;&#160;     &#9492;&#9472;&#9472; gradle-wrapper.properties
+&#9500;&#9472;&#9472; gradle.properties
+&#9500;&#9472;&#9472; gradlew
+&#9500;&#9472;&#9472; gradlew.bat
+&#9492;&#9472;&#9472; settings.gradle
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org0a7ee51" class="outline-2">
+<h2 id="org0a7ee51">Клонирование репозиториев</h2>
+<div class="outline-text-2" id="text-org0a7ee51">
+<p>
+В корне проекта создайте директории:
+</p>
+<ul class="org-ul">
+<li><code>shared/</code> &#x2013; Для тестов</li>
+<li><code>solutions/</code> &#x2013; Для ваших решений</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-shell">mkdir shared solutions
+</pre>
+</div>
+
+<p>
+Перейдите в директорию shared (Не уверен, что надо так подробно расписывать, но пусть):
+</p>
+<div class="org-src-container">
+<pre class="src src-shell"><span style="font-weight: bold;">cd</span> shared
+</pre>
+</div>
+
+<p>
+Склонируйте в shared репозиторий (git у вас тоже должен быть и не забудьте точку в конце команды):
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">git clone https://www.kgeorgiy.info/git/geo/java-advanced-2025.git .
+</pre>
+</div>
+
+<p>
+Перейдите в директорию <code>solutions</code> и склонируйте ваш персональный репозиторий (Тоже точка в конце команды):
+</p>
+<div class="org-src-container">
+<pre class="src src-shell"><span style="font-weight: bold;">cd</span> ..
+<span style="font-weight: bold;">cd</span> solutions
+git clone https://www.kgeorgiy.info/git-students/year2023/&lt;USER&gt;/java-advanced . 
+</pre>
+</div>
+
+<p>
+Вместо &lt;USER&gt; &#x2013; свой юзернейм, также git попросит ввести свой юзернейм и пароль.
+</p>
+</div>
+</div>
+<div id="outline-container-org98403e6" class="outline-2">
+<h2 id="org98403e6">Конфигурация build.gradle</h2>
+<div class="outline-text-2" id="text-org98403e6">
+<p>
+Заходим в <code>build.gradle</code> в корне проекта с помощью любимого редактора/IDE. Удаляем комментарии, которые там есть, вставляем этот код:
+</p>
+<div class="org-src-container">
+<pre class="src src-groovy">plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'shared/lib'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'shared/lib', include: ['*.jar'])
+    implementation files('shared/artifacts/info.kgeorgiy.java.advanced.base.jar')
+    testImplementation files('shared/artifacts/info.kgeorgiy.java.advanced.base.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['solutions/java-solutions']
+        }
+    }
+}
+
+def createTask(String taskName, String testName, String cutClass, String srcDir, String mainClassName) {
+    tasks.register(taskName, JavaExec) {
+        sourceSets.test.java.srcDirs = [srcDir]
+        classpath = sourceSets.test.runtimeClasspath
+        mainClass = mainClassName
+        args testName, cutClass
+    }
+}
+
+createTask("WalkTest",
+        "Walk",
+        "info.kgeorgiy.ja.borisov.walk.Walk",
+        "shared/modules/info.kgeorgiy.java.advanced.walk",
+        "info.kgeorgiy.java.advanced.walk.Tester")
+</pre>
+</div>
+
+<p>
+Из кода несложно понять, что мы подтягиваем зависимости, указываем директорию исходников.
+</p>
+
+<p>
+Функция, с которой мы будем работать, это <code>createTask</code> &#x2013; она нужна для создания задач. Каждая задача конфигурирует запуск конкретных тестов для конкретного домашнего задания. Из сигнатуры функции понятно, что для запуска тестов нам нужно:
+</p>
+<ol class="org-ol">
+<li>Имя, по которому мы в дальнейшем будем запускать задачу (taskName)</li>
+<li>Название модификации (testName). Его нужно менять, если хотите запустить другой вариант</li>
+<li>Тестируемый класс (cutClass)</li>
+<li>Директория с тестами (srcDir)</li>
+<li>Тестирующий класс (mainClassName)</li>
+</ol>
+
+<p>
+Обратите внимание, что директорию исходников (java-solutions), мы указывали ранее, а директории тестов меняются от дз к дз, поэтому их мы указываем динамически в функции.
+</p>
+
+<p>
+И, последнее, вызываем функцию <code>createTask</code> с нужными нам параметрами, тем самым регистрируя задачу для тестирования. Для примера, как создать задачу для дз Walk:
+</p>
+<div class="org-src-container">
+<pre class="src src-groovy">createTask("WalkTest",
+        "Walk",
+        "info.kgeorgiy.ja.borisov.walk.Walk",
+        "shared/modules/info.kgeorgiy.java.advanced.walk",
+        "info.kgeorgiy.java.advanced.walk.Tester")
+</pre>
+</div>
+
+<p>
+Тесты для других домашних заданий делаются по аналогии и добавляются в конец файла build.gradle.
+</p>
+</div>
+</div>
+<div id="outline-container-org164b639" class="outline-2">
+<h2 id="org164b639">Билд и запуск</h2>
+<div class="outline-text-2" id="text-org164b639">
+<p>
+Сборка проекта:
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">./gradlew clean build
+</pre>
+</div>
+
+<p>
+Запуск тестов выполняется с передачей названия задачи, которую мы создали. То есть WalkTest:
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">./gradlew WalkTest
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga67b0ec" class="outline-2">
+<h2 id="orga67b0ec">Заключение</h2>
+<div class="outline-text-2" id="text-orga67b0ec">
+<p>
+Я повторил все шаги с нуля, у меня всё работает. Прежде чем идти на сдачу, убедитесь, что вы понимаете как всё работает. Я всего лишь поделился тем, как собираю проект я.
+</p>
+
+<p>
+Для связи: <a href="https://t.me/vandaisky">@vandaisky</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgc10c73e" class="outline-2">
+<h2 id="orgc10c73e">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-orgc10c73e">
+<ul class="org-ul">
+<li><a href="index.html">Index</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

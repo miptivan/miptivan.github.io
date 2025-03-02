@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       336709cf-fc4a-473b-8d91-3dd0eb2f0bcb
+:END:
+#+title: Теорема о существовании предела последовательности
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 15:17]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Последовательность имеет предел $\Leftrightarrow$ Верхний предел равен нижнему пределу.

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       6650ebab-eedb-4d56-ac26-a9dff449c8ed
+:END:
+#+title: Первообразная
+#+setupfile: setup.org
+#+date: [2025-01-23 Thu 20:18]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $F$ определена на $(a, b)$ и F дифференцируема на $(a, b)$. Пусть $F^{\prime}(x) = f(x)$, где $f$ определена на $(a, b)$. Тогда $F$ называется первообразной для $f$ на $(a, b)$.
+
+* Предложение
+Пусть $F_{1}$ и $F_{2}$ -- первообразные для $f$ на $(a, b)$. Тогда:
+
+$\exists C \in \mathbb{R}\colon F_{1}(x) - F_{2}(x) = C \;\; \forall x \in (a,b)$

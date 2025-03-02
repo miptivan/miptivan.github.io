@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       9c583ce3-817c-4bd5-a6e0-77b8df4ddf31
+:END:
+#+title: Вещественные числа
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:17]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Множество всех периодических и непериодических десятичных дробей называется множеством *вещественных чисел*.

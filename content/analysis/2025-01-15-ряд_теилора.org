@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       eea2e7d0-cb0e-4f2d-aca8-cb6cfde28718
+:END:
+#+title: Ряд Тейлора
+#+setupfile: setup.org
+#+date: [2025-01-15 Wed 21:27]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f$ бесконечно дифференцируема в точке $a$. Формальная бесконечная сумма $\sum_{k = 0}^{\infty} \dfrac{f^{(k)}(a)}{k!}(x - a)^{k}$ называется *рядом Тейлора* $f$ в точке $a$.

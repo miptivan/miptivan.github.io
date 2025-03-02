@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       ca5cf769-d519-4ae7-b9c0-962e821d2c0e
+:END:
+#+title: Интегрирование по частям
+#+setupfile: setup.org
+#+date: [2025-01-23 Thu 22:02]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+$$ \int g df = fg - \int f dg $$

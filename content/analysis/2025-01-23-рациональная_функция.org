@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       67dadc06-2ac6-4aae-9ef0-8a5cddcf3f85
+:END:
+#+title: Рациональная функция
+#+setupfile: setup.org
+#+date: [2025-01-23 Thu 22:08]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Рациональная функция -- это отношение двух многочленов.
+
+$$ \dfrac{P(x)}{Q(x)} $$
+
+Интегрирование выводит нас за пределы рациональных функций.

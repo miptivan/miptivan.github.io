@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       a9e35b01-7713-436b-9caa-0bd41268e3d6
+:END:
+#+title: Дифференциал
+#+setupfile: setup.org
+#+date: [2025-01-11 Sat 15:37]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Функция, обозначающая df(a) и отображающая $\overset{\circ}{U}(0)$ в $\mathbb{R}$ следующим образом: $\forall h \in \overset{\circ}{U}(0)\;\; df(a)(h) = Ah$ называется *дифференциалом* функции f в точке $a$.
+
+$df(a)$ -- это функция, а не значение функции!
+
+* Свойство 1
+$\forall \lambda \in \mathbb{R}\;\; df(a)(\lambda h) = \lambda Ah =\lambda df(a)(h)$.
+
+* Свойство 2
+$\forall h_{1}, h_{2}\;\; df(a)(h_{1} + h_{2}) = A(h_{1} + h_{2}) = Ah_{1} + Ah_{2}$.
+
+Эти два свойства говорят, что $df(a)$ --  линейная функция на $\mathbb{R}$.

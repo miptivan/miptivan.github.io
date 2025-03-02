@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       0be03a5b-ebd8-4e85-808e-a9e740a06ded
+:END:
+#+title: Линейность интегралов
+#+setupfile: setup.org
+#+date: [2025-01-23 Thu 21:49]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+$\int(\alpha F(x) + \beta G(x)) = \alpha\int f(x) + \beta\int g(x) + C$
+
+

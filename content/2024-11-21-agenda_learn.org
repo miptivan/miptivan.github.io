@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       fe8642cb-877b-4cca-921e-a0f76f235057
+:END:
+#+title: Agenda learn
+#+setupfile: setup.org
+#+date: [2024-11-21 Thu 19:57]
+#+excerpt: 
+#+filetags:
+
+* org-agenda
+Пробую планировать с помощью org-agenda.
+
+* Забиндить вызов org-agenda
+~(global-set-key (kbd "C-c a") 'org-agenda)~ -- Я сделал на сочетание клавиш ~C-c a~.
+
+* org-schedule
+Позволяет что-то запланировать.
+
+~C-c C-s~ -- org-schedule
+
+~S-стрелки~ -- Перемещение по календарю
+
+* org-deadline
+~C-c C-d~ -- org-deadline
+
+~(setq org-deadline-warning-days 5)~ -- За сколько дней будут приходить напоминания
+
+~C-c C-t~ -- Выбрать статус задачи
+
+~C-c C-q~ -- Выбрать тег из списка в конфиге
+
+~C-c C-w~ -- Переместить в файл (Например, архивировать)
+
+* Habits
+~M-x org-set-propherty style habit~ -- чтобы тудушка появилась в привычках
+
+~C-c C-t~ -- Состояния тудушек
+
+~21 C-c a~ -- Посмотреть планы на 21 день вперёд
+
+* Books
+org-sort -> propherty -- отсортировать
+
+* Pomodoro
+~org-clock-report~ -- просуммировать затраченное время
+
+* Перемещение тасок в архив
+~org-refile~ -- ~C-c C-w~ -- переместить
+

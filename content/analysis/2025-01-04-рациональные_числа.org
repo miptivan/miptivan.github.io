@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       a98a1060-24cc-4617-9fe8-3bd6efacc603
+:END:
+#+title: Рациональные числа
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:13]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+#+BEGIN_LaTeX
+$$
+\mathbb{Q} = \left\{ \frac{a}{b} \mid a \in \mathbb{Z}, b \in \mathbb{N}, (a, b) = 1 \right\}
+$$
+
+$(a, b) = 1$ Значит, что $НОД = 1$. То есть дробь несократима.
+#+END_LaTeX

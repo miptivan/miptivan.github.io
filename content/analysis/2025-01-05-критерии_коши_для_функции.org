@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       0a655416-07c5-4955-aae8-1ff4c059b42f
+:END:
+#+title: Критерий Коши для функций
+#+setupfile: setup.org
+#+date: [2025-01-05 Sun 19:37]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+* Критерий Коши для функций :theorem:
+У Функции $f$ существует предел при $x \rightarrow a$ $\Leftrightarrow$ $\forall \varepsilon > 0 \;\; \exists \delta > 0 \colon \forall x, y \colon \;\; 0 < |x - a| < \delta \text{ и } 0 < |y - a| < \delta,\;\; |f(x) - f(y)| < \delta$ ($x$ и $y$ из области определения $E$ функции $f$).
+
+В более короткой форме: $\forall \varepsilon > 0 \exists \delta > 0 \colon \forall x, y \in \overset{\circ}{U}_{\delta}(a) \cap E \;\; |f(x) - f(y)| < \varepsilon$
+
+Критерий Коши хорош тем, что нам не надо знать предел, чтобы заявить о его существовании.

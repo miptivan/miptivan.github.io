@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       1271fbf3-7c2f-4745-80c0-40f13449ac61
+:END:
+#+title: Предел функции по Гейне
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 15:21]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f$ определена на $E$ и $a$ -- предельная точка множества $E$. Тогда число $A$ называется пределом функции $f$ при $x \rightarrow a$, если $\forall \{a_{n}\}\subset E \colon a_{n} \rightarrow a (n \rightarrow \infty) , a_{n} \cancel{=} a \forall n \in \mathbb{N} \lim_{n \rightarrow \infty} = A$

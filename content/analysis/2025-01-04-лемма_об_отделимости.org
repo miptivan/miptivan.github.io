@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       adf83c79-237d-4327-8d89-9d5ba86b386f
+:END:
+#+title: Лемма об отделимости
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:54]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Какая-то слишком тривиальная, не понял зачем она. Возможно, потом допишу.

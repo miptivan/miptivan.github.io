@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       2d493bda-f05b-4b73-8455-abc8c42c56f5
+:END:
+#+title: Непрерывные функции
+#+setupfile: setup.org
+#+date: [2025-01-05 Sun 22:40]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Теперь $f\colon E \rightarrow \mathbb{R}$, но $a \in E$ и необязательно является предельной.
+
+$f$ называется непрерывной в точке $a$, если $\forall \varepsilon > 0 \exists \delta > 0 \colon \forall x \in E \wedge |x - a| < \delta\;\; |f(x) - f(a)| < \varepsilon$.
+
+#+begin_quote
+В изолированной точке области определения, функция всегда непрерывна.
+#+end_quote
+
+На следующей лекции, во время повторения, были сказаны такое определения:
+
+$f$ -- *непрерывна* в точке $a \in E$, если $a$ изолированная или если $a$ -- предельная точка $E$ и $lim_{x \rightarrow a} f(x) = f(a)$.
