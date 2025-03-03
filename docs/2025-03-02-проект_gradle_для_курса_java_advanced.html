@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-03-03 Mon 15:37 -->
+<!-- 2025-03-03 Mon 15:42 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Проект Gradle для курса Java-Advanced</title>
@@ -59,30 +59,30 @@ webvisor:true
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org8a9a0ef">Предисловие</a></li>
-<li><a href="#orgbe9c0ad">Установка Gradle</a>
+<li><a href="#org6023932">Предисловие</a></li>
+<li><a href="#org2621602">Установка Gradle</a>
 <ul>
-<li><a href="#org5096c3d">Arch</a></li>
-<li><a href="#orgdec804b">Ubuntu</a></li>
-<li><a href="#orgd20fb40">MacOS</a></li>
-<li><a href="#org806cec8">Windows</a></li>
+<li><a href="#org0523de6">Arch</a></li>
+<li><a href="#org141a95d">Ubuntu</a></li>
+<li><a href="#org0f548e2">MacOS</a></li>
+<li><a href="#org0dca9f7">Windows</a></li>
 </ul>
 </li>
-<li><a href="#org2474a4e">Инициализация проекта</a></li>
-<li><a href="#org972cc20">Клонирование репозиториев</a></li>
-<li><a href="#orgf022440">Конфигурация build.gradle</a></li>
-<li><a href="#org8db6dea">Билд и запуск</a></li>
-<li><a href="#org0b8d6a8">Заключение</a></li>
-<li><a href="#orgabe0bd7">Заметки с ссылками на эту страницу</a></li>
+<li><a href="#org8a6f29e">Инициализация проекта</a></li>
+<li><a href="#org6452646">Клонирование репозиториев</a></li>
+<li><a href="#org2f99dc8">Конфигурация build.gradle</a></li>
+<li><a href="#org381e515">Билд и запуск</a></li>
+<li><a href="#org6f5a146">Заключение</a></li>
+<li><a href="#org2cb4cc6">Заметки с ссылками на эту страницу</a></li>
 </ul>
 </div>
 </div>
 <p>
 Гайд на основе того, как я собрал проект для сдачи домашних заданий на курсе java-advanced.
 </p>
-<div id="outline-container-org8a9a0ef" class="outline-2">
-<h2 id="org8a9a0ef">Предисловие</h2>
-<div class="outline-text-2" id="text-org8a9a0ef">
+<div id="outline-container-org6023932" class="outline-2">
+<h2 id="org6023932">Предисловие</h2>
+<div class="outline-text-2" id="text-org6023932">
 <p>
 Делегируя настройку проекта графическому интерфейсу idea, меня не покидало чувство, что что-то важное происходит под капотом. А я люблю, чтобы вся логика была расписана в тексте &#x2013; в виде билдов/конфигов/скриптов. Если вам близки такие интенции, то, возможно, вам понравится этот способ сборки проекта для сдачи дз с помощью <code>Gradle</code>.
 </p>
@@ -92,25 +92,25 @@ webvisor:true
 </p>
 </div>
 </div>
-<div id="outline-container-orgbe9c0ad" class="outline-2">
-<h2 id="orgbe9c0ad">Установка Gradle</h2>
-<div class="outline-text-2" id="text-orgbe9c0ad">
+<div id="outline-container-org2621602" class="outline-2">
+<h2 id="org2621602">Установка Gradle</h2>
+<div class="outline-text-2" id="text-org2621602">
 <p>
 Посмотрите как установить gradle на вашу ОС, с этим не должно возникнуть проблем. Приведу несколько примеров, но в дальнейшем установка будет ориентирована на Linux.
 </p>
 </div>
-<div id="outline-container-org5096c3d" class="outline-3">
-<h3 id="org5096c3d">Arch</h3>
-<div class="outline-text-3" id="text-org5096c3d">
+<div id="outline-container-org0523de6" class="outline-3">
+<h3 id="org0523de6">Arch</h3>
+<div class="outline-text-3" id="text-org0523de6">
 <div class="org-src-container">
 <pre class="src src-shell">sudo pacman -S gradle
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgdec804b" class="outline-3">
-<h3 id="orgdec804b">Ubuntu</h3>
-<div class="outline-text-3" id="text-orgdec804b">
+<div id="outline-container-org141a95d" class="outline-3">
+<h3 id="org141a95d">Ubuntu</h3>
+<div class="outline-text-3" id="text-org141a95d">
 <div class="org-src-container">
 <pre class="src src-shell">sudo apt update
 sudo apt install gradle
@@ -118,9 +118,9 @@ sudo apt install gradle
 </div>
 </div>
 </div>
-<div id="outline-container-orgd20fb40" class="outline-3">
-<h3 id="orgd20fb40">MacOS</h3>
-<div class="outline-text-3" id="text-orgd20fb40">
+<div id="outline-container-org0f548e2" class="outline-3">
+<h3 id="org0f548e2">MacOS</h3>
+<div class="outline-text-3" id="text-org0f548e2">
 <p>
 С помощью Homebrew.
 </p>
@@ -130,18 +130,18 @@ sudo apt install gradle
 </div>
 </div>
 </div>
-<div id="outline-container-org806cec8" class="outline-3">
-<h3 id="org806cec8">Windows</h3>
-<div class="outline-text-3" id="text-org806cec8">
+<div id="outline-container-org0dca9f7" class="outline-3">
+<h3 id="org0dca9f7">Windows</h3>
+<div class="outline-text-3" id="text-org0dca9f7">
 <p>
 Следуйте официальной инструкции на сайте.
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org2474a4e" class="outline-2">
-<h2 id="org2474a4e">Инициализация проекта</h2>
-<div class="outline-text-2" id="text-org2474a4e">
+<div id="outline-container-org8a6f29e" class="outline-2">
+<h2 id="org8a6f29e">Инициализация проекта</h2>
+<div class="outline-text-2" id="text-org8a6f29e">
 <p>
 Создайте директорию для проекта и перейдите в неё:
 </p>
@@ -189,9 +189,9 @@ sudo apt install gradle
 </div>
 </div>
 </div>
-<div id="outline-container-org972cc20" class="outline-2">
-<h2 id="org972cc20">Клонирование репозиториев</h2>
-<div class="outline-text-2" id="text-org972cc20">
+<div id="outline-container-org6452646" class="outline-2">
+<h2 id="org6452646">Клонирование репозиториев</h2>
+<div class="outline-text-2" id="text-org6452646">
 <p>
 В корне проекта создайте директории:
 </p>
@@ -229,9 +229,9 @@ sudo apt install gradle
 </p>
 </div>
 </div>
-<div id="outline-container-orgf022440" class="outline-2">
-<h2 id="orgf022440">Конфигурация build.gradle</h2>
-<div class="outline-text-2" id="text-orgf022440">
+<div id="outline-container-org2f99dc8" class="outline-2">
+<h2 id="org2f99dc8">Конфигурация build.gradle</h2>
+<div class="outline-text-2" id="text-org2f99dc8">
 <p>
 Заходим в <code>build.gradle</code> в корне проекта с помощью любимого редактора/IDE. Удаляем комментарии, которые там есть, вставляем этот код:
 </p>
@@ -317,9 +317,9 @@ createTask("WalkTest",
 </p>
 </div>
 </div>
-<div id="outline-container-org8db6dea" class="outline-2">
-<h2 id="org8db6dea">Билд и запуск</h2>
-<div class="outline-text-2" id="text-org8db6dea">
+<div id="outline-container-org381e515" class="outline-2">
+<h2 id="org381e515">Билд и запуск</h2>
+<div class="outline-text-2" id="text-org381e515">
 <p>
 Сборка проекта:
 </p>
@@ -337,17 +337,17 @@ createTask("WalkTest",
 </div>
 </div>
 </div>
-<div id="outline-container-org0b8d6a8" class="outline-2">
-<h2 id="org0b8d6a8">Заключение</h2>
-<div class="outline-text-2" id="text-org0b8d6a8">
+<div id="outline-container-org6f5a146" class="outline-2">
+<h2 id="org6f5a146">Заключение</h2>
+<div class="outline-text-2" id="text-org6f5a146">
 <p>
 Я повторил все шаги с нуля, у меня всё работает. Прежде чем идти на сдачу, убедитесь, что вы понимаете как всё работает. Я всего лишь поделился тем, как собираю проект.
 </p>
 </div>
 </div>
-<div id="outline-container-orgabe0bd7" class="outline-2">
-<h2 id="orgabe0bd7">Заметки с ссылками на эту страницу</h2>
-<div class="outline-text-2" id="text-orgabe0bd7">
+<div id="outline-container-org2cb4cc6" class="outline-2">
+<h2 id="org2cb4cc6">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org2cb4cc6">
 <ul class="org-ul">
 <li><a href="index.html">Index</a></li>
 </ul>
