@@ -368,3 +368,20 @@ body .timestamp {
     -webkit-box-pack: justify;
     justify-content: space-between;
 }*/
+
+blockquote {
+    border-left: 4px solid darkgreen;
+    padding-left: 10px;
+    margin-left: 0;
+    font-style: italic;
+    color: #333;
+}
+
+blockquote p {
+    font-style: italic;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;  /* Можно добавить, если нужен курсив */
+}
