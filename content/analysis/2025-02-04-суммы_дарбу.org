@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       5daab77a-4856-413b-8e1f-d9cb7b41ac36
+:END:
+#+title: Суммы Дарбу
+#+setupfile: setup.org
+#+date: [2025-02-04 Tue 17:43]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Выбрав по инфинумам или по супремумам [[id:c53bd209-6a31-4ebb-917b-91d96329170f][разметку разбиения]], мы получаем нижнюю и верхнюю *сумму Дарбу*.

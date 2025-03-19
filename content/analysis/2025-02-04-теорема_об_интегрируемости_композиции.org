@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       2ff6c368-9c1a-4d6a-9733-329dd029cfbb
+:END:
+#+title: Теорема об интегрируемости композиции
+#+setupfile: setup.org
+#+date: [2025-02-04 Tue 20:08]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+[[../../img/31.png]]

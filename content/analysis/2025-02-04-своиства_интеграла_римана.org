@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       71a69379-4f0a-48dd-8bf8-b580fec40c3e
+:END:
+#+title: Свойства интеграла Римана
+#+setupfile: setup.org
+#+date: [2025-02-04 Tue 19:39]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+[[../../img/29.png]]

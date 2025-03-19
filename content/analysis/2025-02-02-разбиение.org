@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       0583512c-8b0b-454b-b5ce-1748c0157499
+:END:
+#+title: Разбиение
+#+setupfile: setup.org
+#+date: [2025-02-02 Sun 14:40]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Множество точек $T = {a = x_{0} < x_{1} < \dots < x_{n} = b$ называется *разбиением* отрезка $[a, b]$

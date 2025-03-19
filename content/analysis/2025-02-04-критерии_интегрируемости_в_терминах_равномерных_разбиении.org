@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       b0c63d18-7ecb-4dc2-9c56-171cee0ccc70
+:END:
+#+title: Критерий интегрируемости в терминах равномерных разбиений
+#+setupfile: setup.org
+#+date: [2025-02-04 Tue 19:29]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть отрезок $[a, b]$ разбит на $n$ равных отрезков. Обозначим соответствующее разбиение через $T_{n}$. Тогда:
+
+$$
+f \text { интегрируема } \Leftrightarrow \lim_{n \to \infty} (S(T_n) - s(T_n)) = 0 
+$$

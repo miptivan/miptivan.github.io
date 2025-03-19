@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       2cb8c7c0-1caa-46ee-a30c-22bf7150a4bf
+:END:
+#+title: Интегрирование по частям в определённом интеграле
+#+setupfile: setup.org
+#+date: [2025-02-05 Wed 19:58]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f, g$ дифференцируемы на $[a, b]$ и пусть $f^{\prime}g$ интегрируема на $[a,b]$. Тогда $g^{\prime}f$ интегрируема на $[a, b]$ и:
+
+$$\int_a^b g^{\prime}(x)f(x)dx = f(x)g(x)|_a^b - \int_a^b f^{\prime}(x)g(x)dx$$
