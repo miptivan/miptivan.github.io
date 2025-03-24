@@ -24,6 +24,18 @@
     "duration": 123
   },
   {
+    "task": "Java-Advanced Jar",
+    "start": "2025-03-24T20:57:00",
+    "end": "2025-03-24T21:51:00",
+    "duration": 54
+  },
+  {
+    "task": "Java-Advanced Jar",
+    "start": "2025-03-24T20:09:00",
+    "end": "2025-03-24T20:39:00",
+    "duration": 30
+  },
+  {
     "task": "Матан",
     "start": "2025-02-04T19:35:00",
     "end": "2025-02-04T20:06:00",
