@@ -3,7 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<<<<<<< HEAD
 <!-- 2025-10-10 Fri 02:27 -->
+=======
+<!-- 2025-03-20 Thu 22:49 -->
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Проект Gradle для курса Java-Advanced</title>
@@ -59,6 +63,7 @@ webvisor:true
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
+<<<<<<< HEAD
 <li><a href="#org87b6d96">Предисловие</a></li>
 <li><a href="#orgbfc86be">Установка Gradle</a>
 <ul>
@@ -74,15 +79,38 @@ webvisor:true
 <li><a href="#org7bb88c0">Билд и запуск</a></li>
 <li><a href="#orgf4f792e">Заключение</a></li>
 <li><a href="#org540698c">Заметки с ссылками на эту страницу</a></li>
+=======
+<li><a href="#org142e497">Предисловие</a></li>
+<li><a href="#orga8f089c">Установка Gradle</a>
+<ul>
+<li><a href="#org09e9166">Arch</a></li>
+<li><a href="#org5d44705">Ubuntu</a></li>
+<li><a href="#org3c343c1">MacOS</a></li>
+<li><a href="#org0646863">Windows</a></li>
+</ul>
+</li>
+<li><a href="#org9880531">Инициализация проекта</a></li>
+<li><a href="#orgd756bbd">Клонирование репозиториев</a></li>
+<li><a href="#org657cb57">Конфигурация build.gradle</a></li>
+<li><a href="#org183baaa">Билд и запуск</a></li>
+<li><a href="#orgf65a7be">Заключение</a></li>
+<li><a href="#org6be461d">Заметки с ссылками на эту страницу</a></li>
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 </ul>
 </div>
 </div>
 <p>
 Гайд на основе того, как я собрал проект для сдачи домашних заданий на курсе java-advanced.
 </p>
+<<<<<<< HEAD
 <div id="outline-container-org87b6d96" class="outline-2">
 <h2 id="org87b6d96">Предисловие</h2>
 <div class="outline-text-2" id="text-org87b6d96">
+=======
+<div id="outline-container-org142e497" class="outline-2">
+<h2 id="org142e497">Предисловие</h2>
+<div class="outline-text-2" id="text-org142e497">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <p>
 Делегируя настройку проекта графическому интерфейсу idea, меня не покидало чувство, что что-то важное происходит под капотом. А я люблю, чтобы вся логика была расписана в тексте &#x2013; в виде билдов/конфигов/скриптов. Если вам близки такие интенции, то, возможно, вам понравится этот способ сборки проекта для сдачи дз с помощью <code>Gradle</code>.
 </p>
@@ -92,25 +120,43 @@ webvisor:true
 </p>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-orgbfc86be" class="outline-2">
 <h2 id="orgbfc86be">Установка Gradle</h2>
 <div class="outline-text-2" id="text-orgbfc86be">
+=======
+<div id="outline-container-orga8f089c" class="outline-2">
+<h2 id="orga8f089c">Установка Gradle</h2>
+<div class="outline-text-2" id="text-orga8f089c">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <p>
 Посмотрите как установить gradle на вашу ОС, с этим не должно возникнуть проблем. Приведу несколько примеров, но в дальнейшем установка будет ориентирована на Linux.
 </p>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-orgf7f8f44" class="outline-3">
 <h3 id="orgf7f8f44">Arch</h3>
 <div class="outline-text-3" id="text-orgf7f8f44">
+=======
+<div id="outline-container-org09e9166" class="outline-3">
+<h3 id="org09e9166">Arch</h3>
+<div class="outline-text-3" id="text-org09e9166">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <div class="org-src-container">
 <pre class="src src-shell">sudo pacman -S gradle
 </pre>
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-org25e1884" class="outline-3">
 <h3 id="org25e1884">Ubuntu</h3>
 <div class="outline-text-3" id="text-org25e1884">
+=======
+<div id="outline-container-org5d44705" class="outline-3">
+<h3 id="org5d44705">Ubuntu</h3>
+<div class="outline-text-3" id="text-org5d44705">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <div class="org-src-container">
 <pre class="src src-shell">sudo apt update
 sudo apt install gradle
@@ -118,9 +164,15 @@ sudo apt install gradle
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-orgc83d20f" class="outline-3">
 <h3 id="orgc83d20f">MacOS</h3>
 <div class="outline-text-3" id="text-orgc83d20f">
+=======
+<div id="outline-container-org3c343c1" class="outline-3">
+<h3 id="org3c343c1">MacOS</h3>
+<div class="outline-text-3" id="text-org3c343c1">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <p>
 С помощью Homebrew.
 </p>
@@ -130,24 +182,40 @@ sudo apt install gradle
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-org58492bb" class="outline-3">
 <h3 id="org58492bb">Windows</h3>
 <div class="outline-text-3" id="text-org58492bb">
+=======
+<div id="outline-container-org0646863" class="outline-3">
+<h3 id="org0646863">Windows</h3>
+<div class="outline-text-3" id="text-org0646863">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <p>
 Следуйте официальной инструкции на сайте.
 </p>
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-org454ca56" class="outline-2">
 <h2 id="org454ca56">Инициализация проекта</h2>
 <div class="outline-text-2" id="text-org454ca56">
+=======
+<div id="outline-container-org9880531" class="outline-2">
+<h2 id="org9880531">Инициализация проекта</h2>
+<div class="outline-text-2" id="text-org9880531">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <p>
 Создайте директорию для проекта и перейдите в неё:
 </p>
 <div class="org-src-container">
 <pre class="src src-shell">mkdir java-advanced
+<<<<<<< HEAD
 cd java-advanced
+=======
+<span style="font-weight: bold;">cd</span> java-advanced
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 </pre>
 </div>
 
@@ -174,6 +242,7 @@ cd java-advanced
 Появится такая структура файлов и директорий:
 </p>
 <div class="org-src-container">
+<<<<<<< HEAD
 <pre class="src src-shell">.
 ├── build.gradle
 ├── gradle
@@ -185,13 +254,32 @@ cd java-advanced
 ├── gradlew
 ├── gradlew.bat
 └── settings.gradle
+=======
+<pre class="src src-shell"><span style="font-weight: bold;">.</span>
+&#9500;&#9472;&#9472; build.gradle
+&#9500;&#9472;&#9472; gradle
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; libs.versions.toml
+&#9474;&#160;&#160; &#9492;&#9472;&#9472; wrapper
+&#9474;&#160;&#160;     &#9500;&#9472;&#9472; gradle-wrapper.jar
+&#9474;&#160;&#160;     &#9492;&#9472;&#9472; gradle-wrapper.properties
+&#9500;&#9472;&#9472; gradle.properties
+&#9500;&#9472;&#9472; gradlew
+&#9500;&#9472;&#9472; gradlew.bat
+&#9492;&#9472;&#9472; settings.gradle
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 </pre>
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-org4eb0b39" class="outline-2">
 <h2 id="org4eb0b39">Клонирование репозиториев</h2>
 <div class="outline-text-2" id="text-org4eb0b39">
+=======
+<div id="outline-container-orgd756bbd" class="outline-2">
+<h2 id="orgd756bbd">Клонирование репозиториев</h2>
+<div class="outline-text-2" id="text-orgd756bbd">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <p>
 В корне проекта создайте директории:
 </p>
@@ -229,9 +317,15 @@ cd java-advanced
 </p>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-orge07450a" class="outline-2">
 <h2 id="orge07450a">Конфигурация build.gradle</h2>
 <div class="outline-text-2" id="text-orge07450a">
+=======
+<div id="outline-container-org657cb57" class="outline-2">
+<h2 id="org657cb57">Конфигурация build.gradle</h2>
+<div class="outline-text-2" id="text-org657cb57">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <p>
 Заходим в <code>build.gradle</code> в корне проекта с помощью любимого редактора/IDE. Удаляем комментарии, которые там есть, вставляем этот код:
 </p>
@@ -317,9 +411,15 @@ createTask("WalkTest",
 </p>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-org7bb88c0" class="outline-2">
 <h2 id="org7bb88c0">Билд и запуск</h2>
 <div class="outline-text-2" id="text-org7bb88c0">
+=======
+<div id="outline-container-org183baaa" class="outline-2">
+<h2 id="org183baaa">Билд и запуск</h2>
+<div class="outline-text-2" id="text-org183baaa">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <p>
 Сборка проекта:
 </p>
@@ -337,17 +437,29 @@ createTask("WalkTest",
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-orgf4f792e" class="outline-2">
 <h2 id="orgf4f792e">Заключение</h2>
 <div class="outline-text-2" id="text-orgf4f792e">
+=======
+<div id="outline-container-orgf65a7be" class="outline-2">
+<h2 id="orgf65a7be">Заключение</h2>
+<div class="outline-text-2" id="text-orgf65a7be">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <p>
 Я повторил все шаги с нуля, у меня всё работает. Прежде чем идти на сдачу, убедитесь, что вы понимаете как всё работает. Я всего лишь поделился тем, как собираю проект.
 </p>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-org540698c" class="outline-2">
 <h2 id="org540698c">Заметки с ссылками на эту страницу</h2>
 <div class="outline-text-2" id="text-org540698c">
+=======
+<div id="outline-container-org6be461d" class="outline-2">
+<h2 id="org6be461d">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org6be461d">
+>>>>>>> 4989f817843e87881cf48e8691eaa912f395a71a
 <ul class="org-ul">
 <li><a href="index.html">Index</a></li>
 </ul>

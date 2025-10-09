@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       4a8cb6b7-8c69-48f1-8502-984d98931e1b
+:END:
+#+title: Предел функции по Коши
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 15:21]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f$ определена на $E$ и $a$ -- предельная точка множества $E$. Тогда число $A$ называется пределом функции $f$ при $x \rightarrow a$, если $\forall \varepsilon > 0 \;\; \exists \delta > 0 \colon \forall x \in E \wedge 0 < |x - a| < \delta \;\; |f(x) - A| < \varepsilon$
+
+В двойном неравенстве "$0 <$" означает, что окрестность проколотая.
+
+Есть другое определение (тоже по Коши) через проколотые окрестности.

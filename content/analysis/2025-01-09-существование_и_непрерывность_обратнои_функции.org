@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       44306a65-1d11-4eb1-a669-cd713c0edd87
+:END:
+#+title: Существование и непрерывность обратной функции
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 21:04]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+

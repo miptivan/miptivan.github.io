@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       b38fa41c-10cb-47f8-a799-fb52fa2fe120
+:END:
+#+title: Раскрытие неопределённостей (правила Лопиталя)
+#+setupfile: setup.org
+#+date: [2025-01-12 Sun 14:06]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+* 1-е правило Лопиталя (неопределённость вида $\dfrac{0}{0}$)
+Пусть:
+1. $f$ и $g$ определены и дифференцируемы на $(a, b)$
+2. $\lim_{x \rightarrow b-}f(x) = \lim_{x \rightarrow b-}g(x) = 0$
+3. $g^{\prime}(x) \cancel{=} 0 \;\; \forall x \in (a, b)$
+4. Существует конечный или бесконечный предел $\lim_{x \rightarrow b-}\dfrac{f^{\prime}(x)}{g^{\prime}(x)}$
+Тогда справедливо равенство $\lim_{x \rightarrow b-}\dfrac{f(x)}{g(x)} = \lim_{x \rightarrow b-}\dfrac{f^{\prime}(x)}{g^{\prime}(x)}$.
+
+* 2-е правило Лопиталя (неопределённость вида $\dfrac{\infty}{\infty}$)
+Пусть:
+1. $f$ и $g$ определены и дифференцируемы на $(a, b)$.
+2. $\lim_{x \rightarrow b-}g(x) = \infty$
+3. $g^{\prime}(x) \cancel{=} 0 \;\; \forall x \in (a, b)$
+4. Существует конечный или бесконечный предел $\lim_{x \rightarrow b-}\dfrac{f^{\prime}(x)}{g^{\prime}(x)}$
+Тогда справедливо равенство $\lim_{x \rightarrow b-}\dfrac{f(x)}{g(x)} = \lim_{x \rightarrow b-}\dfrac{f^{\prime}(x)}{g^{\prime}(x)}$.

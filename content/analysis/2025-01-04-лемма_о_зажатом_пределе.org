@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       39a2a7f6-99b0-4799-b83f-59a64244ddcb
+:END:
+#+title: Лемма о зажатом пределе
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:58]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Это теорема о двух миллиционерах, ничего сложного. Легко гуглятся хорошие объяснения и доказательства.

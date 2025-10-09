@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       ba8ff88c-09ea-4fa1-bfb0-18e69e5b8be4
+:END:
+#+title: Предел последовательности
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:52]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+$\lim a_{n} = A \Leftrightarrow \forall \varepsilon > 0 \exists N \colon \forall n > N\;\;|a_{n} - A| < \varepsilon$
+
+Число не будет пределом, если можно найти интервал вокруг этого числа, вне которого будет лежать бесконечно много элементов последовательности.
+#+NOTE: Попробовать записать кванторами.
+
+* Примеры
+1. Доказать, что $\lim\dfrac{1}{n} = 0$
+
+Указание: Надо взять $n \geqslant \left[\dfrac{1}{\varepsilon}\right] + 1$
+
+2. $b_{n} = (-1)^{n}$
+
+Доказательство, что предела нет (в доказательстве пригодится неравенство треугольника):
+[[file:../../img/3.png]]

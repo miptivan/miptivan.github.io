@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       a194da34-480b-46ed-93f1-d3217c95ae4a
+:END:
+#+title: Эквивалентность определений предела по Коши и по Гейне
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 20:38]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+То есть если есть предел по одному определению, то есть и по другому.
+
+[[https://www.youtube.com/watch?v=UzfAt6DoN3E][Объяснение Трушина]]

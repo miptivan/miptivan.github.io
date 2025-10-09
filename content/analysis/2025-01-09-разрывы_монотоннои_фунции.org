@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       d733f8a7-9120-4a1c-b633-aa2c68fbbb38
+:END:
+#+title: Разрывы монотонной фунции
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 19:39]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f$ определена и монотонна на $(a, b)$ $\Rightarrow$ $f$ может иметь только разрывы первого рода.

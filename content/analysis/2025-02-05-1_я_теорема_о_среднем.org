@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       67b1a34b-f750-4277-b32f-4a0f0755699b
+:END:
+#+title: 1-я теорема о среднем
+#+setupfile: setup.org
+#+date: [2025-02-05 Wed 20:19]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f$, $g$ интегрируемы на $[a, b]$ и $g(x) \geqslant 0 \forall x \in [a,b]$. Тогда:
+
+$$
+\exists \mu \in \mathbb{R} \colon \int_a^b f(x)g(x)dx = \mu \int_a^b g(x)dx, \;\; \mu \in [\inf_{[a,b]} f(x), \sup_{[a, b]} f(x)]
+$$
+
+А если $f$ ещё и непрерывна на $[a, b]$, то $\exists c \in [a, b] \colon f(c) = \mu$
+
+* Ещё один факт
+Если функция $f$ непрерывна, то $exists c \in [a, b] \colon f(c) = \mu$. Тогда $\int_a^b f(x)g(x)dx = f(c)\int_a^b g(x)dx$
+
+** Ещё один интересный факт, если g = 1
+Если $g(x) \equiv 1$ на $[a, b]$ и если $f$ непрерывна на $[a, b]$, тогда $\int_a^b f(x)dx = f(c)(b-a)$

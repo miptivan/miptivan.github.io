@@ -1,0 +1,177 @@
+:PROPERTIES:
+:ID:       21a196ca-b540-4e7c-8e33-3054ccab6f41
+:END:
+#+title: Проект Gradle для курса Java-Advanced
+#+setupfile: setup.org
+#+date: [2025-03-02 Sun 16:36]
+#+excerpt: 
+#+filetags:
+
+Гайд на основе того, как я собрал проект для сдачи домашних заданий на курсе java-advanced.
+
+* Предисловие
+Делегируя настройку проекта графическому интерфейсу idea, меня не покидало чувство, что что-то важное происходит под капотом. А я люблю, чтобы вся логика была расписана в тексте -- в виде билдов/конфигов/скриптов. Если вам близки такие интенции, то, возможно, вам понравится этот способ сборки проекта для сдачи дз с помощью ~Gradle~.
+
+Гайд чисто практический, я освоил Gradle лишь постольку, поскольку этого требует курс java. Поэтому критика приветствуется. Как по мне, в итоге получилось сильно проще, чем копаться GUI.
+
+* Установка Gradle
+Посмотрите как установить gradle на вашу ОС, с этим не должно возникнуть проблем. Приведу несколько примеров, но в дальнейшем установка будет ориентирована на Linux.
+
+** Arch
+#+begin_src shell
+sudo pacman -S gradle
+#+end_src
+
+** Ubuntu
+#+begin_src shell
+sudo apt update
+sudo apt install gradle
+#+end_src
+
+** MacOS
+С помощью Homebrew.
+#+begin_src shell
+brew install gradle
+#+end_src
+
+** Windows
+Следуйте официальной инструкции на сайте.
+
+* Инициализация проекта
+Создайте директорию для проекта и перейдите в неё:
+#+begin_src shell
+mkdir java-advanced
+cd java-advanced
+#+end_src
+
+Инициализируйте проект:
+#+begin_src shell
+gradle init
+#+end_src
+
+Далее вам предложат выбрать опции, я предлагаю такие:
+
+1. Select type of build to generate -- *Basic*
+2. Project name -- *Нажмите Enter, чтобы выбрать дефолтное*
+3. Select build script DSL -- *Groovy*
+4. Generate build using new APIs and behavior -- *no*
+
+Появится такая структура файлов и директорий:
+#+begin_src shell
+.
+├── build.gradle
+├── gradle
+│   ├── libs.versions.toml
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+└── settings.gradle
+#+end_src
+
+* Клонирование репозиториев
+В корне проекта создайте директории:
+- ~shared/~ -- Для тестов
+- ~solutions/~ -- Для ваших решений
+
+Сделать можно одной командой:
+#+begin_src shell
+mkdir shared solutions
+#+end_src
+
+Склонируйте в shared/ репозиторий с тестами (git у вас, думаю, есть):
+#+begin_src shell
+git clone https://www.kgeorgiy.info/git/geo/java-advanced-2025.git shared
+#+end_src
+
+Склонируйте в solutions/ ваш персональный репозиторий:
+#+begin_src shell
+git clone https://www.kgeorgiy.info/git-students/year2023/<USER>/java-advanced solutions
+#+end_src
+
+Вместо <USER> -- свой юзернейм, также git попросит ввести свой юзернейм и пароль.
+
+* Конфигурация build.gradle
+Заходим в ~build.gradle~ в корне проекта с помощью любимого редактора/IDE. Удаляем комментарии, которые там есть, вставляем этот код:
+#+begin_src groovy
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'shared/lib'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'shared/lib', include: ['*.jar'])
+    implementation files('shared/artifacts/info.kgeorgiy.java.advanced.base.jar')
+    testImplementation files('shared/artifacts/info.kgeorgiy.java.advanced.base.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['solutions/java-solutions']
+        }
+    }
+}
+
+def createTask(String taskName, String testName, String cutClass, String srcDir, String mainClassName) {
+    tasks.register(taskName, JavaExec) {
+        sourceSets.test.java.srcDirs = [srcDir]
+        classpath = sourceSets.test.runtimeClasspath
+        mainClass = mainClassName
+        args testName, cutClass
+    }
+}
+
+createTask("WalkTest",
+        "Walk",
+        "info.kgeorgiy.ja.borisov.walk.Walk",
+        "shared/modules/info.kgeorgiy.java.advanced.walk",
+        "info.kgeorgiy.java.advanced.walk.Tester")
+#+end_src
+
+Из кода несложно понять, что мы подтягиваем зависимости, указываем директорию исходников. При желании можете разобраться как работать с репозиторием maven.
+
+Функция, с которой мы будем работать, это ~createTask~ -- она нужна для создания задач. Каждая задача конфигурирует запуск конкретных тестов для конкретного домашнего задания. Из сигнатуры функции понятно, что для запуска тестов нам нужно:
+1. Имя, по которому мы в дальнейшем будем запускать задачу (taskName)
+2. Название модификации (testName). Его нужно менять, если хотите запустить другой вариант
+3. Тестируемый класс (cutClass)
+4. Директория с тестами (srcDir)
+5. Тестирующий класс (mainClassName)
+
+Обратите внимание, что директорию исходников (java-solutions), мы указывали ранее, а директории тестов меняются от дз к дз, поэтому их мы указываем динамически в функции.
+
+И, последнее, вызываем функцию ~createTask~ с нужными нам параметрами, тем самым регистрируя задачу для тестирования. Для примера, как создать задачу для дз Walk:
+#+begin_src groovy
+createTask("WalkTest",
+        "Walk",
+        "info.kgeorgiy.ja.borisov.walk.Walk",
+        "shared/modules/info.kgeorgiy.java.advanced.walk",
+        "info.kgeorgiy.java.advanced.walk.Tester")
+#+end_src
+
+Тесты для других домашних заданий делаются по аналогии и добавляются в конец файла build.gradle.
+
+* Билд и запуск
+Сборка проекта:
+#+begin_src shell
+./gradlew clean build
+#+end_src
+
+Запуск тестов выполняется с передачей названия задачи, которую мы создали. То есть WalkTest:
+#+begin_src shell
+./gradlew WalkTest
+#+end_src
+
+* Заключение
+Я повторил все шаги с нуля, у меня всё работает. Прежде чем идти на сдачу, убедитесь, что вы понимаете как всё работает. Я всего лишь поделился тем, как собираю проект.

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       106edc53-544d-407c-8c5f-acb0339f95d4
+:END:
+#+title: Число e
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 15:04]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Число $e$ -- это предел последовательности $\left(1 + \dfrac{1}{n}\right)^{n}$.
+
+* Последовательность $a_{n} = (1 + \dfrac{1}{n})^{n}$ имеет предел  :theorem:
+Доказал Бернулли. Банковская задача.
+#+NOTE: Найти формулировку банковской задачи.

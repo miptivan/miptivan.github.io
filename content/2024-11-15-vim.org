@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       9ae953f4-89d7-436b-a0de-0970abfc4ac4
+:END:
+#+title: Vim
+#+setupfile: setup.org
+#+date: [2024-11-15 Fri 22:04]
+#+excerpt: vim
+#+filetags: :private:
+
+* Что такое vim
+Здесь я рассказываю о том, что такое текстовый редактор vim.
+
+* Что такое evil-mode
+Здесь я рассказыаю о том, что такое evil-mode в emacs.
+
+* Мой способ привыкнуть к перемещению в vim

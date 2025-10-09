@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       6c3135a3-3cd0-407b-b866-befbb74c6f3c
+:END:
+#+title: Подпоследовательность
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 15:10]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $n_{1} < n_{2} < \dots < n_{k} < \dots$ -- возрастающая [[id:5ba1e0f7-85e4-419b-a01d-08587be205f8][последовательность]] $\mathbb{N}$, тогда последовательность $\{a_{n_{k}}\}_{k=1}^{\infty}$ ($k \in \mathbb{N}$) называется *подпоследовательностью* $\{a_{n}\}$.

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       8298f905-aa37-4413-9398-956b7ecb53d0
+:END:
+#+title: Композиция функций
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 18:54]
+#+excerpt:
+#+filetags: :analysis:
+#+options: toc:nil
+
+Композиция функция это когда мы в одну функцию подставляем другую функцию.
+
+$(g \circ f)(x) = g(f(x))$

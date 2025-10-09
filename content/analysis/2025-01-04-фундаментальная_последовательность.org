@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       7177eab0-1d1f-406f-95aa-8fa70a91f707
+:END:
+#+title: Фундаментальная последовательность
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 15:18]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Последовательность называется фундаментальной $\Leftrightarrow$ $\forall \varepsilon > 0\;\; \exists N \in \mathbb{N} \colon \forall n, m > N \;\; a_{n}-a_{m} < \varepsilon$
+
+* Пример
+$a_{n} = \dfrac{1}{n}$ -- фундаментальная.

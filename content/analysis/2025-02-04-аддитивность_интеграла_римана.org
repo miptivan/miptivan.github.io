@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       1cb8ffc2-c08e-4cd6-bf4f-9390e04be557
+:END:
+#+title: Аддитивность интеграла Римана
+#+setupfile: setup.org
+#+date: [2025-02-04 Tue 19:51]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Имеется ввиду аддитивность по отрезку.
+
+[[../../img/30.png]]

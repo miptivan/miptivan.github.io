@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       5f0c6e0f-d4b0-42e9-805b-b3811bee4709
+:END:
+#+title: Свойства предела функции
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 21:05]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f$ и $g$ определены на $E$, $a$ -- предельная точка $E$. Тогда:
+1. Единственность предела.
+2. Ограниченность. Функция ограничена в окрестности точки, в которой она имеет предел.
+3. Арифметика пределов.
+   1. $\lim_{x \rightarrow a} (\alpha f(x) + \beta g(x)) = \alpha A + \beta B$,
+   2. $\lim_{x \rightarrow a} (f(x) \cdot g(x)) = A \cdot B$
+   3. Частное пределов.
+4. Лемма об отделимости. Похоже на это: [[id:adf83c79-237d-4327-8d89-9d5ba86b386f][лемма об отделимости]]
+5. Лемма о зажатом пределе. Аналогично с последовательностями: [[id:39a2a7f6-99b0-4799-b83f-59a64244ddcb][лемма о зажатом пределе]]
+6. Если $\exists \overset{\circ}{U}(a) \colon \forall x \in \overset{\circ}{U}(a)\;\; f(x) \leqslant g(x)$, то $A \leqslant B$
+   

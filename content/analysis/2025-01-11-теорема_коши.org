@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       ad7fff6c-53a4-442f-809b-e21854005ec8
+:END:
+#+title: Теорема Коши
+#+setupfile: setup.org
+#+date: [2025-01-11 Sat 20:45]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть функции $f$ и $g$:
+1. Определены и непрерывны на $[a, b]$
+2. Дифференцируемы на $(a, b)$
+3. $g^{\prime}(x) \cancel{=} 0 \;\; \forall x \in(a, b)$
+
+Тогда существует такая точка $c \in (a, b)$, что $\dfrac{f(b) - f(a)}{g(b) - g(a)} = \dfrac{f^{\prime}(c)}{g^{\prime}(c)}$

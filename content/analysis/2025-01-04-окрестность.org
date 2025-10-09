@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       335c975d-0b2a-44e5-995e-524643eb5298
+:END:
+#+title: Окрестность
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:44]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+1. *Окрестность* точки $x \in \mathbb{R}$ -- любой интервал, содержащий $x$.
+2. $\varepsilon$ -окрестность в точке $x \in \mathbb{R}$ -- это интервал вида $(x-\varepsilon, x+\varepsilon)\;\;(\varepsilon > 0)$
+3. Проколотая $\varepsilon$ -окрестность 

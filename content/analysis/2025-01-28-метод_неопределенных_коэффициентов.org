@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       9febd41b-134d-45d3-af15-d7877965e660
+:END:
+#+title: Метод неопределённых коэффициентов
+#+setupfile: setup.org
+#+date: [2025-01-28 Tue 15:36]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+[[../../img/22.png]]

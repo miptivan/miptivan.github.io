@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       56ed73be-4e82-4fb1-9996-9880de600286
+:END:
+#+title: Невозрастающая последовательность
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 15:01]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Если $\forall n \in \mathbb{N} \;\; a_{n+1} \leqslant a_{n}$, то такая последовательность называется *невозрастающей*.
+
+Если $\forall n \in \mathbb{N} \;\; a_{n+1} \geqslant a_{n}$ -- *неубывающая*.
+
+Невозрастающие и неубывающие последовательности называются *монотонными*

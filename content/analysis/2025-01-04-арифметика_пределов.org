@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       80838b05-c463-4b05-8c7b-6b23e7425b6e
+:END:
+#+title: Арифметика пределов
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:55]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $\lim_{x \to \infty} a_{n} = A \quad \text{и} \quad \lim_{x \to \infty} b_{n} = B$, тогда:
+
+1. $\lim_{x \to \infty} [\alpha a_{n} + \beta b_{n}] = \alpha A + \beta B$
+2. Предел произведения -- произведение пределов.
+3. Предел частного -- частное пределов.

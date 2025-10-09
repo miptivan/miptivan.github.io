@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       75c80aee-de6f-4b99-8ab3-389c78f61446
+:END:
+#+title: Разложение многочлена
+#+setupfile: setup.org
+#+date: [2025-01-25 Sat 11:49]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Любой многочлен единственным образом раскладывается в произведение некоторой константы и многочленов вида:
+
+$$(x - a)^{k}, a \in \mathbb{R}, k \in \mathbb{N} \text{ и } (x^{2} + px + q)^{l}, \;\; p, q \in \mathbb{R}, \;\; \dfrac{p^{2}}{4}-q < 0, l \in \mathbb{N}$$

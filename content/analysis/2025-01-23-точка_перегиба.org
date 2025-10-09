@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       38048dc0-1121-4e0a-b092-864867fba0ea
+:END:
+#+title: Точка перегиба
+#+setupfile: setup.org
+#+date: [2025-01-23 Thu 16:33]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Если $f^{\prime\prime}(a) = 0$ и меняет знак, то это будет точка перегиба.
+
+Пример: $y = x^{3}$ в точке x = 0.

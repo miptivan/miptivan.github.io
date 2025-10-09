@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       0b2b6525-f53b-4d09-8b40-e08904d623a3
+:END:
+#+title: Аксиома Архимеда
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:41]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+$\forall a \in \mathbb{R} \wedge a > 0\;\; \exists n \in \mathbb{N} : n\cdot a \geqslant 1$

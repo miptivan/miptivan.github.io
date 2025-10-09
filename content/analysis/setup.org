@@ -1,0 +1,29 @@
+#+AUTHOR: Ivan Borisov
+#+EMAIL: miptivan@gmail.com
+#+OPTIONS: num:nil html-style:nil
+#+HTML_HEAD:<!-- Yandex.Metrika counter -->
+#+HTML_HEAD:<script type="text/javascript" >
+#+HTML_HEAD:   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+#+HTML_HEAD:   m[i].l=1*new Date();
+#+HTML_HEAD:   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+#+HTML_HEAD:   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+#+HTML_HEAD:   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+#+HTML_HEAD:
+#+HTML_HEAD:   ym(98980347, "init", {
+#+HTML_HEAD:        clickmap:true,
+#+HTML_HEAD:        trackLinks:true,
+#+HTML_HEAD:        accurateTrackBounce:true,
+#+HTML_HEAD:        webvisor:true
+#+HTML_HEAD:   });
+#+HTML_HEAD:</script>
+#+HTML_HEAD:<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+#+HTML_HEAD:<!-- /Yandex.Metrika counter -->
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/scrollable.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/links.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+#+LATEX_HEADER: \usepackage[T2A]{fontenc}
+#+LATEX_HEADER: \usepackage[russian]{babel}
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{cancel}
+#+LATEX_HEADER: \usepackage{mathtext}

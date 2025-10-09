@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       879aca43-5827-4e91-ad90-eab94b227ece
+:END:
+#+title: Неопределённый интеграл
+#+setupfile: setup.org
+#+date: [2025-01-23 Thu 21:26]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Произвольная первообразная функции $f$ на $(a, b)$ обозначается:
+
+$$\int f(x) dx$$
+
+И называется *неопределённым интегралом* функции $f$ на $(a, b)$.

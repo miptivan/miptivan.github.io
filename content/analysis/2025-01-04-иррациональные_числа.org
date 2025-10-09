@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       1be84218-bc0b-400f-aa4c-1087e62793ed
+:END:
+#+title: Иррациональные числа
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:16]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+*Иррациональные числа* -- числа которые представляются в виде бесконечных непериодических десятичных дробей.

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       5ba1e0f7-85e4-419b-a01d-08587be205f8
+:END:
+#+title: Последовательность
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:48]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Последовательность -- это $f \colon \mathbb{N} \rightarrow \mathbb{R}$

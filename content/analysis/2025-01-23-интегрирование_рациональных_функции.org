@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       2e337c4d-b817-4eb1-b2d1-8d3c33417ee9
+:END:
+#+title: Интегрирование рациональных функций
+#+setupfile: setup.org
+#+date: [2025-01-23 Thu 22:25]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть дана [[id:67dadc06-2ac6-4aae-9ef0-8a5cddcf3f85][рациональная функция]]. Интеграл от рациональной функции всегда выражается в [[id:d0c3ade7-d64e-4a67-a21e-3115af5eaa24][элементарных функциях]].
+
+#+CAPTION: Ключ к доказательству
+[[../../img/19.png]]

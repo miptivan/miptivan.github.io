@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       74bc502e-ac97-4708-815f-1531c22d276e
+:END:
+#+title: Вложенные отрезки
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:42]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Определение отрезка и системы вложенных отрезков.
+
+Стягивающаяся последовательность вложенных отрезков.
+[[file:../../img/1.png]]

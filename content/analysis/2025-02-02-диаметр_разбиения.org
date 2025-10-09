@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       a927cd55-ddb5-4c69-ad96-04e1242ffefe
+:END:
+#+title: Диаметр разбиения
+#+setupfile: setup.org
+#+date: [2025-02-02 Sun 14:41]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Максимум из отрезков, полученных [[id:0583512c-8b0b-454b-b5ce-1748c0157499][разбиением]], называется *диаметром разбиения* и обозначается $d(T)$.

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       e9c8d2bc-b518-40b7-afdc-f93b2d3b6e80
+:END:
+#+title: Верхний и нижний пределы
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 15:07]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Зорич:
+[[file:../../img/4.png]]
+Пример ряда несократимых рациональных дробей:
+[[file:../../img/5.png]]

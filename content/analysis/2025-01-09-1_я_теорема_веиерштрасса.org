@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       c81c05e2-3785-4686-beed-472fe1821561
+:END:
+#+title: 1-я теорема Вейерштрасса
+#+setupfile: setup.org
+#+date: [2025-01-09 Thu 20:15]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Пусть $f$ [[id:95de782c-ef68-4639-bef4-d1c337cc7c57][непрерывная на отрезке функция]] $\Rightarrow$ $f$ ограничена на отрезке.

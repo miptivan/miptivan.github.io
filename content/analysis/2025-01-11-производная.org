@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       bc3e1024-0b3f-4b8a-a102-88e1d404cd53
+:END:
+#+title: Производная функции
+#+setupfile: setup.org
+#+date: [2025-01-11 Sat 16:09]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+Если существует предел отношения при $\lim_{h \rightarrow 0} \dfrac{f(a + h) - f(a)}{h}$, то этот предел называется производной функции $f$ в точке $a$ и обозначается $f^{\prime}(a)$.
+
+$f \in D(a)$ ($f$ дифференцируема в точке $a$)

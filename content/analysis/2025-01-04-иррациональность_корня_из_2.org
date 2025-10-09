@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       1ed2de44-2ca2-4984-a898-1de0c053ab1d
+:END:
+#+title: Иррациональность корня из 2
+#+setupfile: setup.org
+#+date: [2025-01-04 Sat 14:35]
+#+excerpt: 
+#+filetags: :analysis:
+#+options: toc:nil
+
+\begin{gather*}
+x^2 = 2 \\
+x = \dfrac{a}{b} \iff 2 = \dfrac{a^2}{b^2} \iff 2b^2 = a^2 \iff \\
+\iff a \text{ делится на } 4 \iff a^2 = 4k, k \in \mathbb{N} \iff b^2 = 2k \iff \\ 
+\iff a \text{ и } b - \text{чётные, а значит сократимые}
+\end{gather*}
