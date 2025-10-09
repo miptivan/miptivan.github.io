@@ -51,10 +51,11 @@ targets and targets."
  (org-export-get-reference datum info)))))
 ;; / ПРЕВРАЩАЕТ ID ORG-ROAM В ССЫЛКИ
 
-(use-package org-roam
-  :straight (:host github
-                   :repo "hniksic/emacs-htmlize"
-                   :pin "8e3841c837b4b78bd72ad7f0436e919f39315a46"))
+;; Не знаю почему у меня был второй блок org-roam
+;;(use-package org-roam
+;;  :straight (:host github
+;;                   :repo "hniksic/emacs-htmlize"
+;;                   :pin "8e3841c837b4b78bd72ad7f0436e919f39315a46"))
 
 
 ;; ORG-ROAM BACKLINKS

@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       948a16f6-a822-4d06-8473-a980541af4c3
+:END:
+#+title: Babel
+#+setupfile: setup.org
+#+date: [2024-11-12 Tue 18:02]
+#+excerpt: 
+#+filetags:
+
+* Как использовать org-babel?
+Выполнить блок кода: ~C-c~ ~C-c~
+#+begin_src python :results output
+def test():
+    print("Hello!")
+
+test()
+#+end_src
+
+#+RESULTS:
+: Hello!
+
+#+begin_src emacs-lisp :results value
+(message "Hello!")
+#+end_src
+
+#+RESULTS:
+: Hello!
+
+* Org-tempo
+Установи ~org-tempo~ и сможешь создавать блоки кода синтаксисом ~<py + Tab~
+
+

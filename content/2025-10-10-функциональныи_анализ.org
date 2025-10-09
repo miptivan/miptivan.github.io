@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       d8bf6504-8e16-4821-88a8-186babd606c3
+:END:
+#+title: Функциональный анализ
+#+setupfile: setup.org
+#+date: [2025-10-10 Fri 00:31]
+#+excerpt: 
+#+filetags:
+
+
+- [[id:0bf6c233-71ae-4f38-b8bc-0a14b90ff09c][Метрическое пространство]]

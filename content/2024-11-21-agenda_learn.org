@@ -47,3 +47,8 @@ org-sort -> propherty -- отсортировать
 * Перемещение тасок в архив
 ~org-refile~ -- ~C-c C-w~ -- переместить
 
+* Показать затраченное время
+~org-clock-display~
+
+* Посчитать duration
+~org-clock-update-time-maybe~
