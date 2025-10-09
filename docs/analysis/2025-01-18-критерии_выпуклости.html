@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-10-10 Fri 02:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Критерий выпуклости</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="../css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="../css/links.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
+</div>
+<div id="content" class="content">
+<h1 class="title">Критерий выпуклости</h1>
+<p>
+Пусть \(f\) определена на \((a, b)\), \(x_{1}, y, x_{2} \in (a, b), x_{1} < y < x_{2}\). Тогда \(f\) выпукла на \((a, b)\) \(\Leftrightarrow\) \(\dfrac{f(y) - f(x_{1})}{y - x_{1}} \leqslant \dfrac{f(x_{2})-f(y)}{x_{2} - y}\)
+</p>
+
+<p>
+Геометрически, это две секущие:
+<img src="img/15.png" alt="15.png" />
+</p>
+<div id="outline-container-org5731ab3" class="outline-2">
+<h2 id="org5731ab3">Следствие 1</h2>
+<div class="outline-text-2" id="text-org5731ab3">
+<p>
+<i>А вот это знакомо со школы.</i>
+</p>
+
+<p>
+Пусть \(f\) дифференцируема на \((a, b)\). Тогда: \(f\) выпукла на \((a, b)\) \(\Leftrightarrow\) \(f^{\prime}\) не убывает на \((a, b)\).
+</p>
+</div>
+</div>
+<div id="outline-container-orgc5005cb" class="outline-2">
+<h2 id="orgc5005cb">Следствие 2</h2>
+<div class="outline-text-2" id="text-orgc5005cb">
+<p>
+Пусть \(f\) &#x2013; дважды дифференцируема на \((a, b)\). Тогда: \(f\) выпукла на \((a, b)\) \(\Leftrightarrow\) \(f^{\prime\prime} \geqslant 0\) на \((a, b)\).
+</p>
+
+<p>
+Доказательство следует из <a href="2025-01-11-теорема_лагранжа.html#ID-a2992df3-4b1c-4119-902d-518c914b5276">теоремы Лагранжа</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-org435201f" class="outline-2">
+<h2 id="org435201f">Links</h2>
+<div class="outline-text-2" id="text-org435201f">
+<ul class="org-ul">
+<li><a href="2025-01-17-выпуклость.html#ID-541a50d7-84e9-4bca-b530-d26c03d6d5d1">Выпуклость и вогнутость</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org122b184" class="outline-2">
+<h2 id="org122b184">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org122b184">
+<ul class="org-ul">
+<li><a href="2025-01-17-выпуклость.html">Выпуклость и вогнутость</a></li>
+<li><a href="../analysis.html">Analysis</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

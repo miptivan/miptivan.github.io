@@ -1,0 +1,7 @@
+mjx-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    overflow-y: hidden;
+    height: auto;
+}

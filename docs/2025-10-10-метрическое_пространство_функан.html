@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-10-10 Fri 02:27 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Метрическое пространство (Функан)</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="./css/links.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
+</div>
+<div id="content" class="content">
+<h1 class="title">Метрическое пространство (Функан)</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orge52239c">Метрические пространства</a>
+<ul>
+<li><a href="#orgcd4c5ff">Лекция 1</a>
+<ul>
+<li><a href="#orga4354e6">Определение метрического пространства</a></li>
+<li><a href="#org1048fe0">Примеры классических функциональных пространств</a></li>
+<li><a href="#org4c4b4c9">Полнота метрического пространства</a></li>
+<li><a href="#orgc27ce4d">Полнота \(C[0, 1]\)</a></li>
+<li><a href="#org938e7aa">Задача: описать все фундаментальные последовательности в дискретном пространстве</a></li>
+<li><a href="#org0a09db3">Пространства последовательностей</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org8232758">Заметки с ссылками на эту страницу</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge52239c" class="outline-2">
+<h2 id="orge52239c">Метрические пространства</h2>
+<div class="outline-text-2" id="text-orge52239c">
+</div>
+<div id="outline-container-orgcd4c5ff" class="outline-3">
+<h3 id="orgcd4c5ff">Лекция 1</h3>
+<div class="outline-text-3" id="text-orgcd4c5ff">
+<p>
+<a href="https://teach-in.ru/lecture/2020-06-15-Sheypak-1">Метрические и нормированные пространства</a>
+</p>
+</div>
+<div id="outline-container-orga4354e6" class="outline-4">
+<h4 id="orga4354e6">Определение метрического пространства</h4>
+<div class="outline-text-4" id="text-orga4354e6">
+<p>
+Метрическое пространство — это пара \((X, \rho)\), где \(X\) — множество, а \(\rho: X \times X \to \mathbb{R}\) &#x2013; функция, удовлетворяющая аксиомам:
+</p>
+
+<ol class="org-ol">
+<li>\(\rho(x, y) \geq 0\), причем \(\rho(x, y) = 0 \Leftrightarrow x = y\)</li>
+<li>\(\rho(x, y) = \rho(y, x)\)</li>
+<li>\(\rho(x, z) \leq \rho(x, y) + \rho(y, z)\)</li>
+</ol>
+
+<blockquote>
+<p>
+Есть пространства, состоящие из последовательностей, есть пространства, состоящие из функций
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-org1048fe0" class="outline-4">
+<h4 id="org1048fe0">Примеры классических функциональных пространств</h4>
+<div class="outline-text-4" id="text-org1048fe0">
+<ul class="org-ul">
+<li>\(L_p(\Omega, \mu)\)
+<ul class="org-ul">
+<li>\(\Omega\) &#x2013; универсальное множество</li>
+<li>\(M\) &#x2013; сигма-алгебра измеримых множеств</li>
+<li>\(\mu\) &#x2013; сигма-аддитивная мера</li>
+<li>"мы рассматриваем измеримые функции на \(\Omega\) и на классе измеримых функций мы вводим пространство Лебега"</li>
+</ul></li>
+
+<li>\(W_p^n[a, b]\) &#x2013; с классической мерой Лебега</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4c4b4c9" class="outline-4">
+<h4 id="org4c4b4c9">Полнота метрического пространства</h4>
+<div class="outline-text-4" id="text-org4c4b4c9">
+<p>
+Метрическое пространство полное, если для любой фундаментальной последовательности существует предел и он лежит в \(X\).
+</p>
+
+<p>
+В полных МП можно спокойно делать предельный переход. Например, в пространстве интегрируемых функций, если оно полное МП, то совершая предельный переход, получившаяся функция тоже будет интегрируема и это доказывать не надо (если МП полное).
+</p>
+</div>
+</div>
+<div id="outline-container-orgc27ce4d" class="outline-4">
+<h4 id="orgc27ce4d">Полнота \(C[0, 1]\)</h4>
+<div class="outline-text-4" id="text-orgc27ce4d">
+<p>
+Пусть \({f_n} \subset C[0, 1]\) &#x2013; фундаментальная последовательность.
+</p>
+
+<p>
+Из \(\max|f_n(x) - f_m(x)| < \varepsilon\) следует, что \(\forall x \in [0, 1]\ |f_n(x) - f_m(x)|\)
+</p>
+
+<p>
+То есть для фиксированного \(x\) числовая последовательность \({f_n(x)}\) фундаментальна в \(\mathbb{R}\).
+</p>
+
+<p>
+Пусть \(f(x) = \lim_{n \rightarrow \infty} f_n(x)\).
+</p>
+
+<p>
+Зафиксируем \(\varepsilon > 0\) и найдём \(N\) такое, что \(|f_n(x) - f_m(x)| < \varepsilon\). Если \(m \rightarrow \infty\), то \(|f_n(x) - f(x)| < \varepsilon\)
+</p>
+</div>
+</div>
+<div id="outline-container-org938e7aa" class="outline-4">
+<h4 id="org938e7aa">Задача: описать все фундаментальные последовательности в дискретном пространстве</h4>
+<div class="outline-text-4" id="text-org938e7aa">
+<p>
+Довольно просто.
+</p>
+</div>
+</div>
+<div id="outline-container-org0a09db3" class="outline-4">
+<h4 id="org0a09db3">Пространства последовательностей</h4>
+<div class="outline-text-4" id="text-org0a09db3">
+<dl class="org-dl">
+<dt>\(C_{00}\)</dt><dd>Пространство всех финитных последовательностей (равны нулю начиная с некоторого номера)</dd>
+<dt>\(C_{0}\)</dt><dd>Пространство последовательностей, стремящихся к нулю</dd>
+<dt>\(C\)</dt><dd>Пространство сходящихся последовательностей</dd>
+</dl>
+
+<p>
+Иерархия: \(C_{00} \subset C_0 \subset C \subset l_{\infty}\) (ограниченные)
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org0efa9a5"></a>Доказательство неполноты \(C_{00}\)<br />
+<div class="outline-text-5" id="text-org0efa9a5">
+<p>
+\[
+\rho(x, y) = \max_k |x_k - y_k|.
+\]
+</p>
+
+<p>
+Рассмотрим последовательность \( \{x^{(n)}\} \subset C_{00} \), где
+\[
+x^{(n)} = \left(1, \frac{1}{2}, \frac{1}{3}, \dots, \frac{1}{n}, 0, 0, \dots\right).
+\]
+</p>
+
+<p>
+<b>Фундаментальность:</b>
+Пусть \( m > n \). Тогда:
+\[
+\rho(x^{(n)}, x^{(m)}) = \max_k |x_k^{(n)} - x_k^{(m)}| = \frac{1}{n+1} \to 0 \quad \text{при } n,m \to \infty.
+\]
+Следовательно, \( \{x^{(n)}\} \) фундаментальна в \( C_{00} \).
+</p>
+
+<p>
+<b>Предел:</b>
+Рассмотрим покоординатный предел:
+\[
+\lim_{n \to \infty} x_k^{(n)} = \frac{1}{k} \quad \text{для всех } k \in \mathbb{N}.
+\]
+Таким образом, последовательность сходится к
+\[
+x = \left(1, \frac{1}{2}, \frac{1}{3}, \dots, \frac{1}{k}, \dots\right).
+\]
+</p>
+
+<p>
+<b>Проверка сходимости в метрике:</b>
+\[
+\rho(x^{(n)}, x) = \max_k |x_k^{(n)} - x_k| = \frac{1}{n+1} \to 0.
+\]
+Значит, \( x^{(n)} \to x \) в метрике \( \rho \). \(\frac{1}{n+1}\) тут потому что до \(n\) все элементы одинаковы, а после как раз и возникает разница \(\frac{1}{n+1}\), которая и максимальна.
+</p>
+
+<p>
+Последовательность \( x \) имеет все ненулевые координаты, поэтому \( x \notin C_{00} \), следовательно сходится к элементу не из \(C_{00}\).
+</p>
+
+<p>
+<b>Доказательство полноты \(C_{0}\):</b>
+В общих чертах.
+</p>
+
+<p>
+Фиксируем \(\varepsilon > 0\).
+</p>
+
+<p>
+Для каждой координаты \(k\) последовательность чисел \(\{x_k^{(n)}\}\) фундаментальна в \(\mathbb{R}\) (так как \(\{x^{(n)}\}\) фундаментальна в \(C_0\)). По полноте \(\mathbb{R}\) существует \(x_k = \lim_{n\to\infty} x_k^{(n)}\). Полагаем \(x = (x_1, x_2, x_3, \dots)\).
+</p>
+
+<ol class="org-ol">
+<li>Выберем \(n\) так, что \(\rho(x^{(n)}, x) < \varepsilon/2\) (возможно по доказанной сходимости)</li>
+<li>Так как \(x^{(n)} \in C_0\), то \(\lim_{k\to\infty} x_k^{(n)} = 0\) \(\Rightarrow \exists K: \forall k \geq K\ |x_k^{(n)}| < \varepsilon/2\)</li>
+<li>Тогда для \(k \geq K\) (оценка неравенством треугольника):
+\[
+   \vert x_k \vert \leq \vert x_k - x_k^{(n)} \vert + \vert x_k^{(n)}\vert < \varepsilon/2 + \varepsilon/2 = \varepsilon
+   \]</li>
+</ol>
+
+<p>
+Значит, \(\lim_{k\to\infty} x_k = 0\) \(\Rightarrow\) \(x \in C_0\).
+</p>
+
+<p>
+Мы доказали, что:
+</p>
+
+<ol class="org-ol">
+<li>Для любой фундаментальной \({x^{(n)}}\) мы явно построили её предел \(x\)</li>
+<li>Доказали, что \(x^{(n)} \to x\) в метрике \(c_0\)</li>
+<li>Доказали, что \(x \in c_0\)</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8232758" class="outline-2">
+<h2 id="org8232758">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org8232758">
+<ul class="org-ul">
+<li><a href="2025-10-10-функциональныи_анализ.html">Функциональный анализ</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
