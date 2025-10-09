@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-10-10 Fri 02:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agenda learn</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="./css/links.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
+</div>
+<div id="content" class="content">
+<h1 class="title">Agenda learn</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org595d35a">org-agenda</a></li>
+<li><a href="#org83ec6a1">Забиндить вызов org-agenda</a></li>
+<li><a href="#orgbabc4ad">org-schedule</a></li>
+<li><a href="#org76fc903">org-deadline</a></li>
+<li><a href="#org46bcc38">Habits</a></li>
+<li><a href="#orge3a2c68">Books</a></li>
+<li><a href="#org6519fb6">Pomodoro</a></li>
+<li><a href="#org98f1607">Перемещение тасок в архив</a></li>
+<li><a href="#orga13ffe3">Показать затраченное время</a></li>
+<li><a href="#orgc655305">Посчитать duration</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org595d35a" class="outline-2">
+<h2 id="org595d35a">org-agenda</h2>
+<div class="outline-text-2" id="text-org595d35a">
+<p>
+Пробую планировать с помощью org-agenda.
+</p>
+</div>
+</div>
+<div id="outline-container-org83ec6a1" class="outline-2">
+<h2 id="org83ec6a1">Забиндить вызов org-agenda</h2>
+<div class="outline-text-2" id="text-org83ec6a1">
+<p>
+<code>(global-set-key (kbd "C-c a") 'org-agenda)</code> &#x2013; Я сделал на сочетание клавиш <code>C-c a</code>.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbabc4ad" class="outline-2">
+<h2 id="orgbabc4ad">org-schedule</h2>
+<div class="outline-text-2" id="text-orgbabc4ad">
+<p>
+Позволяет что-то запланировать.
+</p>
+
+<p>
+<code>C-c C-s</code> &#x2013; org-schedule
+</p>
+
+<p>
+<code>S-стрелки</code> &#x2013; Перемещение по календарю
+</p>
+</div>
+</div>
+<div id="outline-container-org76fc903" class="outline-2">
+<h2 id="org76fc903">org-deadline</h2>
+<div class="outline-text-2" id="text-org76fc903">
+<p>
+<code>C-c C-d</code> &#x2013; org-deadline
+</p>
+
+<p>
+<code>(setq org-deadline-warning-days 5)</code> &#x2013; За сколько дней будут приходить напоминания
+</p>
+
+<p>
+<code>C-c C-t</code> &#x2013; Выбрать статус задачи
+</p>
+
+<p>
+<code>C-c C-q</code> &#x2013; Выбрать тег из списка в конфиге
+</p>
+
+<p>
+<code>C-c C-w</code> &#x2013; Переместить в файл (Например, архивировать)
+</p>
+</div>
+</div>
+<div id="outline-container-org46bcc38" class="outline-2">
+<h2 id="org46bcc38">Habits</h2>
+<div class="outline-text-2" id="text-org46bcc38">
+<p>
+<code>M-x org-set-propherty style habit</code> &#x2013; чтобы тудушка появилась в привычках
+</p>
+
+<p>
+<code>C-c C-t</code> &#x2013; Состояния тудушек
+</p>
+
+<p>
+<code>21 C-c a</code> &#x2013; Посмотреть планы на 21 день вперёд
+</p>
+</div>
+</div>
+<div id="outline-container-orge3a2c68" class="outline-2">
+<h2 id="orge3a2c68">Books</h2>
+<div class="outline-text-2" id="text-orge3a2c68">
+<p>
+org-sort -&gt; propherty &#x2013; отсортировать
+</p>
+</div>
+</div>
+<div id="outline-container-org6519fb6" class="outline-2">
+<h2 id="org6519fb6">Pomodoro</h2>
+<div class="outline-text-2" id="text-org6519fb6">
+<p>
+<code>org-clock-report</code> &#x2013; просуммировать затраченное время
+</p>
+</div>
+</div>
+<div id="outline-container-org98f1607" class="outline-2">
+<h2 id="org98f1607">Перемещение тасок в архив</h2>
+<div class="outline-text-2" id="text-org98f1607">
+<p>
+<code>org-refile</code> &#x2013; <code>C-c C-w</code> &#x2013; переместить
+</p>
+</div>
+</div>
+<div id="outline-container-orga13ffe3" class="outline-2">
+<h2 id="orga13ffe3">Показать затраченное время</h2>
+<div class="outline-text-2" id="text-orga13ffe3">
+<p>
+<code>org-clock-display</code>
+</p>
+</div>
+</div>
+<div id="outline-container-orgc655305" class="outline-2">
+<h2 id="orgc655305">Посчитать duration</h2>
+<div class="outline-text-2" id="text-orgc655305">
+<p>
+<code>org-clock-update-time-maybe</code>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

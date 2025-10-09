@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-10-10 Fri 02:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Теорема Больцано-Вейерштрасса</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="../css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="../css/links.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
+</div>
+<div id="content" class="content">
+<h1 class="title">Теорема Больцано-Вейерштрасса</h1>
+<p>
+Пусть последовательность ограничена, тогда у неё есть частичный предел.
+</p>
+
+<p>
+Другими словами: если последовательность ограничена, то в ней найдётся сходящаяся подпоследовательность.
+</p>
+
+<p>
+То есть из всякой ограниченной последовательности можно выделить сходящуюся подпоследовательность.
+</p>
+
+<p>
+Доказательство: Разбиваем отрезок пополам и выбираем ту часть, в которой бесконечно много элементов и ещё раз и ещё раз&#x2026; Мы получим систему вложенных отрезков, длины которых стремятся к нулю &#x2013; система <i>стягивающихся</i> отрезков. По лемме о вложенных отрезках, у всех отрезков есть единственная общая точка. В любой окрестности этой точки бесконечно много элементов последовательности. Предел подпоследовательности и будет равен этой точке.
+</p>
+<div id="outline-container-orgfb7bdb7" class="outline-2">
+<h2 id="orgfb7bdb7">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-orgfb7bdb7">
+<ul class="org-ul">
+<li><a href="../analysis.html">Analysis</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
