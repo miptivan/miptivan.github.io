@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-10-14 Tue 01:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Предельные точки множеств</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="./css/links.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
+</div>
+<div id="content" class="content">
+<h1 class="title">Предельные точки множеств</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org5cb900d">Предельная точка</a></li>
+<li><a href="#org67e56df">Следствие</a></li>
+<li><a href="#org78aa98c">Точка прикосновения</a></li>
+<li><a href="#org04af13f">Изолированная точка</a></li>
+<li><a href="#org51a49ff">Замыкание</a></li>
+<li><a href="#orgc3f80e9">Пример</a></li>
+<li><a href="#org21e8552">Свойства замыкания</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5cb900d" class="outline-2">
+<h2 id="org5cb900d">Предельная точка</h2>
+<div class="outline-text-2" id="text-org5cb900d">
+<p>
+Точка \( x_0 \) &#x2013; предельная точка множества \( M \subset (X, \rho) \), если 
+\[ \forall \varepsilon > 0 \;\; B(x_0, \varepsilon) \cap M \] 
+содержит бесконечно много точек.
+</p>
+
+<p>
+См. <a href="analysis/2025-01-04-предельная_точка.html#ID-6b9feaef-9718-424f-a229-0372537fcf2e">Предельная точка</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-org67e56df" class="outline-2">
+<h2 id="org67e56df">Следствие</h2>
+<div class="outline-text-2" id="text-org67e56df">
+<p>
+Если \( x_0 \) &#x2013; предельная точка, то 
+\[ \exists \{x_n\}_{n=1}^{\infty}, \quad x_n \in M \;\; \text{и} \quad x_n \xrightarrow{\rho} x_0. \]
+</p>
+</div>
+</div>
+<div id="outline-container-org78aa98c" class="outline-2">
+<h2 id="org78aa98c">Точка прикосновения</h2>
+<div class="outline-text-2" id="text-org78aa98c">
+<p>
+Точка \( x_0 \) является точкой прикосновения множества \( M \), если 
+\[ \forall \varepsilon > 0 \;\; B(x_0, \varepsilon) \cap M \neq \emptyset. \]
+</p>
+
+<p>
+Чем отличаются точки прикосновения от предельных точек? Для точек прикосновения пересечение (из определения) может содержать либо конечное ненулевое число точек, либо бесконечное. Следовательно любая предельная точка является точкой прикосновения, но обратное неверно.
+</p>
+</div>
+</div>
+<div id="outline-container-org04af13f" class="outline-2">
+<h2 id="org04af13f">Изолированная точка</h2>
+<div class="outline-text-2" id="text-org04af13f">
+<p>
+Точка \( x_0 \) называется изолированной для множества \( M \), если 
+\[ \exists \varepsilon > 0 \;\; B(x_0, \varepsilon) \cap M = \{x_0\}. \]
+</p>
+
+<p>
+:NOTE: Мне показался тонким момент отличия точки прикосновения от изолированной точки. Возможно станет понятнее на специально подобранных множествах.
+</p>
+</div>
+</div>
+<div id="outline-container-org51a49ff" class="outline-2">
+<h2 id="org51a49ff">Замыкание</h2>
+<div class="outline-text-2" id="text-org51a49ff">
+<p>
+Пусть \( M \subset (X, \rho) \), тогда его замыкание 
+\[ \overline{M} = M \cup \{\text{все предельные точки}\} = \{\text{все точки прикосновения}\}. \]
+</p>
+</div>
+</div>
+<div id="outline-container-orgc3f80e9" class="outline-2">
+<h2 id="orgc3f80e9">Пример</h2>
+<div class="outline-text-2" id="text-orgc3f80e9">
+<p>
+:NOTE: Это пример из лекции и я его не понял. Может быть 3 это точка прикосновения потому что в её окрестности всегда есть она сама как часть множества&#x2026; Но если мы принимаем это суждение, то у нас ломается понятие изолированной точки, потому что в любой её окрестности тоже всегда есть она сама. Это даже одна и та же точка в примере. Может быть изолированная точка это просто точка прикосновения, но особого типа &#x2013; скорее всего так и есть.
+</p>
+
+<p>
+Я так понял, что <i>все точки прикосновения \(=\) предельные точки \(\cup\) изолированные точки</i>.
+</p>
+
+<p>
+Пусть \( X = \mathbb{R}, \;\; \rho(x, y) = |x - y|, \quad M = [1;2) \cup \{3\} \).
+</p>
+
+<ul class="org-ul">
+<li>Предельные точки: все точки отрезка \( [1;2] \)</li>
+<li>Точки прикосновения: \( [1;2] \cup \{3\} \)</li>
+<li>Изолированная точка: \( \{3\} \)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org21e8552" class="outline-2">
+<h2 id="org21e8552">Свойства замыкания</h2>
+<div class="outline-text-2" id="text-org21e8552">
+<ol class="org-ol">
+<li>\( \overline{M} \) - замкнутое множество</li>
+<li>\( \overline{\overline{M}} = M \)</li>
+</ol>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-10-14 Tue 01:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Поточечная и равномерная сходимость</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="./css/links.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
+</div>
+<div id="content" class="content">
+<h1 class="title">Поточечная и равномерная сходимость</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org9f1fad0">Определения</a></li>
+<li><a href="#org129403d">Интуиция</a></li>
+<li><a href="#orgfa4e102">Связь с нормой</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9f1fad0" class="outline-2">
+<h2 id="org9f1fad0">Определения</h2>
+<div class="outline-text-2" id="text-org9f1fad0">
+<p>
+Пусть \( f_n, f \in C[0,1] \).
+</p>
+
+<ul class="org-ul">
+<li><b>Поточечная сходимость:</b>
+\[
+  f_n \to f \text{ поточечно}, 
+  \quad \text{если } 
+  \forall x \in [0,1] \; \lim_{n\to\infty} f_n(x) = f(x).
+  \]
+То есть для каждого фиксированного \(x\) значения \(f_n(x)\) образуют сходящуюся числовую последовательность.</li>
+
+<li><b>Равномерная сходимость:</b>
+\[
+  f_n \to f \text{ равномерно}, 
+  \quad \text{если } 
+  \forall \varepsilon>0 \; \exists N \;
+  \forall n \ge N, \forall x \in [0,1]: |f_n(x) - f(x)| < \varepsilon.
+  \]</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org129403d" class="outline-2">
+<h2 id="org129403d">Интуиция</h2>
+<div class="outline-text-2" id="text-org129403d">
+<ul class="org-ul">
+<li>Поточечная сходимость проверяет приближение <b>в каждой точке отдельно</b>.</li>
+<li>Равномерная сходимость требует, чтобы функции приближались <b>одинаково хорошо на всём интервале</b>.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfa4e102" class="outline-2">
+<h2 id="orgfa4e102">Связь с нормой</h2>
+<div class="outline-text-2" id="text-orgfa4e102">
+<p>
+:NOTE: Пока не до конца осмыслил, но пусть будет
+</p>
+
+<p>
+Если в \(C[0,1]\) задана норма:
+\[
+\vert f\vert = \max_{x\in[0,1]} \vert f(x)\vert,
+\]
+то
+\[
+f_n \to f \text{ в норме } \iff f_n \to f \text{ равномерно}.
+\]
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

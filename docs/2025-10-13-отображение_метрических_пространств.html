@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-10-14 Tue 01:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Отображение метрических пространств</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="./css/links.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
+</div>
+<div id="content" class="content">
+<h1 class="title">Отображение метрических пространств</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgdf83a03">Непрерывность</a></li>
+<li><a href="#org634b776">Равномерная непрерывность</a></li>
+<li><a href="#org758dd78">Липшицево отображение</a>
+<ul>
+<li><a href="#org1d82641">Константа Липшица</a>
+<ul>
+<li><a href="#orgd60572f">Сжимающее отображение</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgeaaf568">Изометрический изоморфизм</a></li>
+<li><a href="#org4482e5a">Свойства полных метрических пространств</a>
+<ul>
+<li><a href="#org675d386">Теорема о неподвижной точке</a>
+<ul>
+<li><a href="#orge7ea1a1">Идея доказательства</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org353b5ad">Заметки с ссылками на эту страницу</a></li>
+</ul>
+</div>
+</div>
+<p>
+\[(X, \rho) \overset{f}{\rightarrow} (Y, d)\]
+</p>
+
+<p>
+:NOTE: Что \(f\) делает с метриками?
+</p>
+
+<p>
+:NOTE: Возможно, следующие определения следует вывести в отдельную заметку, а здесь оставить ссылки
+</p>
+<div id="outline-container-orgdf83a03" class="outline-2">
+<h2 id="orgdf83a03">Непрерывность</h2>
+<div class="outline-text-2" id="text-orgdf83a03">
+<p>
+\[
+\text{Отображение } f \text{ непрерывно, если } \forall \varepsilon > 0\ \exists \delta = \delta(x_{0}, \varepsilon): 
+\forall x_1, x_2: \rho(x_1, x_2) < \delta \implies d(f(x_1), f(x_2)) < \varepsilon.
+\]
+</p>
+</div>
+</div>
+<div id="outline-container-org634b776" class="outline-2">
+<h2 id="org634b776">Равномерная непрерывность</h2>
+<div class="outline-text-2" id="text-org634b776">
+<p>
+\[
+\text{Отображение } f \text{ равномерно непрерывно, если } \forall \varepsilon > 0\ \exists \delta = \delta(\varepsilon): 
+\forall x_1, x_2: \rho(x_1, x_2) < \delta \implies d(f(x_1), f(x_2)) < \varepsilon.
+\]
+</p>
+</div>
+</div>
+<div id="outline-container-org758dd78" class="outline-2">
+<h2 id="org758dd78">Липшицево отображение</h2>
+<div class="outline-text-2" id="text-org758dd78">
+<p>
+\[
+\text{Отображение } f \text{ - липшицево } (f \in \text{Lip}(X, Y)), \text{ если } \exists r \geq 0: \forall x_1, x_2 \in X: 
+d(f(x_1), f(x_2)) \leq r \cdot \rho(x_1, x_2).
+\]
+</p>
+
+<p>
+Очевидно, что липшицево отображение <i>равномерно непрерывно</i>.
+</p>
+</div>
+<div id="outline-container-org1d82641" class="outline-3">
+<h3 id="org1d82641">Константа Липшица</h3>
+<div class="outline-text-3" id="text-org1d82641">
+<p>
+\[
+\text{Lip}(f) = \sup_{x_1 \neq x_2} \dfrac{d(f(x_1), f(x_2))}{\rho(x_1, x_2)}
+\]
+</p>
+</div>
+<div id="outline-container-orgd60572f" class="outline-4">
+<h4 id="orgd60572f">Сжимающее отображение</h4>
+<div class="outline-text-4" id="text-orgd60572f">
+<p>
+Отображение f называется <b>сжимающим</b>, если:
+</p>
+<ol class="org-ol">
+<li>\(f\) - липшицево</li>
+<li>\(r \in [0, 1)\)</li>
+</ol>
+
+<p>
+То есть если существует \(r\) <b>уменьшающий</b> \(\rho\), что всё равно неравенство \(d(f(x_1), f(x_2)) \leq r \cdot \rho(x_1, x_2)\) выполняется для любых \(x_1, x_2\), то мы называем отображение сжимающим. <b>Это правильное понимание?</b>
+</p>
+
+<p>
+Может быть другой случай, когда неравенство выполняется только если \(r\) играет роль увеличивающего коэффициента.
+</p>
+
+<p>
+А может быть случай, когда, какой бы мы \(r\) ни взяли, для каких-то \(x_1, x_2\) у нас неравенство не выполнится и это значит, что отображение не липшицево. Я так всё это понял.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeaaf568" class="outline-2">
+<h2 id="orgeaaf568">Изометрический изоморфизм</h2>
+<div class="outline-text-2" id="text-orgeaaf568">
+<p>
+Метрические пространства $(X, &rho;) и \((Y, d)\) <b>изометрически изоморфны</b>, если \(\exists f: X \implies Y\) такое, что:
+</p>
+<ol class="org-ol">
+<li>\(f\) - биекция</li>
+<li>\(\forall x_1, x_2 \in X: \rho(x_1, x_2) = d(f(x_1), f(x_2))\)</li>
+</ol>
+
+<p>
+Такие пространства можно считать <b>неразличимыми</b>.
+</p>
+
+<p>
+Понятно о чём речь, стоит добавить примеры, когда пространства записываются по-разному &#x2013; формально разные, но при этом изометрически изоморфны. Потому что если пространства записываются одинаково, то нет сомнений, что они неразличимы)
+</p>
+</div>
+</div>
+<div id="outline-container-org4482e5a" class="outline-2">
+<h2 id="org4482e5a">Свойства полных метрических пространств</h2>
+<div class="outline-text-2" id="text-org4482e5a">
+</div>
+<div id="outline-container-org675d386" class="outline-3">
+<h3 id="org675d386">Теорема о неподвижной точке</h3>
+<div class="outline-text-3" id="text-org675d386">
+<p>
+Пусть \((X, \rho)\) &#x2013; полное метрическое пространство и \(f\colon X \rightarrow X\) &#x2013; сжимающее отображение \(\implies \exists!x\colon f(x) = x\).
+</p>
+
+<p>
+То есть, при действии отображения, эта точка никуда не сдвинулась. Не очевидно почему она единственная.
+</p>
+
+<blockquote>
+<p>
+Это очень мощный инструмент в доказательстве теорем о существовании.
+</p>
+</blockquote>
+</div>
+<div id="outline-container-orge7ea1a1" class="outline-4">
+<h4 id="orge7ea1a1">Идея доказательства</h4>
+<div class="outline-text-4" id="text-orge7ea1a1">
+<p>
+Берём любую \(x_0\), далее определяем \(x_{1}= f(x_{0})\dots x_{n+1}=f(x_{n})\).
+</p>
+
+<p>
+Это называется <b>орбитой точки</b> \(x_{0}\): \(\text{orb}x_0 = \{x_k\}_{k=0}^{\infty}\). Основная идея в том, что орбита фундаментальна, фундаментальность показывается с помощью сжимаемости, далее пользуемся фактом полноты и показываем, что существует предел \(\exists \lim x_{k}=x\). На основе сжимаемости отображения надо будет доказать, что если бы мы выбрали другую начальную точку \(x_0\), то предел всё равно был бы тот же.
+:NOTE: Пока не очень понятно, но я не пробовал доказать
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org353b5ad" class="outline-2">
+<h2 id="org353b5ad">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org353b5ad">
+<ul class="org-ul">
+<li><a href="2025-10-10-функциональныи_анализ.html">Функциональный анализ</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

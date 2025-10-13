@@ -21,6 +21,9 @@
 ~S-стрелки~ -- Перемещение по календарю
 
 * org-deadline
+:PROPERTIES:
+:ID:       be33f4c1-d82b-4fc1-9648-091ee79f6160
+:END:
 ~C-c C-d~ -- org-deadline
 
 ~(setq org-deadline-warning-days 5)~ -- За сколько дней будут приходить напоминания
