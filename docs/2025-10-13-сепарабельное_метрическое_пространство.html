@@ -6,7 +6,7 @@
 <!-- 2025-10-14 Tue 01:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Дифференцируемая функция</title>
+<title>Сепарабельное метрическое пространство</title>
 <meta name="author" content="Ivan Borisov" />
 <meta name="generator" content="Org Mode" />
 <!-- Yandex.Metrika counter -->
@@ -26,9 +26,9 @@ webvisor:true
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<link rel="stylesheet" type="text/css" href="../css/scrollable.css" />
-<link rel="stylesheet" type="text/css" href="../css/links.css" />
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="./css/links.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
 <script>
   window.MathJax = {
     tex: {
@@ -86,25 +86,45 @@ webvisor:true
                              <!-- / SIDEBAR -->
 </div>
 <div id="content" class="content">
-<h1 class="title">Дифференцируемая функция</h1>
+<h1 class="title">Сепарабельное метрическое пространство</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgd2a2a17">Ссылки</a></li>
+<li><a href="#org91f2360">Заметки с ссылками на эту страницу</a></li>
+</ul>
+</div>
+</div>
 <p>
-Функция \(f\) называется дифференцируемой в точке \(a\), если \(\forall h \in \overset{\circ}{U}(0)\) выполнено равенство f(a+h) - f(a) = Ah + &alpha;(h)h$, где \(A\) &#x2013; некоторое число, \(\lim_{h \rightarrow 0} \alpha(h) = 0\).
+<a href="2025-10-10-метрическое_пространство_функан.html#ID-0bf6c233-71ae-4f38-b8bc-0a14b90ff09c">Метрическое пространство</a> \((X, \rho)\) сепарабельно, если (\(\exists M \subset X\) &#x2013; не более чем счётное и: \(\overline{M} = X)\) \(\Leftrightarrow\) \(\exists\) не более чем счётное всюду плотное множество.
 </p>
 
 <p>
-Если \(f\) дифференцируема в другой точке, то, вообще говоря, число \(A\) другое, \(\alpha\) &#x2013; другая бесконечно малая, \(\overset{\circ}{U}(0)\) &#x2013; тоже другая. То есть эти объекты зависят от точки. Поэтому иногда пишут: \(f(a+h)-f(a) = A(a)h + \alpha(a,h)h\).
+"Не более чем счётное" &#x2013; то есть оно может быть и конечным.
 </p>
 
-<blockquote>
 <p>
-Дифференцируемые функции это те и только те, у которых локально всё устроено как у прямых. В маленькой окрестности точки это просто прямые.
+Поставил скобки в определении потому что было не понятно что именно входит в левую часть эквивалентности \(\Leftrightarrow\).
 </p>
-</blockquote>
-<div id="outline-container-org7a0f4e8" class="outline-2">
-<h2 id="org7a0f4e8">Заметки с ссылками на эту страницу</h2>
-<div class="outline-text-2" id="text-org7a0f4e8">
+
+<p>
+Чаще встречал формулировку в виде правой части эквивалентности. Можно было написать 2 определения и третьим пунктом сказать, что они эквивалентны.
+</p>
+<div id="outline-container-orgd2a2a17" class="outline-2">
+<h2 id="orgd2a2a17">Ссылки</h2>
+<div class="outline-text-2" id="text-orgd2a2a17">
 <ul class="org-ul">
-<li><a href="../analysis.html">Analysis</a></li>
+<li><a href="2025-10-13-всюду_плотное_множество.html#ID-98238b33-dc28-48be-acb8-c3199117cbdb">Всюду плотное множество</a></li>
+<li><a href="2025-10-13-нигде_не_плотное_множество.html#ID-b4efd7ae-2a2e-4295-9223-432a84fa0af6">Нигде не плотное множество</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org91f2360" class="outline-2">
+<h2 id="org91f2360">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org91f2360">
+<ul class="org-ul">
+<li><a href="2025-10-10-функциональныи_анализ.html">Функциональный анализ</a></li>
 </ul>
 </div>
 </div>
