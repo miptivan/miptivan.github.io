@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-10-17 Fri 00:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Нормированное пространство (функан)</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="./css/links.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
+</div>
+<div id="content" class="content">
+<h1 class="title">Нормированное пространство (функан)</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org389da1e">Нормированное пространство</a></li>
+<li><a href="#orgd390492">Nota bene</a></li>
+<li><a href="#org0f76dcb">Сходимость</a></li>
+<li><a href="#org2d11474">Метрика и норма</a></li>
+<li><a href="#orgcfea49e">Инвариантность относительно сдвига</a></li>
+<li><a href="#org34d5602">Итого</a></li>
+<li><a href="#org5699f50">Заметки с ссылками на эту страницу</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org389da1e" class="outline-2">
+<h2 id="org389da1e">Нормированное пространство</h2>
+<div class="outline-text-2" id="text-org389da1e">
+<p>
+Линейное пространство \(X\) над полем \(\mathbb{K}\) (в нашем случае \(\mathbb{R}\) или \(\mathbb{C}\)) называется нормированным, если задана функция \(\| \cdot \| : X \to [0, +\infty)\) такая, что:
+</p>
+
+<ol class="org-ol">
+<li>\(\forall x \in X : \|x\| \geqslant 0\) и \(\|x\| = 0 \Leftrightarrow x = 0\)</li>
+<li>\(\forall \alpha \in \mathbb{K}, \forall x \in X : \|\alpha x\| = |\alpha| \cdot \|x\|\)</li>
+<li>\(\forall x, y \in X : \|x + y\| \leqslant \|x\| + \|y\|\)</li>
+</ol>
+
+<p>
+Функция \(\| \cdot \|\) называется нормой.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd390492" class="outline-2">
+<h2 id="orgd390492">Nota bene</h2>
+<div class="outline-text-2" id="text-orgd390492">
+<p>
+Если мы вводим норму, то наше пространство обязано быть линейным. Потому что в аксиоматике мы должны уметь умножать на число и складывать элементы.
+</p>
+</div>
+</div>
+<div id="outline-container-org0f76dcb" class="outline-2">
+<h2 id="org0f76dcb">Сходимость</h2>
+<div class="outline-text-2" id="text-org0f76dcb">
+<p>
+Можно ввести сходимость по норме.
+</p>
+</div>
+</div>
+<div id="outline-container-org2d11474" class="outline-2">
+<h2 id="org2d11474">Метрика и норма</h2>
+<div class="outline-text-2" id="text-org2d11474">
+<p>
+Суть вопроса в том, что если у нас есть нормированное пространство, то можно сделать его же метрическим? И так, чтобы сходимость по метрике была согласована со сходимостью по норме.
+</p>
+
+<p>
+Ответ: Можно. Введя метрику как норму разности.
+</p>
+
+<p>
+Самый главный вывод:
+</p>
+<blockquote>
+<p>
+Любое нормированное пространство является метрическим.
+</p>
+</blockquote>
+
+<p>
+Очевидно, что обратное неверно. Например дискретная метрика &#x2013; там даже нет линейной структуры. Если наше метрическое пространство не линейное, то оно не является нормированным.
+</p>
+
+<p>
+И, понятное дело, метрику можно вводить любую, но нам нужна та, чтобы сходимость была та же.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcfea49e" class="outline-2">
+<h2 id="orgcfea49e">Инвариантность относительно сдвига</h2>
+<div class="outline-text-2" id="text-orgcfea49e">
+<p>
+Легко заметить свойство метрики, порождённой нормой:
+\[
+\|x - y\| = \|(x-z)-(y-z)\|
+\] 
+</p>
+</div>
+</div>
+<div id="outline-container-org34d5602" class="outline-2">
+<h2 id="org34d5602">Итого</h2>
+<div class="outline-text-2" id="text-org34d5602">
+<p>
+Объединяя предыдущие два пункта:
+</p>
+
+<p>
+Метрическое пространство может быть нормированно, если:
+</p>
+<ol class="org-ol">
+<li>\(X\) &#x2013; линейное пространство</li>
+<li>Метрика инвариантна относительно сдвигов</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5699f50" class="outline-2">
+<h2 id="org5699f50">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org5699f50">
+<ul class="org-ul">
+<li><a href="2025-10-16-банахово_пространство.html">Банахово пространство</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

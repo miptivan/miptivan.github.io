@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-10-17 Fri 00:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Теорема об ортогональном дополнении</title>
+<meta name="author" content="Ivan Borisov" />
+<meta name="generator" content="Org Mode" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(98980347, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98980347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+<link rel="stylesheet" type="text/css" href="./css/links.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- SIDEBAR -->
+                                 <a aria-current="page" class="" href="/">
+                                     <img alt="me" src="img/me.jpg" width="150" height="150">
+                                     <div class="name">Ivan Borisov</div>
+                                 </a>
+
+                                 <div class="whoami">Computer science student at ITMO University. Interested in programming, Linux and Emacs.</div>
+
+                                 <div class="links">
+                                     <span><a href="https://t.me/vandaisky">Telegram</a></span>
+                                     <span><a href="https://github.com/miptivan">GitHub</a></span>
+                                     <span><a href="https://instagram.com/vandaisky">Instagram</a></span>
+                                 </div>
+
+                                 <div><ul class="menu">
+                                     <li><a href="https://miptivan.github.io/index.html">Home</a></li>
+                                     <li><a href="https://miptivan.github.io/about.html">About</a></li>
+                                     <li><a href="https://miptivan.github.io/analysis.html">Analysis</a></li>
+                                 </ul></div>
+                             <!-- / SIDEBAR -->
+</div>
+<div id="content" class="content">
+<h1 class="title">Теорема об ортогональном дополнении</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgca622c9">Теорема о ортогональном дополнении</a></li>
+<li><a href="#orgdd06387">Лемма о перпендикуляре</a></li>
+<li><a href="#orge260c51">Note</a></li>
+<li><a href="#org3b20991">Заметки с ссылками на эту страницу</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgca622c9" class="outline-2">
+<h2 id="orgca622c9">Теорема о ортогональном дополнении</h2>
+<div class="outline-text-2" id="text-orgca622c9">
+<p>
+Пусть \(H\) &#x2013; гильбертово пространство, \(H_0\) &#x2013; замкнутое подпространство.
+Тогда \(\exists H_1\) &#x2013; замкнутое, что \(H = H_0 \oplus H_1\). Более того, \(H_1 = H_0^\perp\).
+</p>
+</div>
+</div>
+<div id="outline-container-orgdd06387" class="outline-2">
+<h2 id="orgdd06387">Лемма о перпендикуляре</h2>
+<div class="outline-text-2" id="text-orgdd06387">
+<p>
+Пусть \(H\) &#x2013; гильбертово пространство, \(H_0\) &#x2013; замкнутое подпространство и \(x \notin H_0 \Rightarrow \exists x_0 \in H_0 : \|x - x_0\| = \inf_{y \in H_0} \|x - y\| = \mathrm{dist}(x, H_0)\).
+</p>
+</div>
+</div>
+<div id="outline-container-orge260c51" class="outline-2">
+<h2 id="orge260c51">Note</h2>
+<div class="outline-text-2" id="text-orge260c51">
+<p>
+Кажется в <a href="2025-10-16-банахово_пространство.html#ID-37e48043-6321-441c-b9a5-d15641d9a308">банаховом пространстве</a> были проблемы с дополняемостью. А в <a href="2025-10-16-гильбертово_пространство.html#ID-f6cb7994-5615-40e9-a81b-eba26f8101dc">гильбертовом</a> &#x2013; нет.
+</p>
+</div>
+</div>
+<div id="outline-container-org3b20991" class="outline-2">
+<h2 id="org3b20991">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org3b20991">
+<ul class="org-ul">
+<li><a href="2025-10-10-функциональныи_анализ.html">Функциональный анализ</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
