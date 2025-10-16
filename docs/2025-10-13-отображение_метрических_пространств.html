@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-10-14 Tue 01:56 -->
+<!-- 2025-10-16 Thu 04:58 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Отображение метрических пространств</title>
@@ -91,28 +91,28 @@ webvisor:true
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf0c1c91">Непрерывность</a></li>
-<li><a href="#org947be67">Равномерная непрерывность</a></li>
-<li><a href="#orgf2a5cbf">Липшицево отображение</a>
+<li><a href="#orgb4faf5f">Непрерывность</a></li>
+<li><a href="#org38c683f">Равномерная непрерывность</a></li>
+<li><a href="#org050aeb0">Липшицево отображение</a>
 <ul>
-<li><a href="#orge4fbc8e">Константа Липшица</a>
+<li><a href="#org2529fd3">Константа Липшица</a>
 <ul>
-<li><a href="#org8efafe6">Сжимающее отображение</a></li>
+<li><a href="#orgcfdf0f7">Сжимающее отображение</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org29b6c33">Изометрический изоморфизм</a></li>
-<li><a href="#org2bc1325">Свойства полных метрических пространств</a>
+<li><a href="#org10b4286">Изометрический изоморфизм</a></li>
+<li><a href="#org5bf79e7">Свойства полных метрических пространств</a>
 <ul>
-<li><a href="#org0ec84ea">Теорема о неподвижной точке</a>
+<li><a href="#orgd721d22">Теорема о неподвижной точке</a>
 <ul>
-<li><a href="#org7847af7">Идея доказательства</a></li>
+<li><a href="#org240bf48">Идея доказательства</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgcd4f317">Заметки с ссылками на эту страницу</a></li>
+<li><a href="#org1e98c79">Заметки с ссылками на эту страницу</a></li>
 </ul>
 </div>
 </div>
@@ -127,9 +127,9 @@ webvisor:true
 <p>
 :NOTE: Возможно, следующие определения следует вывести в отдельную заметку, а здесь оставить ссылки
 </p>
-<div id="outline-container-orgf0c1c91" class="outline-2">
-<h2 id="orgf0c1c91">Непрерывность</h2>
-<div class="outline-text-2" id="text-orgf0c1c91">
+<div id="outline-container-orgb4faf5f" class="outline-2">
+<h2 id="orgb4faf5f">Непрерывность</h2>
+<div class="outline-text-2" id="text-orgb4faf5f">
 <p>
 \[
 \text{Отображение } f \text{ непрерывно, если } \forall \varepsilon > 0\ \exists \delta = \delta(x_{0}, \varepsilon): 
@@ -138,9 +138,9 @@ webvisor:true
 </p>
 </div>
 </div>
-<div id="outline-container-org947be67" class="outline-2">
-<h2 id="org947be67">Равномерная непрерывность</h2>
-<div class="outline-text-2" id="text-org947be67">
+<div id="outline-container-org38c683f" class="outline-2">
+<h2 id="org38c683f">Равномерная непрерывность</h2>
+<div class="outline-text-2" id="text-org38c683f">
 <p>
 \[
 \text{Отображение } f \text{ равномерно непрерывно, если } \forall \varepsilon > 0\ \exists \delta = \delta(\varepsilon): 
@@ -149,9 +149,9 @@ webvisor:true
 </p>
 </div>
 </div>
-<div id="outline-container-orgf2a5cbf" class="outline-2">
-<h2 id="orgf2a5cbf">Липшицево отображение</h2>
-<div class="outline-text-2" id="text-orgf2a5cbf">
+<div id="outline-container-org050aeb0" class="outline-2">
+<h2 id="org050aeb0">Липшицево отображение</h2>
+<div class="outline-text-2" id="text-org050aeb0">
 <p>
 \[
 \text{Отображение } f \text{ - липшицево } (f \in \text{Lip}(X, Y)), \text{ если } \exists r \geq 0: \forall x_1, x_2 \in X: 
@@ -163,18 +163,18 @@ d(f(x_1), f(x_2)) \leq r \cdot \rho(x_1, x_2).
 Очевидно, что липшицево отображение <i>равномерно непрерывно</i>.
 </p>
 </div>
-<div id="outline-container-orge4fbc8e" class="outline-3">
-<h3 id="orge4fbc8e">Константа Липшица</h3>
-<div class="outline-text-3" id="text-orge4fbc8e">
+<div id="outline-container-org2529fd3" class="outline-3">
+<h3 id="org2529fd3">Константа Липшица</h3>
+<div class="outline-text-3" id="text-org2529fd3">
 <p>
 \[
 \text{Lip}(f) = \sup_{x_1 \neq x_2} \dfrac{d(f(x_1), f(x_2))}{\rho(x_1, x_2)}
 \]
 </p>
 </div>
-<div id="outline-container-org8efafe6" class="outline-4">
-<h4 id="org8efafe6">Сжимающее отображение</h4>
-<div class="outline-text-4" id="text-org8efafe6">
+<div id="outline-container-orgcfdf0f7" class="outline-4">
+<h4 id="orgcfdf0f7">Сжимающее отображение</h4>
+<div class="outline-text-4" id="text-orgcfdf0f7">
 <p>
 Отображение f называется <b>сжимающим</b>, если:
 </p>
@@ -198,9 +198,9 @@ d(f(x_1), f(x_2)) \leq r \cdot \rho(x_1, x_2).
 </div>
 </div>
 </div>
-<div id="outline-container-org29b6c33" class="outline-2">
-<h2 id="org29b6c33">Изометрический изоморфизм</h2>
-<div class="outline-text-2" id="text-org29b6c33">
+<div id="outline-container-org10b4286" class="outline-2">
+<h2 id="org10b4286">Изометрический изоморфизм</h2>
+<div class="outline-text-2" id="text-org10b4286">
 <p>
 Метрические пространства $(X, &rho;) и \((Y, d)\) <b>изометрически изоморфны</b>, если \(\exists f: X \implies Y\) такое, что:
 </p>
@@ -218,13 +218,13 @@ d(f(x_1), f(x_2)) \leq r \cdot \rho(x_1, x_2).
 </p>
 </div>
 </div>
-<div id="outline-container-org2bc1325" class="outline-2">
-<h2 id="org2bc1325">Свойства полных метрических пространств</h2>
-<div class="outline-text-2" id="text-org2bc1325">
+<div id="outline-container-org5bf79e7" class="outline-2">
+<h2 id="org5bf79e7">Свойства полных метрических пространств</h2>
+<div class="outline-text-2" id="text-org5bf79e7">
 </div>
-<div id="outline-container-org0ec84ea" class="outline-3">
-<h3 id="org0ec84ea">Теорема о неподвижной точке</h3>
-<div class="outline-text-3" id="text-org0ec84ea">
+<div id="outline-container-orgd721d22" class="outline-3">
+<h3 id="orgd721d22">Теорема о неподвижной точке</h3>
+<div class="outline-text-3" id="text-orgd721d22">
 <p>
 Пусть \((X, \rho)\) &#x2013; полное метрическое пространство и \(f\colon X \rightarrow X\) &#x2013; сжимающее отображение \(\implies \exists!x\colon f(x) = x\).
 </p>
@@ -239,9 +239,9 @@ d(f(x_1), f(x_2)) \leq r \cdot \rho(x_1, x_2).
 </p>
 </blockquote>
 </div>
-<div id="outline-container-org7847af7" class="outline-4">
-<h4 id="org7847af7">Идея доказательства</h4>
-<div class="outline-text-4" id="text-org7847af7">
+<div id="outline-container-org240bf48" class="outline-4">
+<h4 id="org240bf48">Идея доказательства</h4>
+<div class="outline-text-4" id="text-org240bf48">
 <p>
 Берём любую \(x_0\), далее определяем \(x_{1}= f(x_{0})\dots x_{n+1}=f(x_{n})\).
 </p>
@@ -254,9 +254,9 @@ d(f(x_1), f(x_2)) \leq r \cdot \rho(x_1, x_2).
 </div>
 </div>
 </div>
-<div id="outline-container-orgcd4f317" class="outline-2">
-<h2 id="orgcd4f317">Заметки с ссылками на эту страницу</h2>
-<div class="outline-text-2" id="text-orgcd4f317">
+<div id="outline-container-org1e98c79" class="outline-2">
+<h2 id="org1e98c79">Заметки с ссылками на эту страницу</h2>
+<div class="outline-text-2" id="text-org1e98c79">
 <ul class="org-ul">
 <li><a href="2025-10-10-функциональныи_анализ.html">Функциональный анализ</a></li>
 </ul>
