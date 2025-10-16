@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       f612d107-a3ad-4880-b63c-6c9441668059
+:END:
+#+title: Замкнутое множество
+#+setupfile: setup.org
+#+date: [2025-10-13 Mon 00:58]
+#+excerpt: 
+#+filetags:
+
+Это множество, содержащее все свои предельные точки.

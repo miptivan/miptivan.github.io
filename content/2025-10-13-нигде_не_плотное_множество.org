@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       b4efd7ae-2a2e-4295-9223-432a84fa0af6
+:END:
+#+title: Нигде не плотное множество
+#+setupfile: setup.org
+#+date: [2025-10-13 Mon 01:31]
+#+excerpt: 
+#+filetags:
+
+Множество $M \subset X$ нигде не плотно, если $\forall \text{ шара } B в X \exists\tilde{B} \subset B - \text{ другой шар и } \tilde{B} \cap M = \o$
+
+* Ссылки
+- [[id:98238b33-dc28-48be-acb8-c3199117cbdb][Всюду плотное множество]]

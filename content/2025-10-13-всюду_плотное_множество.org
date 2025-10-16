@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       98238b33-dc28-48be-acb8-c3199117cbdb
+:END:
+#+title: Всюду плотное множество
+#+setupfile: setup.org
+#+date: [2025-10-13 Mon 01:24]
+#+excerpt: 
+#+filetags:
+
+Множество $M \subset X$ всюду плотно в $X$, если: $$\overline{M} = X$$.
+
+* Ссылки
+- [[id:b4efd7ae-2a2e-4295-9223-432a84fa0af6][Нигде не плотное множество]]

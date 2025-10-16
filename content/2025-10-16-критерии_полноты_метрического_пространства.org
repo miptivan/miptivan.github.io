@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       bb0b51e2-26aa-415d-8249-36ffd3285d91
+:END:
+#+title: Критерий полноты метрического пространства
+#+setupfile: setup.org
+#+date: [2025-10-16 Thu 03:34]
+#+excerpt: 
+#+filetags:
+
+* Критерий полноты метрического пространства
+Пусть $(X, \rho)$ \--- метрическое пространство. Тогда: 
+
+$(X, \rho)$ полно $\Longleftrightarrow$ для любой последовательности $\{\overline{B}_n\}$ замкнутых вложенных шаров с радиусами $r_n \to 0$ существует единственный общий элемент, т.е.
+
+$$
+\overline{B}_1 \supset \overline{B}_2 \supset \cdots \supset \overline{B}_n \supset \cdots,\quad r_n \to 0 \ \Rightarrow \ \bigcap_{n=1}^{\infty} \overline{B}_n = \{x\}\text{ (единственный).
+\]
+$$
+
